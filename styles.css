@@ -72,7 +72,7 @@ h1 {
 .trending.card {
   max-width: 200px;
   max-height: 200px;
-  border: 0;
+border: 0;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 20%);
 }
 .col {
@@ -81,18 +81,19 @@ h1 {
 }
 
 .card > .card-img-top img {
-  width: 100%;
+width: 100%;
   height: 100%;
+  background-attachment: fixed;
   object-fit: cover;
 }
-
 .trending.card h6 {
-  position: absolute;
-  bottom: -10px;
-  color: white;
-  font-size: 10px;
-  text-align: center;
-  align-self: center;
-  justify-content: center;
-  margin-top: 5px;
+.card:hover .cover-description,
+.card:focus .cover-description {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 1%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  height: 200px;
+  width: 200px;
 }
