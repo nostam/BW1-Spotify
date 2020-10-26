@@ -16,13 +16,21 @@ body {
     rgba(0, 212, 255, 1) 100%
   );
 }
+
+h1 {
+  color: white;
+  font-weight: 900;
+}
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link {
   background-color: transparent;
   border: 0px;
+  font-size: 12px;
   font-weight: 500;
   color: whitesmoke;
   letter-spacing: 0.1em;
+  justify-content: space-around;
+  margin-bottom: 10px;
 }
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link:hover {
@@ -49,9 +57,6 @@ body {
 .nav-tabs {
   border-bottom: none;
 }
-.card-img-top {
-  width: 200px;
-}
 
 .card .spotify-card-icon {
   position: absolute;
@@ -64,21 +69,30 @@ body {
   opacity: 0.5;
 }
 
-.card {
+.trending.card {
   max-width: 200px;
   max-height: 200px;
   border: 0;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 20%);
 }
+.col {
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
 
-.card .card-img-top {
+.card > .card-img-top img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.trending.card > h4 {
+.trending.card h6 {
   position: absolute;
-  top: 50px;
-  left: 15px;
+  bottom: -10px;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  margin-top: 5px;
 }
