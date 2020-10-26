@@ -22,93 +22,126 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
     />
+    <script
+      src="https://kit.fontawesome.com/6f47b95a54.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- My CSS -->
     <link rel="stylesheet" href="styles.css" />
-
     <title>Hello, world!</title>
   </head>
   <body>
+    <section class="mainframe">
+    <aside>
+      <div>
+        <img src="assets/logo.png" alt="logo" class="logo" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="#"> <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#"> <i class="fas fa-search"></i> Search</a>
+          </li>
+          <li>
+            <a href="#"> <i class="fas fa-book"></i> Your library</a>
+          </li>
+        </ul>
+        <h6>PLAYLISTS</h6>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="far fa-plus-square"></i> Create playlist</a
+            >
+          </li>
+          <li>
+            <a href="#"> <i class="far fa-heart"></i> Liked Songs</a>
+          </li>
+        </ul>
+        <hr />
+      </div>
+      <div class="line"></div>
+    </aside>
+
     <div class="container">
       <!-- Tab heading -->
-
-      <section>
-        <div class="container mt-3 justify-center">
-          <div>
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  id="trending-tab"
-                  data-toggle="tab"
-                  href="#trending"
-                  role="tab"
-                  aria-controls="trending"
-                  aria-selected="true"
-                  data-target="#homepage-headings"
-                  data-slide-to="0"
-                  >TRENDING</a
-                >
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  id="podcast-tab"
-                  data-toggle="tab"
-                  href="#podcast"
-                  role="tab"
-                  aria-controls="podcast"
-                  aria-selected="false"
-                  data-target="#homepage-headings"
-                  data-slide-to="1"
-                  >PODCAST</a
-                >
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  id="moods-and-genres-tab"
-                  data-toggle="tab"
-                  href="#moods-and-genres"
-                  role="tab"
-                  aria-controls="moods-and-genres"
-                  aria-selected="false"
-                  data-target="#homepage-headings"
-                  data-slide-to="2"
-                  >MOODS AND GENRES</a
-                >
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  id="new-releases-tab"
-                  data-toggle="tab"
-                  href="#new-releases"
-                  role="tab"
-                  aria-controls="new-releases"
-                  aria-selected="false"
-                  data-target="#homepage-headings"
-                  data-slide-to="2"
-                  >NEW RELEASES</a
-                >
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  id="discover-tab"
-                  data-toggle="tab"
-                  href="#discover"
-                  role="tab"
-                  aria-controls="discover"
-                  aria-selected="false"
-                  data-target="#homepage-headings"
-                  data-slide-to="2"
-                  >DISCOVER</a
-                >
-              </li>
-            </ul>
-          </div>
+      <div class="container mt-3 justify-center">
+        <div>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="trending-tab"
+                data-toggle="tab"
+                href="#trending"
+                role="tab"
+                aria-controls="trending"
+                aria-selected="true"
+                data-target="#homepage-headings"
+                data-slide-to="0"
+                >TRENDING</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="podcast-tab"
+                data-toggle="tab"
+                href="#podcast"
+                role="tab"
+                aria-controls="podcast"
+                aria-selected="false"
+                data-target="#homepage-headings"
+                data-slide-to="1"
+                >PODCAST</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="moods-and-genres-tab"
+                data-toggle="tab"
+                href="#moods-and-genres"
+                role="tab"
+                aria-controls="moods-and-genres"
+                aria-selected="false"
+                data-target="#homepage-headings"
+                data-slide-to="2"
+                >MOODS AND GENRES</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="new-releases-tab"
+                data-toggle="tab"
+                href="#new-releases"
+                role="tab"
+                aria-controls="new-releases"
+                aria-selected="false"
+                data-target="#homepage-headings"
+                data-slide-to="2"
+                >NEW RELEASES</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="discover-tab"
+                data-toggle="tab"
+                href="#discover"
+                role="tab"
+                aria-controls="discover"
+                aria-selected="false"
+                data-target="#homepage-headings"
+                data-slide-to="2"
+                >DISCOVER
+                </a>
+            </li>
+          </ul>
         </div>
-      </section>
+      </div>
       <!-- End of Tab heading -->
       <h1>#THROWBACKTHURSDAY</h1>
       <!-- Card Design -->
@@ -182,6 +215,7 @@
             <h6>Italian Karaoke</h6>
           </div>
         </div>
+
         <div class="trending card col-12 col-md-3 col-lg-2">
           <img
             class="card-img-top"
@@ -196,11 +230,6 @@
           </div>
         </div>
       </div>
-
-
-
-
-
 
       <h1 class= "mt-5">Classifiche</h1>
       <!-- Card Design -->
@@ -260,62 +289,27 @@
             <h6>Viral 50 - Italy</h6>
           </div>
         </div>
-
-
+      </div>
       <!-- End of Container Closure -->
-      
     </div>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-=======
-    <link
-      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
-      rel="stylesheet"
-    />
-
-    <title>Spotify</title>
-  </head>
-  <body>
-    <section class="mainframe">
-      <aside>
-        <div>
-          <img src="assets/logo.png" alt="logo" class="logo" />
-        </div>
-        <div class="menu">
-          <ul>
-            <li>
-              <a href="#"> <i class="fas fa-home"></i> Home</a>
-            </li>
-            <li>
-              <a href="#"> <i class="fas fa-search"></i> Search</a>
-            </li>
-            <li>
-              <a href="#"> <i class="fas fa-book"></i> Your library</a>
-            </li>
-          </ul>
-
-          <h6>PLAYLISTS</h6>
-          <ul>
-            <li>
-              <a href="#">
-                <i class="far fa-plus-square"></i> Create playlist</a
-              >
-            </li>
-            <li>
-              <a href="#"> <i class="far fa-heart"></i> Liked Songs</a>
-            </li>
-          </ul>
-          <hr />
-        </div>
-        <div class="line"></div>
-      </aside>
-    </section>
-
+  </section>
     <section class="player d-flex justify-content-between">
       <div
         class="player-albumart d-flex align-items-center justify-content-start"
       >
-        64px art + title here
+      <div class="nowplaying-albumart mx-3">
+        <img src="http://placehold.it/64x64" />
+      </div>
+      <div class="d-flex flex-column text-left mr-4">
+        <div class="nowplaying-title">Nowplaying title</div>
+        <div class="nowplaying-artist">Nowplaying artist</div>
+      </div>
+      <div class="loved-track mr-3">
+        <i class="far fa-heart"></i>
+        <i class="fas fa-heart"></i>
+      </div>
+      <i class="fas fa-chalkboard"></i>
+    </div>
       </div>
 
       <div class="d-flex flex-column py-2 my-1 flex-grow-1">
