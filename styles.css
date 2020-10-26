@@ -190,4 +190,116 @@ h6 .nav-tabs .nav-item.show .nav-link,
   transition: 1s ease;
   opacity: 0.9;
   z-index: 999;
+=======
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap");
+
+/* global */
+body {
+  margin: 0px;
+  padding: 0px;
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mainframe {
+  height: calc(100vh - 90px);
+}
+/* Sidebar */
+aside {
+  background-color: #040404;
+  color: #b3b3b3;
+  height: 85vh;
+  top: 0px;
+  width: 20vw;
+}
+.logo {
+  width: 8em;
+  height: 4.5em;
+  display: flex;
+  padding-top: 2em;
+  margin-left: 2em;
+}
+.menu a {
+  color: #b3b3b3;
+}
+.menu a:hover {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+ul {
+  list-style-type: none;
+}
+.menu ul li {
+  padding-top: 1em;
+  font-size: 1.1em;
+}
+.menu i {
+  padding-right: 20px;
+}
+.menu h6 {
+  padding-left: 35px;
+}
+.line {
+  border: 1px solid #b3b3b3;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* bottom player */
+.player {
+  color: #ccc;
+  background-color: #282828;
+  max-height: 90px;
+  height: 100%;
+  padding-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+.player-albumart {
+  max-width: 30vw;
+  width: 100%;
+}
+.player-controller {
+  max-width: 40vw;
+  width: 100%;
+}
+.player-setting {
+  max-width: 30vw;
+  width: 100%;
+}
+.fa-play:hover,
+.fa-pause:hover,
+.fa-play:focus,
+.fa-pause:focus {
+  color: white;
+  transform: scale(1.25);
+  transition: 0.25s;
+  position: relative;
+}
+.player-nowplaying {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.player-progress {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: auto 1rem;
+}
+#nowplayingProgress {
+  width: 75%;
+  height: 2px;
+  background-color: grey;
+  border-radius: 2px;
+}
+.player-volume {
+  width: 125px;
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 1rem;
+}
+#nowplayingVolume {
+  width: 75%;
+  height: 4px;
+  background-color: grey;
+  border-radius: 2px;
 }
