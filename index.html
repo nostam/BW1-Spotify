@@ -15,19 +15,114 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+ <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <!-- My CSS -->
 
-    <title>Spotify</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Hello, world!</title>
   </head>
   <body>
-    <div class="card" style="width: 18rem">
-      <img class="card-img-top" src="..." alt="Card image cap" />
-      <div class="card-body">
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
+    <div class="container">
+      <!-- Tab heading -->
+
+      <section>
+        <div class="container mt-3 justify-center">
+          <div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="trending-tab"
+                  data-toggle="tab"
+                  href="#trending"
+                  role="tab"
+                  aria-controls="trending"
+                  aria-selected="true"
+                  data-target="#homepage-headings"
+                  data-slide-to="0"
+                  >TRENDING</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="podcast-tab"
+                  data-toggle="tab"
+                  href="#podcast"
+                  role="tab"
+                  aria-controls="podcast"
+                  aria-selected="false"
+                  data-target="#homepage-headings"
+                  data-slide-to="1"
+                  >PODCAST</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="moods-and-genres-tab"
+                  data-toggle="tab"
+                  href="#moods-and-genres"
+                  role="tab"
+                  aria-controls="moods-and-genres"
+                  aria-selected="false"
+                  data-target="#homepage-headings"
+                  data-slide-to="2"
+                  >MOODS AND GENRES</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="new-releases-tab"
+                  data-toggle="tab"
+                  href="#new-releases
+                  role="tab"
+                  aria-controls="new-releases"
+                  aria-selected="false"
+                  data-target="#homepage-headings"
+                  data-slide-to="2"
+                  >NEW RELEASES</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="discover-tab"
+                  data-toggle="tab"
+                  href="#discover"
+                  role="tab"
+                  aria-controls="discover"
+                  aria-selected="false"
+                  data-target="#homepage-headings"
+                  data-slide-to="2"
+                  >DISCOVER</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- End of Tab heading -->
+
+      <!-- Card Design -->
+
+      <div class="trending card d-flex flex-column">
+        <span><img class="card-img-top" src="images/spotify_playlist_1.jpg" alt="spotify_playlist_1">
+        <i class="spotify-card-icon fab fa-spotify"></i>
+        <h4>Karaoke Italiano</h4>
+        <h6>Italian Karaoke</h6></span>
       </div>
+
+
+
     </div>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
