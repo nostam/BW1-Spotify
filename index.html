@@ -8,9 +8,8 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    
-    <link rel='stylesheet' type='text/css' href='styles.css'/>
-    
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -18,41 +17,91 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    
-    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+      rel="stylesheet"
+    />
 
     <title>Spotify</title>
   </head>
   <body>
-    
-    <aside>
-      <div>
-          <img src='assets/logo.png' alt='logo' class='logo'/>
-      </div>
-      <div class='menu'>
+    <section class="mainframe">
+      <aside>
+        <div>
+          <img src="assets/logo.png" alt="logo" class="logo" />
+        </div>
+        <div class="menu">
           <ul>
-              <li>
-                  <a href='#'> <i class="fas fa-home"></i> Home</a>
-              </li>
-              <li><a href='#'> <i class="fas fa-search"></i> Search</a></li>
-              <li><a href='#'> <i class="fas fa-book"></i> Your library</a></li>
+            <li>
+              <a href="#"> <i class="fas fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="#"> <i class="fas fa-search"></i> Search</a>
+            </li>
+            <li>
+              <a href="#"> <i class="fas fa-book"></i> Your library</a>
+            </li>
           </ul>
 
           <h6>PLAYLISTS</h6>
           <ul>
-              <li>
-                  <a href='#'> <i class="far fa-plus-square"></i> Create playlist</a>
-              </li>
-              <li><a href='#'> <i class="far fa-heart"></i> Liked Songs</a></li>
+            <li>
+              <a href="#">
+                <i class="far fa-plus-square"></i> Create playlist</a
+              >
+            </li>
+            <li>
+              <a href="#"> <i class="far fa-heart"></i> Liked Songs</a>
+            </li>
           </ul>
-          <hr>
+          <hr />
+        </div>
+        <div class="line"></div>
+      </aside>
+    </section>
+
+    <section class="player d-flex justify-content-between">
+      <div
+        class="player-albumart d-flex align-items-center justify-content-start"
+      >
+        64px art + title here
       </div>
-      <div class='line'></div>
-  </aside>
 
-  
-
-  <script src='script.js'></script>
+      <div class="d-flex flex-column py-2 my-1 flex-grow-1">
+        <div
+          class=".player-btn d-flex align-items-center justify-content-center player-controller my-1 py-1"
+        >
+          <i class="fas fa-random fa-md mx-3"></i>
+          <i class="fas fa-step-backward fa-md mx-3"></i>
+          <div class="fa-lg">
+            <i class="fas fa-play fa-md mx-3"></i>
+            <!-- <i class="fas fa-pause fa-2x></i>-->
+          </div>
+          <i class="fas fa-step-forward fg-md mx-3"></i>
+          <i class="fas fa-redo-alt fg-md mx-3"></i>
+        </div>
+        <div
+          class="d-flex flex-row justify-content-between player-nowplaying position-relative"
+        >
+          <div class="player-nowplaying-time">18:32</div>
+          <div class="player-progress">
+            <div id="nowplayingProgress"></div>
+          </div>
+          <div class="player-totaltime">24:42</div>
+        </div>
+      </div>
+      <div class="player-setting d-flex align-items-center justify-content-end">
+        <i class="fas fa-list-ol fa-md mx-2"></i>
+        <i class="fas fa-laptop-house fa-md mx-2"></i>
+        <div class="player-volume">
+          <i class="fas fa-volume-up fa-md mx-2"></i>
+          <div id="nowplayingVolume"></div>
+        </div>
+        <!--fa-volume-down fa-volume-mute-->
+      </div>
+    </section>
+    <script src="script.js"></script>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
