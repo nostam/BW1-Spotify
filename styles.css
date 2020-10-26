@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+@font-face {
+    font-family: "Circular";
+    src: url("https://www.bu.edu/cdn/fonts/Circular/Circular-Bold.eot");
+    src: url("https://www.bu.edu/cdn/fonts/Circular/Circular-Bold.eot?#iefix")
+        format("embedded-opentype"),
+      url("https://www.bu.edu/cdn/fonts/Circular/Circular-Bold.woff")
+        format("woff"),
+      url("https://www.bu.edu/cdn/fonts/Circular/Circular-Bold.ttf")
+        format("truetype");
+    font-style: normal;
+    font-weight: 700;
+  }
 
 body{
     margin: 0px;
     padding: 0px;
-    /* font-family: 'Nunito Sans', sans-serif; */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Circular', Arial, Helvetica, sans-serif !important;
 }
 aside{
     background-color: #040404;
@@ -18,10 +29,12 @@ aside{
     height: 4.5em;
     display: flex;
     padding-top: 2em;
+    margin-bottom: 1em;
     margin-left: 2em;
 }
 .menu a{
     color: #b3b3b3;
+    z-index: 1;
 }
 .menu a:hover{
     text-decoration: none;
@@ -32,16 +45,146 @@ ul{
 }
 .menu ul li{
     padding-top: 1em;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 .menu i{
     padding-right: 20px;
 }
 .menu h6{
     padding-left: 35px;
+    margin-top: 2em;
+    margin-bottom: -0.3em;;
 }
-.line{
-    border: 1px solid #b3b3b3;
+hr{
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:#b3b3b3;
+    height: 1px;
+  }
+.menu hr{
     width: 80%;
     margin: 0 auto;
+}
+.menu a:hover{
+    color: white;
+    transition: 0.5s;
+}
+.menu li:active::after{
+    background: #afaeae50;
+    color: white !important;
+    border-radius: 4px;
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: -30px; 
+    margin-left: -25px;
+    height: 2.5em; 
+    width: 18vw;
+}
+.menu li:hover a { 
+    color: #FFF ;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .logo{
+        width: 5.2em;
+        height: 4em;
+        display: flex;
+        padding-top: 0.5;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+    .menu ul li{
+        padding-top: 0.8em;
+        font-size: 0.5em;
+        margin-left: -3em;
+    }
+    .menu h6{
+        padding-left: 15px;
+        margin-top: 1em;
+        margin-bottom: 0.3em;
+        font-size: 0.8em;
+    }
+    ul a img{
+        width: 10px;
+        height: 10px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .logo{
+        width: 5.2em;
+        height: 4em;
+        display: flex;
+        padding-top: 0.5;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+    .menu ul li{
+        padding-top: 0.8em;
+        font-size: 0.5em;
+        margin-left: -3em;
+    }
+    .menu h6{
+        padding-left: 15px;
+        margin-top: 1em;
+        margin-bottom: 0.3em;
+        font-size: 0.8em;
+    }
+    ul a img{
+        width: 20px;
+        height: 20px;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .logo{
+        width: 7.2em;
+        height: 4em;
+        display: flex;
+        padding-top: 0.5;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+    .menu ul li{
+        padding-top: 0.8em;
+        font-size: .8em;
+        margin-left: -25px;
+    }
+    .menu h6{
+        padding-left: 15px;
+        margin-top: 3em;
+        margin-bottom: 0.3em;
+        font-size: 0.7em;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .logo{
+        width: 8em;
+        height: 4.5em;
+        display: flex;
+        padding-top: 2em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+    }
+    .menu ul li{
+        padding-top: 1em;
+        font-size: 1em;
+        margin-left: 0px;
+    }
+    .menu h6{
+        padding-left: 15px;
+        margin-top: 3em;
+        margin-bottom: 0.3em;
+        font-size: 0.9em;
+        margin-left: 15px;
+    }
+    ul a img{
+        width: 20px;
+        height: 20px;
+    }
 }
