@@ -8,6 +8,9 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+    
+    <link rel='stylesheet' type='text/css' href='styles.css'/>
+    
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -15,20 +18,41 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 
     <title>Spotify</title>
   </head>
   <body>
-    <div class="card" style="width: 18rem">
-      <img class="card-img-top" src="..." alt="Card image cap" />
-      <div class="card-body">
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
+    
+    <aside>
+      <div>
+          <img src='assets/logo.png' alt='logo' class='logo'/>
       </div>
-    </div>
-    <!-- Optional JavaScript; choose one of the two! -->
+      <div class='menu'>
+          <ul>
+              <li>
+                  <a href='#'> <i class="fas fa-home"></i> Home</a>
+              </li>
+              <li><a href='#'> <i class="fas fa-search"></i> Search</a></li>
+              <li><a href='#'> <i class="fas fa-book"></i> Your library</a></li>
+          </ul>
+
+          <h6>PLAYLISTS</h6>
+          <ul>
+              <li>
+                  <a href='#'> <i class="far fa-plus-square"></i> Create playlist</a>
+              </li>
+              <li><a href='#'> <i class="far fa-heart"></i> Liked Songs</a></li>
+          </ul>
+          <hr>
+      </div>
+      <div class='line'></div>
+  </aside>
+
+  
+
+  <script src='script.js'></script>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
