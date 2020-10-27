@@ -93,6 +93,35 @@ hr{
     color: #FFF ;
 }
 
+/* scrollbar */
+
+.playlists{
+    position: relative;
+    padding-left: 15%;
+    font-size: smaller;
+    padding-top: 20px;
+    overflow-y : auto;
+    height: 130px;
+}
+/* The emerging W3C standard
+   that is currently Firefox-only */
+   * {
+    scrollbar-width: auto;
+    scrollbar-color: #040404  #b3b3b3;
+  }
+  
+  /* Works on Chrome/Edge/Safari */
+  *::-webkit-scrollbar {
+    width: 1em;
+  }
+  *::-webkit-scrollbar-track {
+    background: #b3b3b3;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color:  #040404;
+    border: 3px solid #b3b3b3;
+  }
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .logo{
@@ -117,6 +146,10 @@ hr{
     ul a img{
         width: 10px;
         height: 10px;
+    }
+    .playlists{
+        height: 50vh;
+        overflow-y: auto;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -143,6 +176,9 @@ hr{
     ul a img{
         width: 20px;
         height: 20px;
+    }    
+    .playlists{
+        height: 40vh;
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -165,6 +201,9 @@ hr{
         margin-top: 3em;
         margin-bottom: 0.3em;
         font-size: 0.7em;
+    }
+    .playlists{
+        height: 40vh;
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -194,32 +233,3 @@ hr{
         height: 20px;
     }
 }
-
-/* scrollbar */
-
-.playlists{
-    position: relative;
-    padding-left: 15%;
-    font-size: smaller;
-    padding-top: 20px;
-    overflow-y : scroll;
-    height: 130px;
-}
-/* The emerging W3C standard
-   that is currently Firefox-only */
-   * {
-    scrollbar-width: auto;
-    scrollbar-color: #040404  #b3b3b3;
-  }
-  
-  /* Works on Chrome/Edge/Safari */
-  *::-webkit-scrollbar {
-    width: 1em;
-  }
-  *::-webkit-scrollbar-track {
-    background: #b3b3b3;
-  }
-  *::-webkit-scrollbar-thumb {
-    background-color:  #040404;
-    border: 3px solid #b3b3b3;
-  }
