@@ -28,7 +28,8 @@
     ></script>
     <!-- My CSS -->
     <link rel="stylesheet" href="styles.css" />
-    <title>Hello, world!</title>
+    <title>Spotify</title>
+    <script src='script.js'></script>
   </head>
   <body>
     <section class="mainframe">
@@ -52,31 +53,15 @@
         <ul>
           <li>
             <a href="#">
-              <i class="far fa-plus-square"></i> Create playlist</a
+              <img src="https://img.icons8.com/ios/25/b3b3b3/plus.png" /> Create playlist</a
             >
           </li>
           <li>
-            <a href="#"> <i class="far fa-heart"></i> Liked Songs</a>
+            <a href='#'>
+            <img src="https://img.icons8.com/ios/25/b3b3b3/like.png"/> Liked Songs</a>
           </li>
         </ul>
         <hr />
-      </div>
-      <div class="line"></div>
-    </aside>
-
-
-          <h6>PLAYLISTS</h6>
-          <ul>
-              <li><a href='#'> 
-                <!-- <i class="far fa-plus-square"></i>  -->
-                <img src="https://img.icons8.com/ios/25/b3b3b3/plus.png"/>
-                Create playlist</a></li>
-              <li><a href='#'> 
-                <!-- <i class="far fa-heart"></i>  -->
-                <img src="https://img.icons8.com/ios/25/b3b3b3/like.png"/>
-                Liked Songs</a></li>
-          </ul>
-          <hr>
 
           <div class='playlists'>
             <p>#playlist 1</p>
@@ -91,17 +76,17 @@
             <p>#playlist 5</p>
           </div>
 
-          <ul class='stick-to-bottom'>
-            <li><a href='#'> <i class="fas fa-arrow-circle-down"></i> Install</a></li>
-        </ul>
-          
-      </div>
+            <ul class='stick-to-bottom'>
+              <li><a href='#'> <i class="fas fa-arrow-circle-down"></i> Install</a></li>
+            </ul>
+        
+      </div>  
+    </div>
   </aside>
   
   <!-- <a href="https://icons8.com/icon/1501/plus">Plus icon by Icons8</a> -->
-  <script src='script.js'></script>
 
-    <div class="container">
+    <div class="container main-content">
       <!-- Tab heading -->
       <div class="container mt-3 justify-center">
         <div>
@@ -330,7 +315,10 @@
       <!-- End of Container Closure -->
     </div>
   </section>
-    <section class="player d-flex justify-content-between">
+  <br>
+
+  <!-- player menu -->
+    <section class="player d-flex justify-content-between" style='width: 100%; position: fixed;'>
       <div
         class="player-albumart d-flex align-items-center justify-content-start"
       >
@@ -381,7 +369,8 @@
         </div>
         <!--fa-volume-down fa-volume-mute-->
       </div>
-    </section>
+    </section> <!---player menu end-->
+
     <script src="script.js"></script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
