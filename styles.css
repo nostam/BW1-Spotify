@@ -436,6 +436,18 @@ h6 .nav-tabs .nav-item.show .nav-link,
   transition: 1s ease;
   opacity: 0.9;
   z-index: 999;
+  }
+
+/* global */
+body {
+  margin: 0px;
+  padding: 0px;
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: "Circular", sans-serif;  /* updated to the spotify text shared in discord */
+}
+.mainframe {
+  height: calc(100vh - 90px);
+
 }
 /******************** bottom player ******************/
 .player {
