@@ -67,6 +67,7 @@ hr{
 .menu hr{
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 5px;
 }
 .stick-to-bottom{
     position: absolute;
@@ -193,3 +194,32 @@ hr{
         height: 20px;
     }
 }
+
+/* scrollbar */
+
+.playlists{
+    position: relative;
+    padding-left: 15%;
+    font-size: smaller;
+    padding-top: 20px;
+    overflow-y : scroll;
+    height: 130px;
+}
+/* The emerging W3C standard
+   that is currently Firefox-only */
+   * {
+    scrollbar-width: auto;
+    scrollbar-color: #040404  #b3b3b3;
+  }
+  
+  /* Works on Chrome/Edge/Safari */
+  *::-webkit-scrollbar {
+    width: 1em;
+  }
+  *::-webkit-scrollbar-track {
+    background: #b3b3b3;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color:  #040404;
+    border: 3px solid #b3b3b3;
+  }
