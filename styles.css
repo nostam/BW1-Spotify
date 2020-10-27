@@ -1,3 +1,4 @@
+
 /*********************** global *********************/
 /* @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap");*/
 :root {
@@ -45,6 +46,7 @@ body {
 }
 
 /********************** Sidebar **********************/
+
 aside {
   background-color: #040404;
   color: #b3b3b3;
@@ -53,6 +55,7 @@ aside {
   top: 0px;
   max-width: 232px;
   width: 100%;
+  position: fixed;
 }
 .logo {
   width: 8em;
@@ -60,33 +63,210 @@ aside {
   display: flex;
   padding-top: 2em;
   margin-left: 2em;
+  margin-bottom: 1em;
 }
-.menu a {
-  color: #b3b3b3;
+.menu a{
+    color: #b3b3b3;
+    z-index: 1;
 }
-.menu a:hover {
-  text-decoration: none;
-  color: #b3b3b3;
+.menu a:hover{
+    text-decoration: none;
+    color: #b3b3b3;
 }
-ul {
-  list-style-type: none;
+ul{
+    list-style-type: none;
 }
-.menu ul li {
-  padding-top: 1em;
-  font-size: 1.1em;
+.menu ul li{
+    padding-top: 1em;
+    font-size: 1em;
 }
-.menu i {
-  padding-right: 20px;
+.menu i{
+    padding-right: 20px;
 }
-.menu h6 {
-  padding-left: 35px;
+.menu h6{
+    padding-left: 35px;
+    margin-top: 2em;
+    margin-bottom: -0.3em;;
 }
-.line {
-  border: 1px solid #b3b3b3;
-  width: 80%;
-  margin: 0 auto;
+hr{
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:#b3b3b3;
+    height: 1px;
+  }
+.menu hr{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.stick-to-bottom{
+    position: absolute;
+    bottom: 5px;
+}
+.menu a:hover{
+    color: white;
+    transition: 0.5s;
+}
+.menu li:active::after{
+    background: #afaeae50;
+    color: white !important;
+    border-radius: 4px;
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: -30px; 
+    margin-left: -25px;
+    height: 2.5em; 
+    width: 18vw;
+}
+.menu li:hover a { 
+    color: #FFF ;
 }
 
+/* scrollbar */
+
+.playlists{
+    position: relative;
+    padding-left: 15%;
+    font-size: smaller;
+    padding-top: 20px;
+    overflow-y : auto;
+    height: 130px;
+}
+/* The emerging W3C standard
+   that is currently Firefox-only */
+   * {
+    scrollbar-width: auto;
+    scrollbar-color: #040404  #b3b3b3;
+  }
+  
+  /* Works on Chrome/Edge/Safari */
+  *::-webkit-scrollbar {
+    width: 1em;
+  }
+  *::-webkit-scrollbar-track {
+    background: #b3b3b3;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color:  #040404;
+    border: 3px solid #b3b3b3;
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .logo{
+        width: 5.2em;
+        height: 4em;
+        display: flex;
+        padding-top: 0.5;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+    .menu ul li{
+        padding-top: 0.8em;
+        font-size: 0.5em;
+        margin-left: -3em;
+    }
+    .menu h6{
+        padding-left: 15px;
+        margin-top: 1em;
+        margin-bottom: 0.3em;
+        font-size: 0.8em;
+    }
+    ul a img{
+        width: 10px;
+        height: 10px;
+    }
+    .playlists{
+        height: 50vh;
+        overflow-y: auto;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .logo{
+        width: 5.2em;
+        height: 4em;
+        display: flex;
+        padding-top: 0.5;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+    .menu ul li{
+        padding-top: 0.8em;
+        font-size: 0.5em;
+        margin-left: -3em;
+    }
+    .menu h6{
+        padding-left: 15px;
+        margin-top: 1em;
+        margin-bottom: 0.3em;
+        font-size: 0.8em;
+    }
+    ul a img{
+        width: 20px;
+        height: 20px;
+    }    
+    .playlists{
+        height: 40vh;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .logo{
+        width: 7.2em;
+        height: 4em;
+        display: flex;
+        padding-top: 0.5;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+    .menu ul li{
+        padding-top: 0.8em;
+        font-size: .8em;
+        margin-left: -25px;
+    }
+    .menu h6{
+        padding-left: 15px;
+        margin-top: 3em;
+        margin-bottom: 0.3em;
+        font-size: 0.7em;
+    }
+    .playlists{
+        height: 40vh;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .logo{
+        width: 8em;
+        height: 4.5em;
+        display: flex;
+        padding-top: 2em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+    }
+    .menu ul li{
+        padding-top: 1em;
+        font-size: 1em;
+        margin-left: 0px;
+    }
+    .menu h6{
+        padding-left: 15px;
+        margin-top: 1.3em;
+        margin-bottom: 0em;
+        font-size: 0.9em;
+        margin-left: 25px;
+    }
+    ul a img{
+        width: 20px;
+        height: 20px;
+    }
+    .playlists{
+        height: 20vh;
+    }
 /********************* cover page *****************/
 .nav {
   display: flex;
