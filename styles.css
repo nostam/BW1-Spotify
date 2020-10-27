@@ -1,4 +1,3 @@
-
 /*********************** global *********************/
 /* @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap");*/
 :root {
@@ -65,215 +64,214 @@ aside {
   margin-left: 2em;
   margin-bottom: 1em;
 }
-.menu a{
-    color: #b3b3b3;
-    z-index: 1;
+.menu a {
+  color: #b3b3b3;
+  z-index: 1;
 }
-.menu a:hover{
-    text-decoration: none;
-    color: #b3b3b3;
+.menu a:hover {
+  text-decoration: none;
+  color: #b3b3b3;
 }
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
-.menu ul li{
-    padding-top: 1em;
-    font-size: 1em;
+.menu ul li {
+  padding-top: 1em;
+  font-size: 1em;
 }
-.menu i{
-    padding-right: 20px;
+.menu i {
+  padding-right: 20px;
 }
-.menu h6{
-    padding-left: 35px;
-    margin-top: 2em;
-    margin-bottom: -0.3em;;
+.menu h6 {
+  padding-left: 35px;
+  margin-top: 2em;
+  margin-bottom: -0.3em;
 }
-hr{
-    border: 0;
-    clear:both;
-    display:block;
-    width: 96%;
-    background-color:#b3b3b3;
-    height: 1px;
-  }
-.menu hr{
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 5px;
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: #b3b3b3;
+  height: 1px;
 }
-.stick-to-bottom{
-    position: absolute;
-    bottom: 5px;
+.menu hr {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5px;
 }
-.menu a:hover{
-    color: white;
-    transition: 0.5s;
+.stick-to-bottom {
+  position: absolute;
+  bottom: 5px;
 }
-.menu li:active::after{
-    background: #afaeae50;
-    color: white !important;
-    border-radius: 4px;
-    content: '';
-    display: block;
-    position: absolute;
-    margin-top: -30px;
-    margin-left: -25px;
-    height: 2.5em;
-    width: 15vw;
+.menu a:hover {
+  color: white;
+  transition: 0.5s;
+}
+.menu li:active::after {
+  background: #afaeae50;
+  color: white !important;
+  border-radius: 4px;
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: -25px;
+  height: 2.5em;
+  width: 15vw;
 }
 .menu li:hover a {
-    color: #FFF ;
+  color: #fff;
 }
 
 /* scrollbar */
 
-.playlists{
-    position: relative;
-    padding-left: 15%;
-    font-size: smaller;
-    padding-top: 20px;
-    overflow-y : auto;
-    height: 130px;
+.playlists {
+  position: relative;
+  padding-left: 15%;
+  font-size: smaller;
+  padding-top: 20px;
+  overflow-y: auto;
+  height: 130px;
 }
 /* The emerging W3C standard
    that is currently Firefox-only */
-   * {
-    scrollbar-width: auto;
-    scrollbar-color: #040404  #b3b3b3;
-  }
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #040404 #b3b3b3;
+}
 
-  /* Works on Chrome/Edge/Safari */
-  *::-webkit-scrollbar {
-    width: 1em;
-  }
-  *::-webkit-scrollbar-track {
-    background: #b3b3b3;
-  }
-  *::-webkit-scrollbar-thumb {
-    background-color:  #040404;
-    border: 3px solid #b3b3b3;
-  }
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 1em;
+}
+*::-webkit-scrollbar-track {
+  background: #b3b3b3;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #040404;
+  border: 3px solid #b3b3b3;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .logo{
-        width: 5.2em;
-        height: 4em;
-        display: flex;
-        padding-top: 0.5;
-        margin-bottom: 1em;
-        margin-left: 1em;
-    }
-    .menu ul li{
-        padding-top: 0.8em;
-        font-size: 0.5em;
-        margin-left: -3em;
-    }
-    .menu h6{
-        padding-left: 15px;
-        margin-top: 1em;
-        margin-bottom: 0.3em;
-        font-size: 0.8em;
-    }
-    ul a img{
-        width: 10px;
-        height: 10px;
-    }
-    .playlists{
-        height: 50vh;
-        overflow-y: auto;
-    }
+  .logo {
+    width: 5.2em;
+    height: 4em;
+    display: flex;
+    padding-top: 0.5;
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+  .menu ul li {
+    padding-top: 0.8em;
+    font-size: 0.5em;
+    margin-left: -3em;
+  }
+  .menu h6 {
+    padding-left: 15px;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    font-size: 0.8em;
+  }
+  ul a img {
+    width: 10px;
+    height: 10px;
+  }
+  .playlists {
+    height: 50vh;
+    overflow-y: auto;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .logo{
-        width: 5.2em;
-        height: 4em;
-        display: flex;
-        padding-top: 0.5;
-        margin-bottom: 1em;
-        margin-left: 1em;
-    }
-    .menu ul li{
-        padding-top: 0.8em;
-        font-size: 0.5em;
-        margin-left: -3em;
-    }
-    .menu h6{
-        padding-left: 15px;
-        margin-top: 1em;
-        margin-bottom: 0.3em;
-        font-size: 0.8em;
-    }
-    ul a img{
-        width: 20px;
-        height: 20px;
-    }
-    .playlists{
-        height: 40vh;
-    }
+  .logo {
+    width: 5.2em;
+    height: 4em;
+    display: flex;
+    padding-top: 0.5;
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+  .menu ul li {
+    padding-top: 0.8em;
+    font-size: 0.5em;
+    margin-left: -3em;
+  }
+  .menu h6 {
+    padding-left: 15px;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    font-size: 0.8em;
+  }
+  ul a img {
+    width: 20px;
+    height: 20px;
+  }
+  .playlists {
+    height: 40vh;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .logo{
-        width: 7.2em;
-        height: 4em;
-        display: flex;
-        padding-top: 0.5;
-        margin-bottom: 1em;
-        margin-left: 1em;
-    }
-    .menu ul li{
-        padding-top: 0.8em;
-        font-size: .8em;
-        margin-left: -25px;
-    }
-    .menu h6{
-        padding-left: 15px;
-        margin-top: 3em;
-        margin-bottom: 0.3em;
-        font-size: 0.7em;
-    }
-    .playlists{
-        height: 40vh;
-    }
+  .logo {
+    width: 7.2em;
+    height: 4em;
+    display: flex;
+    padding-top: 0.5;
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+  .menu ul li {
+    padding-top: 0.8em;
+    font-size: 0.8em;
+    margin-left: -25px;
+  }
+  .menu h6 {
+    padding-left: 15px;
+    margin-top: 3em;
+    margin-bottom: 0.3em;
+    font-size: 0.7em;
+  }
+  .playlists {
+    height: 40vh;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .logo{
-        width: 8em;
-        height: 4.5em;
-        display: flex;
-        padding-top: 2em;
-        margin-bottom: 1em;
-        margin-left: 2em;
-    }
-    .menu ul li{
-        padding-top: 1em;
-        font-size: 1em;
-        margin-left: 0px;
-    }
-    .menu h6{
-        padding-left: 15px;
-        margin-top: 1.3em;
-        margin-bottom: 0em;
-        font-size: 0.9em;
-        margin-left: 25px;
-    }
-    ul a img{
-        width: 20px;
-        height: 20px;
-    }
-    .playlists{
-        height: 20vh;
-    }
+  .logo {
+    width: 8em;
+    height: 4.5em;
+    display: flex;
+    padding-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 2em;
   }
+  .menu ul li {
+    padding-top: 1em;
+    font-size: 1em;
+    margin-left: 0px;
+  }
+  .menu h6 {
+    padding-left: 15px;
+    margin-top: 1.3em;
+    margin-bottom: 0em;
+    font-size: 0.9em;
+    margin-left: 25px;
+  }
+  ul a img {
+    width: 20px;
+    height: 20px;
+  }
+  .playlists {
+    height: 20vh;
+  }
+}
 /********************* cover page *****************/
-.main-content{
-    max-width: calc(100vw - 232px);
-    width: 100%;
-    margin-left: 232px;
-
+.main-content {
+  max-width: calc(100vw - 232px);
+  width: 100%;
+  margin-left: 232px;
 }
 
 .nav {
@@ -319,9 +317,8 @@ h6 .nav-tabs .nav-item.show .nav-link,
   border-bottom: 2px solid limegreen;
   font-weight: 500;
   color: whitesmoke; */
-  #myTab{
-
-  }
+#myTab {
+}
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link:after {
   display: block;
@@ -437,18 +434,17 @@ h6 .nav-tabs .nav-item.show .nav-link,
   transition: 1s ease;
   opacity: 0.9;
   z-index: 999;
-  }
+}
 
 /* global */
 body {
   margin: 0px;
   padding: 0px;
   /* font-family: 'Nunito Sans', sans-serif; */
-  font-family: "Circular", sans-serif;  /* updated to the spotify text shared in discord */
+  font-family: "Circular", sans-serif; /* updated to the spotify text shared in discord */
 }
 .mainframe {
   height: calc(100vh - 90px);
-
 }
 /******************** bottom player ******************/
 .player {
@@ -458,7 +454,7 @@ body {
   height: 100%;
   padding-top: 0.5rem;
   padding-top: 0.5rem;
-  bottom: 0px;;
+  bottom: 0px;
 }
 .player-albumart {
   max-width: 30vw;
@@ -545,9 +541,9 @@ body {
   position: absolute;
   color: #b3b3b3;
   background-color: #b3b3b3;
-  top: 0;
-  bottom: 0;
-  transform: translate(-50%, -45%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-200%, -50%);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   left: var(--nowplaying-progress);
   z-index: 1;
