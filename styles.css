@@ -23,6 +23,7 @@ aside{
     height: 85vh;
     top: 0px;
     width: 20vw;
+    position: fixed;
 }
 .logo{
     width: 8em;
@@ -66,6 +67,10 @@ hr{
 .menu hr{
     width: 80%;
     margin: 0 auto;
+}
+.stick-to-bottom{
+    position: absolute;
+    bottom: 5px;
 }
 .menu a:hover{
     color: white;
@@ -178,10 +183,10 @@ hr{
     }
     .menu h6{
         padding-left: 15px;
-        margin-top: 3em;
-        margin-bottom: 0.3em;
+        margin-top: 1.3em;
+        margin-bottom: 0em;
         font-size: 0.9em;
-        margin-left: 15px;
+        margin-left: 25px;
     }
     ul a img{
         width: 20px;
