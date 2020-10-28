@@ -23,7 +23,7 @@ body {
   margin: 0;
   padding: 0;
   /* font-family: 'Nunito Sans', sans-serif; */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Circular", Arial, sans-serif;
 }
 .container-fluid {
   padding: 0;
@@ -105,13 +105,15 @@ body {
   background-color: #3b5998;
 }
 .login-facebook:hover {
-  background-color: #3a61b3;
+  background-color: #3269e0;
+  cursor: pointer;
 }
 .login-apple {
   background-color: black;
 }
 .login-apple:hover {
-  background-color: #333;
+  background-color: rgb(70, 70, 70);
+  cursor: pointer;
 }
 .login-google {
   color: #616467;
@@ -121,6 +123,7 @@ body {
 .login-signup:hover {
   background-color: #616467;
   color: white;
+  cursor: pointer;
 }
 div > hr {
   width: 100%;
@@ -187,10 +190,20 @@ p a {
 .login-spotify {
   font-weight: bold;
   justify-content: center;
-  background-color: #15883e;
+  background-color: #46b954;
   text-align: center;
   width: 12rem;
 }
+
+.login-spotify:hover {
+  font-weight: bold;
+  justify-content: center;
+  background-color: #09991a;
+  text-align: center;
+  width: 12rem;
+  cursor: pointer;
+}
+
 .login-footer {
   margin: 1rem auto;
   font-weight: bolder;
@@ -201,4 +214,34 @@ p a {
   font-weight: bold;
   border: 2px solid #616467;
   padding: 0.5rem;
+}
+
+.custom-control-label:before {
+  background-color: white;
+  cursor: pointer;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #46b954;
+  cursor: pointer;
+}
+
+.custom-control-label {
+  font-size: 12px;
+  padding-top: 0.25em;
+}
+
+.forgot-password {
+  justify-content: center;
+  align-content: center;
+  color: #46b954;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  justify-content: center;
+  align-content: center;
+  color: #09991a;
+  text-decoration: none;
+  cursor: pointer;
 }
