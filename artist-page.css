@@ -41,6 +41,7 @@ body {
   width: 100%;
   margin-left: 232px;
   padding-left: 1rem;
+  overflow-y: auto;
 }
 
 /********************** Sidebar **********************/
@@ -69,9 +70,10 @@ aside {
 }
 .menu a:hover {
   text-decoration: none;
-  color: #b3b3b3;
+  color: white;
+  transition: 0.5s;
 }
-ul {
+.menu ul {
   list-style-type: none;
 }
 .menu ul li {
@@ -86,15 +88,13 @@ ul {
   margin-top: 2em;
   margin-bottom: -0.3em;
 }
-hr {
+.menu hr {
   border: 0;
   clear: both;
   display: block;
   width: 96%;
   background-color: #b3b3b3;
   height: 1px;
-}
-.menu hr {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 5px;
@@ -103,10 +103,7 @@ hr {
   position: absolute;
   bottom: 5px;
 }
-.menu a:hover {
-  color: white;
-  transition: 0.5s;
-}
+
 .menu li:active::after {
   background: #afaeae50;
   color: white !important;
@@ -173,7 +170,7 @@ hr {
     margin-bottom: 0.3em;
     font-size: 0.8em;
   }
-  ul a img {
+  .menu ul a img {
     width: 10px;
     height: 10px;
   }
@@ -203,7 +200,7 @@ hr {
     margin-bottom: 0.3em;
     font-size: 0.8em;
   }
-  ul a img {
+  .menu ul a img {
     width: 20px;
     height: 20px;
   }
@@ -258,7 +255,7 @@ hr {
     font-size: 0.9em;
     margin-left: 25px;
   }
-  ul a img {
+  .menu ul a img {
     width: 20px;
     height: 20px;
   }
