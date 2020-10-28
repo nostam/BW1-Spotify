@@ -180,7 +180,7 @@ hr {
     margin-bottom: 0.3em;
     font-size: 0.8em;
   }
-  .menu ul a img {
+  ul a img {
     width: 10px;
     height: 10px;
   }
@@ -210,12 +210,38 @@ hr {
     margin-bottom: 0.3em;
     font-size: 0.8em;
   }
-  .menu ul a img {
+  ul a img {
     width: 20px;
     height: 20px;
   }
   .playlists {
-    height: 40vh;
+    height: 45vh;
+  }
+
+  h6 .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link {
+    background-color: transparent;
+    border: 0px;
+    font-size: 10px;
+    font-weight: 500;
+    color: whitesmoke;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link:after {
+    display: block;
+    content: "";
+    margin-bottom: 10px;
+    border-bottom: solid 2px limegreen;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link:hover:after {
+    transform: scaleX(0.5);
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -240,14 +266,30 @@ hr {
     font-size: 0.7em;
   }
   .playlists {
-    height: 40vh;
+    height: 35vh;
+  }
+  h6 .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link {
+    background-color: transparent;
+    border: 0px;
+    font-size: 10px;
+    font-weight: 500;
+    color: whitesmoke;
+    letter-spacing: 0.1em;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link:after {
+    display: block;
+    content: "";
+    margin-bottom: 10px;
+    border-bottom: solid 2px limegreen;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
-/********************* cover page *****************/
-
   .logo {
     width: 8em;
     height: 4.5em;
@@ -268,13 +310,35 @@ hr {
     font-size: 0.9em;
     margin-left: 25px;
   }
-  .menu ul a img {
+  ul a img {
     width: 20px;
     height: 20px;
   }
   .playlists {
-    height: 20vh;
+    height: 30vh;
+  }
+
+  h6 .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link {
+    background-color: transparent;
+    border: 0px;
+    font-size: 10px;
+    font-weight: 500;
+    color: whitesmoke;
+    letter-spacing: 0.1em;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link:after {
+    display: block;
+    content: "";
+    margin-bottom: 10px;
+    border-bottom: solid 2px limegreen;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+  }
 }
+
 /********************* cover page *****************/
 .nav {
   display: flex;
@@ -283,9 +347,6 @@ hr {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   list-style: none;
-  justify-content: space-between;
-  padding-left: 10em;
-  padding-right: 10em;
 }
 
 .mainframe h1 {
@@ -308,19 +369,9 @@ hr {
   font-weight: 500;
   color: whitesmoke;
   letter-spacing: 0.1em;
-  justify-content: space-around;
   margin-bottom: 10px;
 }
-/* .nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link:hover {
-  background-color: transparent;
-  border: 0px;
-  padding-bottom: 1px;
-  border-bottom: 2px solid limegreen;
-  font-weight: 500;
-  color: whitesmoke; */
-#myTab {
-}
+
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link:after {
   display: block;
@@ -401,24 +452,6 @@ hr {
   display: none;
 }
 
-/* .trending.card:hover .overlay-icons {
-  display: inline-block;
-  position: absolute;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  font-size: 25px;
-  top: 55px;
-  right: 50px;
-  bottom: 50px;
-  left: 50px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  border: 2px solid white;
-  z-index: 999;
-} */
-
 .overlay-icons {
   display: none;
 }
@@ -438,8 +471,32 @@ hr {
   height: 100%;
   transition: 1s ease;
   opacity: 0.9;
-  z-index: 2;
 
+  z-index: 999;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 100%;
+  padding-left: 25px;
+  margin-left: 230px;
+  max-width: calc(100vw - 232px);
+  position: fixed;
+  top: 0px;
+}
+
+/* global */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Circular", sans-serif; /* updated to the spotify text shared in discord */
+}
+.mainframe {
+  height: calc(100vh - 90px);
 }
 
 /******************** bottom player ******************/
@@ -450,10 +507,10 @@ hr {
   height: 100%;
   padding-top: 0.5rem;
   padding-top: 0.5rem;
-  bottom: 0px;;
-  z-index: 100;
-
+  bottom: 0px;
+  z-index: 10001;
 }
+
 .player-albumart {
   max-width: 30vw;
   width: 100%;
