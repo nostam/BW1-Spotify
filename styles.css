@@ -147,7 +147,7 @@ aside {
   padding-top: 20px;
   overflow-y: auto;
   height: 130px;
-  flex-basis: 20em;
+  flex-basis: 15em;
   flex-shrink: 2;
 }
 .install-btn{
