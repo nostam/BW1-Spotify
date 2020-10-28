@@ -44,6 +44,7 @@ body {
   display: flex;
   flex-direction: row;
   overflow-y: auto;
+  align-items: flex-start;
 }
 .main-content {
   max-width: calc(100vw - 232px);
@@ -275,7 +276,7 @@ aside {
     height: 220px;
     overflow-y: auto;
   }
-  
+
   .menu h6 .nav-tabs .nav-item.show .nav-link,
   .nav-tabs .nav-link {
     background-color: transparent;
