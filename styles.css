@@ -76,9 +76,11 @@ aside {
 }
 .menu a:hover {
   text-decoration: none;
-  color: #b3b3b3;
+  color: white;
+  transition: 0.5s;
 }
-ul {
+
+.menu ul {
   list-style-type: none;
 }
 .menu ul li {
@@ -93,15 +95,13 @@ ul {
   margin-top: 2em;
   margin-bottom: -0.3em;
 }
-hr {
+.menu hr {
   border: 0;
   clear: both;
   display: block;
   width: 96%;
   background-color: #b3b3b3;
   height: 1px;
-}
-.menu hr {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 5px;
@@ -110,10 +110,7 @@ hr {
   position: absolute;
   bottom: 5px;
 }
-.menu a:hover {
-  color: white;
-  transition: 0.5s;
-}
+
 .menu li:active::after {
   background: #afaeae50;
   color: white !important;
@@ -215,7 +212,33 @@ hr {
     height: 20px;
   }
   .playlists {
-    height: 40vh;
+    height: 45vh;
+  }
+
+  .menu h6 .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link {
+    background-color: transparent;
+    border: 0px;
+    font-size: 10px;
+    font-weight: 500;
+    color: whitesmoke;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link:after {
+    display: block;
+    content: "";
+    margin-bottom: 10px;
+    border-bottom: solid 2px limegreen;
+    transform: scaleX(0);
+    transition: 300ms ease-in-out;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link:hover:after {
+    transform: scaleX(0.5);
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -240,7 +263,26 @@ hr {
     font-size: 0.7em;
   }
   .playlists {
-    height: 40vh;
+    height: 35vh;
+  }
+  .menu h6 .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link {
+    background-color: transparent;
+    border: 0px;
+    font-size: 10px;
+    font-weight: 500;
+    color: whitesmoke;
+    letter-spacing: 0.1em;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link:after {
+    display: block;
+    content: "";
+    margin-bottom: 10px;
+    border-bottom: solid 2px limegreen;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -270,9 +312,30 @@ hr {
     height: 20px;
   }
   .playlists {
-    height: 20vh;
+    height: 30vh;
+  }
+
+  .menu h6 .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link {
+    background-color: transparent;
+    border: 0px;
+    font-size: 10px;
+    font-weight: 500;
+    color: whitesmoke;
+    letter-spacing: 0.1em;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link:after {
+    display: block;
+    content: "";
+    margin-bottom: 10px;
+    border-bottom: solid 2px limegreen;
+    transform: scaleX(0);
+    transition: 300ms ease-in-out;
   }
 }
+
 /********************* cover page *****************/
 .nav {
   display: flex;
@@ -281,24 +344,21 @@ hr {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   list-style: none;
-  justify-content: space-between;
-  padding-left: 10em;
-  padding-right: 10em;
 }
 
-.mainframe h1 {
+.main-content h1 {
   color: white;
   font-size: 36px;
   font-weight: 800;
 }
 
-.mainframe h6 {
+.main-content h6 {
   color: white;
   font-size: 10px;
   font-weight: 600px;
 }
 
-.mainframe h6 .nav-tabs .nav-item.show .nav-link,
+.main-content h6 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link {
   background-color: transparent;
   border: 0px;
@@ -306,19 +366,9 @@ hr {
   font-weight: 500;
   color: whitesmoke;
   letter-spacing: 0.1em;
-  justify-content: space-around;
   margin-bottom: 10px;
 }
-/* .nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link:hover {
-  background-color: transparent;
-  border: 0px;
-  padding-bottom: 1px;
-  border-bottom: 2px solid limegreen;
-  font-weight: 500;
-  color: whitesmoke; */
-#myTab {
-}
+
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link:after {
   display: block;
@@ -326,7 +376,7 @@ hr {
   margin-bottom: 10px;
   border-bottom: solid 2px limegreen;
   transform: scaleX(0);
-  transition: transform 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .nav-tabs .nav-item.show .nav-link,
@@ -342,9 +392,9 @@ hr {
   border-bottom: 3px solid limegreen;
   font-weight: 500;
   color: whitesmoke;
-  transition: border-bottom 0.5s ease-in-out;
-  -moz-transition: border-bottom 0.5s ease-in-out;
-  -webkit-transition: border-bottom 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
 }
 .nav-tabs {
   border-bottom: none;
@@ -362,7 +412,9 @@ hr {
 }
 
 .card:hover .spotify-card-icon {
-  color: white;
+  color: limegreen;
+  opacity: 1;
+  z-index: 10001;
 }
 
 .trending.card {
@@ -370,6 +422,7 @@ hr {
   max-height: 150px;
   border: 0;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.3);
+  margin-top: 1.5rem;
 }
 
 .card {
@@ -396,24 +449,6 @@ hr {
   display: none;
 }
 
-/* .trending.card:hover .overlay-icons {
-  display: inline-block;
-  position: absolute;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  font-size: 25px;
-  top: 55px;
-  right: 50px;
-  bottom: 50px;
-  left: 50px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  border: 2px solid white;
-  z-index: 999;
-} */
-
 .overlay-icons {
   display: none;
 }
@@ -433,7 +468,22 @@ hr {
   height: 100%;
   transition: 1s ease;
   opacity: 0.9;
+
   z-index: 999;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 100%;
+  padding-left: 25px;
+  margin-left: 230px;
+  max-width: calc(100vw - 232px);
+  position: fixed;
+  top: 0px;
 }
 
 /******************** bottom player ******************/
@@ -445,7 +495,9 @@ hr {
   padding-top: 0.5rem;
   padding-top: 0.5rem;
   bottom: 0px;
+  z-index: 10001;
 }
+
 .player-albumart {
   max-width: 30vw;
   width: 100%;
