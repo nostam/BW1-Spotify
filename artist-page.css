@@ -162,9 +162,9 @@ aside {
     width: auto;
     height: 4rem;
     display: flex;
-    padding-top: 0.5;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
+    padding-top: 2rem;
+    margin-bottom: 1em;
+    margin-left: 2rem;
   }
   .menu ul li {
     padding-top: 0.8rem;
@@ -182,7 +182,7 @@ aside {
     height: 10px;
   }
   .playlists {
-    height: 220px;
+    height: 200px;
     overflow-y: auto;
   }
 }
@@ -192,10 +192,12 @@ aside {
     width: auto;
     height: 4rem;
     display: flex;
-    padding-top: 0.5;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
+    padding-top: 2rem;
+    margin-bottom: 1em;
+    margin-left: 2rem;
   }
+
+  
   .menu ul li {
     padding-top: 0.8rem;
     /* font-size: 0.5rem; */
@@ -248,10 +250,11 @@ aside {
     width: auto;
     height: 4rem;
     display: flex;
-    padding-top: 0.5;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
+    padding-top: 2rem;
+    margin-bottom: 1em;
+    margin-left: 2rem;
   }
+  
   .menu ul li {
     padding-top: 0.8rem;
     /* font-size: 0.8rem; */
