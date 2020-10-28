@@ -157,13 +157,13 @@ aside {
   width: .75rem;
 }
 *::-webkit-scrollbar-track {
-  background: #000000; 
+  background: transparent; 
 }
 *::-webkit-scrollbar-thumb {
-  background: #555; 
+  background: rgba(70, 70, 70, 0.76); 
 }
 *::-webkit-scrollbar-thumb:hover{
-  background: rgb(125, 125, 125); 
+  background: rgba(110, 110, 110, 0.76); 
 }
 
 /* Extra small devices (phones, 600px and down) */
