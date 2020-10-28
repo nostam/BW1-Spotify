@@ -43,6 +43,12 @@ body {
   display: flex;
   flex-direction: row;
 }
+.main-content {
+  max-width: calc(100vw - 232px);
+  width: 100%;
+  margin-left: 232px;
+  padding-left: 1rem;
+}
 
 /********************** Sidebar **********************/
 
@@ -118,7 +124,7 @@ hr {
   margin-top: -30px;
   margin-left: -25px;
   height: 2.5em;
-  width: 18vw;
+  width: 15vw;
 }
 .menu li:hover a {
   color: #fff;
@@ -209,7 +215,7 @@ hr {
     height: 20px;
   }
   .playlists {
-    height: 40vh;
+    height: 45vh;
   }
 
   h6 .nav-tabs .nav-item.show .nav-link,
@@ -260,7 +266,7 @@ hr {
     font-size: 0.7em;
   }
   .playlists {
-    height: 40vh;
+    height: 35vh;
   }
   h6 .nav-tabs .nav-item.show .nav-link,
   .nav-tabs .nav-link {
@@ -332,16 +338,9 @@ hr {
     transition: transform 300ms ease-in-out;
   }
 }
-/********************* cover page *****************/
-/* .main-content {
-    max-width: calc(100vw - 232px);
-    width: 100%;
-    margin-left: 250px;
-    position: fixed;
-    top: 0px;
-  } */
 
-.nav-tabs {
+/********************* cover page *****************/
+.nav {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -350,19 +349,19 @@ hr {
   list-style: none;
 }
 
-h1 {
+.mainframe h1 {
   color: white;
   font-size: 36px;
   font-weight: 800;
 }
 
-h6 {
+.mainframe h6 {
   color: white;
   font-size: 10px;
   font-weight: 600px;
 }
 
-h6 .nav-tabs .nav-item.show .nav-link,
+.mainframe h6 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link {
   background-color: transparent;
   border: 0px;
@@ -471,6 +470,7 @@ h6 .nav-tabs .nav-item.show .nav-link,
   height: 100%;
   transition: 1s ease;
   opacity: 0.9;
+
   z-index: 999;
 }
 
@@ -509,6 +509,7 @@ body {
   bottom: 0px;
   z-index: 10001;
 }
+
 .player-albumart {
   max-width: 30vw;
   width: 100%;
@@ -594,9 +595,9 @@ body {
   position: absolute;
   color: #b3b3b3;
   background-color: #b3b3b3;
-  top: 0;
-  bottom: 0;
-  transform: translate(-50%, -45%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-200%, -50%);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   left: var(--nowplaying-progress);
   z-index: 1;
