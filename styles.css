@@ -180,7 +180,7 @@ hr {
     margin-bottom: 0.3em;
     font-size: 0.8em;
   }
-  ul a img {
+  .menu ul a img {
     width: 10px;
     height: 10px;
   }
@@ -210,7 +210,7 @@ hr {
     margin-bottom: 0.3em;
     font-size: 0.8em;
   }
-  ul a img {
+  .menu ul a img {
     width: 20px;
     height: 20px;
   }
@@ -265,7 +265,7 @@ hr {
     font-size: 0.9em;
     margin-left: 25px;
   }
-  ul a img {
+  .menu ul a img {
     width: 20px;
     height: 20px;
   }
@@ -286,19 +286,19 @@ hr {
   padding-right: 10em;
 }
 
-h1 {
+.mainframe h1 {
   color: white;
   font-size: 36px;
   font-weight: 800;
 }
 
-h6 {
+.mainframe h6 {
   color: white;
   font-size: 10px;
   font-weight: 600px;
 }
 
-h6 .nav-tabs .nav-item.show .nav-link,
+.mainframe h6 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link {
   background-color: transparent;
   border: 0px;
