@@ -154,7 +154,7 @@ aside {
 
 /* Works on Chrome/Edge/Safari */
 *::-webkit-scrollbar {
-  width: 1em;
+  width: .75rem;
 }
 *::-webkit-scrollbar-track {
   background: #b3b3b3;
@@ -353,8 +353,8 @@ aside {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   list-style: none;
 }
 
@@ -377,7 +377,7 @@ aside {
   font-size: 10px;
   font-weight: 500;
   color: whitesmoke;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
   margin-bottom: 10px;
 }
 
