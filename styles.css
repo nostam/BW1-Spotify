@@ -33,7 +33,8 @@ body {
   margin: 0px;
   padding: 0px;
   /* font-family: 'Nunito Sans', sans-serif; */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Circular", Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
 .mainframe {
   max-height: calc(100vh - 90px);
@@ -42,12 +43,14 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
+  overflow-y: auto;
 }
 .main-content {
   max-width: calc(100vw - 232px);
   width: 100%;
   margin-left: 232px;
   padding-left: 1rem;
+  overflow-y: auto;
 }
 
 /********************** Sidebar **********************/
@@ -63,12 +66,16 @@ aside {
   position: fixed;
 }
 .logo {
-  width: 8em;
-  height: 4.5em;
+  width: auto;
+  height: 4em;
   display: flex;
-  padding-top: 2em;
-  margin-left: 2em;
-  margin-bottom: 1em;
+  padding-top: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.menu {
+  font-size: 12px;
 }
 .menu a {
   color: #b3b3b3;
@@ -76,14 +83,17 @@ aside {
 }
 .menu a:hover {
   text-decoration: none;
-  color: #b3b3b3;
+  color: white;
+  transition: 0.5s;
 }
-ul {
+
+.menu ul {
   list-style-type: none;
+  font-size: 12px;
 }
 .menu ul li {
-  padding-top: 1em;
-  font-size: 1em;
+  padding-top: 1rem;
+  font-size: 12px;
 }
 .menu i {
   padding-right: 20px;
@@ -93,27 +103,22 @@ ul {
   margin-top: 2em;
   margin-bottom: -0.3em;
 }
-hr {
+.menu hr {
   border: 0;
   clear: both;
   display: block;
   width: 96%;
   background-color: #b3b3b3;
   height: 1px;
-}
-.menu hr {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 5px;
 }
 .stick-to-bottom {
   position: absolute;
-  bottom: 5px;
+  bottom: 10px;
 }
-.menu a:hover {
-  color: white;
-  transition: 0.5s;
-}
+
 .menu li:active::after {
   background: #afaeae50;
   color: white !important;
@@ -149,7 +154,7 @@ hr {
 
 /* Works on Chrome/Edge/Safari */
 *::-webkit-scrollbar {
-  width: 1em;
+  width: .75rem;
 }
 *::-webkit-scrollbar-track {
   background: #b3b3b3;
@@ -162,163 +167,220 @@ hr {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .logo {
-    width: 5.2em;
-    height: 4em;
+    width: auto;
+    height: 4rem;
     display: flex;
     padding-top: 0.5;
-    margin-bottom: 1em;
-    margin-left: 1em;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
   }
   .menu ul li {
-    padding-top: 0.8em;
-    font-size: 0.5em;
-    margin-left: -3em;
+    padding-top: 0.8rem;
+    /* font-size: 0.5rem; */
+    /* margin-left: -3rem; */
   }
-  .menu h6 {
+  /* .menu h6 {
     padding-left: 15px;
-    margin-top: 1em;
-    margin-bottom: 0.3em;
-    font-size: 0.8em;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.8rem; */
   }
-  ul a img {
+  .menu ul a img {
     width: 10px;
     height: 10px;
   }
   .playlists {
-    height: 50vh;
+    height: 220px;
     overflow-y: auto;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .logo {
-    width: 5.2em;
-    height: 4em;
+    width: auto;
+    height: 4rem;
     display: flex;
     padding-top: 0.5;
-    margin-bottom: 1em;
-    margin-left: 1em;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
   }
   .menu ul li {
-    padding-top: 0.8em;
-    font-size: 0.5em;
-    margin-left: -3em;
+    padding-top: 0.8rem;
+    /* font-size: 0.5rem; */
+    /* margin-left: -3rem; */
   }
-  .menu h6 {
+  /* .menu h6 {
     padding-left: 15px;
-    margin-top: 1em;
-    margin-bottom: 0.3em;
-    font-size: 0.8em;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.8rem; */
   }
-  ul a img {
+  .menu ul a img {
     width: 20px;
     height: 20px;
   }
   .playlists {
-    height: 40vh;
+    height: 220px;
+    overflow-y: auto;
+  }
+
+  .menu h6 .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link {
+    background-color: transparent;
+    border: 0px;
+    font-size: 10px;
+    font-weight: 500;
+    color: whitesmoke;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link:after {
+    display: block;
+    content: "";
+    margin-bottom: 10px;
+    border-bottom: solid 2px limegreen;
+    transform: scaleX(0);
+    transition: 300ms ease-in-out;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link:hover:after {
+    transform: scaleX(0.5);
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .logo {
-    width: 7.2em;
-    height: 4em;
+    width: auto;
+    height: 4rem;
     display: flex;
     padding-top: 0.5;
-    margin-bottom: 1em;
-    margin-left: 1em;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
   }
   .menu ul li {
-    padding-top: 0.8em;
-    font-size: 0.8em;
-    margin-left: -25px;
+    padding-top: 0.8rem;
+    /* font-size: 0.8rem; */
+    /* margin-left: -25px; */
   }
-  .menu h6 {
+  /* .menu h6 {
     padding-left: 15px;
-    margin-top: 3em;
-    margin-bottom: 0.3em;
-    font-size: 0.7em;
-  }
+    margin-top: 3rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.7rem;
+  } */
   .playlists {
-    height: 40vh;
+    height: 220px;
+    overflow-y: auto;
+  }
+
+  .menu h6 .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link {
+    background-color: transparent;
+    border: 0px;
+    font-size: 10px;
+    font-weight: 500;
+    color: whitesmoke;
+    letter-spacing: 0.1em;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link:after {
+    display: block;
+    content: "";
+    margin-bottom: 10px;
+    border-bottom: solid 2px limegreen;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .logo {
-    width: 8em;
-    height: 4.5em;
+    width: auto;
+    height: 4rem;
     display: flex;
-    padding-top: 2em;
+    padding-top: 2rem;
     margin-bottom: 1em;
-    margin-left: 2em;
+    margin-left: 2rem;
   }
   .menu ul li {
-    padding-top: 1em;
-    font-size: 1em;
+    padding-top: 1rem;
+    /* font-size: 1rem; */
     margin-left: 0px;
   }
-  .menu h6 {
+  /* .menu h6 {
     padding-left: 15px;
-    margin-top: 1.3em;
-    margin-bottom: 0em;
-    font-size: 0.9em;
+    margin-top: 1.3rem;
+    margin-bottom: 0rem;
+    font-size: 0.9rem;
     margin-left: 25px;
-  }
-  ul a img {
+  } */
+  .menu ul a img {
     width: 20px;
     height: 20px;
   }
   .playlists {
-    height: 20vh;
+    height: 220px;
+    overflow-y: auto;
+  }
+
+  .menu h6 .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link {
+    background-color: transparent;
+    border: 0px;
+    font-size: 10px;
+    font-weight: 500;
+    color: whitesmoke;
+    letter-spacing: 0.1rem;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link:after {
+    display: block;
+    content: "";
+    margin-bottom: 10px;
+    border-bottom: solid 2px limegreen;
+    transform: scaleX(0);
+    transition: 300ms ease-in-out;
   }
 }
+
 /********************* cover page *****************/
 .nav {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   list-style: none;
-  justify-content: space-between;
-  padding-left: 10em;
-  padding-right: 10em;
 }
 
-h1 {
+.main-content h1 {
   color: white;
   font-size: 36px;
   font-weight: 800;
 }
 
-h6 {
+.main-content h6 {
   color: white;
   font-size: 10px;
   font-weight: 600px;
 }
 
-h6 .nav-tabs .nav-item.show .nav-link,
+.main-content h6 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link {
   background-color: transparent;
   border: 0px;
   font-size: 10px;
   font-weight: 500;
   color: whitesmoke;
-  letter-spacing: 0.1em;
-  justify-content: space-around;
+  letter-spacing: 0.1rem;
   margin-bottom: 10px;
 }
-/* .nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link:hover {
-  background-color: transparent;
-  border: 0px;
-  padding-bottom: 1px;
-  border-bottom: 2px solid limegreen;
-  font-weight: 500;
-  color: whitesmoke; */
-#myTab {
-}
+
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link:after {
   display: block;
@@ -326,7 +388,7 @@ h6 .nav-tabs .nav-item.show .nav-link,
   margin-bottom: 10px;
   border-bottom: solid 2px limegreen;
   transform: scaleX(0);
-  transition: transform 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .nav-tabs .nav-item.show .nav-link,
@@ -342,9 +404,9 @@ h6 .nav-tabs .nav-item.show .nav-link,
   border-bottom: 3px solid limegreen;
   font-weight: 500;
   color: whitesmoke;
-  transition: border-bottom 0.5s ease-in-out;
-  -moz-transition: border-bottom 0.5s ease-in-out;
-  -webkit-transition: border-bottom 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
 }
 .nav-tabs {
   border-bottom: none;
@@ -362,7 +424,9 @@ h6 .nav-tabs .nav-item.show .nav-link,
 }
 
 .card:hover .spotify-card-icon {
-  color: white;
+  color: limegreen;
+  opacity: 1;
+  z-index: 10001;
 }
 
 .trending.card {
@@ -370,6 +434,7 @@ h6 .nav-tabs .nav-item.show .nav-link,
   max-height: 150px;
   border: 0;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.3);
+  margin-top: 1.5rem;
 }
 
 .card {
@@ -396,24 +461,6 @@ h6 .nav-tabs .nav-item.show .nav-link,
   display: none;
 }
 
-/* .trending.card:hover .overlay-icons {
-  display: inline-block;
-  position: absolute;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  font-size: 25px;
-  top: 55px;
-  right: 50px;
-  bottom: 50px;
-  left: 50px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  border: 2px solid white;
-  z-index: 999;
-} */
-
 .overlay-icons {
   display: none;
 }
@@ -433,7 +480,22 @@ h6 .nav-tabs .nav-item.show .nav-link,
   height: 100%;
   transition: 1s ease;
   opacity: 0.9;
+
   z-index: 999;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 100%;
+  padding-left: 25px;
+  margin-left: 230px;
+  max-width: calc(100vw - 232px);
+  position: fixed;
+  top: 0px;
 }
 
 /******************** bottom player ******************/
@@ -445,7 +507,9 @@ h6 .nav-tabs .nav-item.show .nav-link,
   padding-top: 0.5rem;
   padding-top: 0.5rem;
   bottom: 0px;
+  z-index: 10001;
 }
+
 .player-albumart {
   max-width: 30vw;
   width: 100%;
@@ -512,6 +576,7 @@ h6 .nav-tabs .nav-item.show .nav-link,
   display: flex;
   align-items: center;
   margin: auto 1rem;
+  background-color: grey;
 }
 #nowplayingProgress {
   width: var(--nowplaying-progress);

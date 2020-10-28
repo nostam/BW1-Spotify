@@ -27,231 +27,341 @@
     <title>Artist Page</title>
   </head>
   <body>
-      <img src = "images/rock-concert.jpg"/>
-      <div class="container mt-3 justify-center">
-        
-    <div class="jumbotron d-flex justify-content-center flex-column">
-        <h6>33,000,575 MONTHLY LISTENERS</h6>
-        <h1 class="display-4">Queen</h1>
-    <div class = "d-flex flex-row"><a class="artist-pg-play-btn btn" href="#" role="button">PLAY</a>
-        <a class="artist-pg-follow-btn btn btn-outline-light btn-lg" href="#" role="button">FOLLOW</a></div>
-      </div>    
+    <!-- side menu -->
+    <aside>
+      <div>
+        <img src="assets/logo.png" alt="logo" class="logo" />
+      </div>
+      <div class="menu">
+      <ul>
+        <li>
+          <a href="#"> <i class="fas fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="#"> <i class="fas fa-search"></i> Search</a>
+        </li>
+        <li>
+          <a href="#"> <i class="fas fa-book"></i> Your library</a>
+        </li>
+      </ul>
+      <h6>PLAYLISTS</h6>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="https://img.icons8.com/ios/25/b3b3b3/plus.png" /> Create playlist</a
+          >
+        </li>
+        <li>
+          <a href='#'>
+          <img src="https://img.icons8.com/ios/25/b3b3b3/like.png"/> Liked Songs</a>
+        </li>
+      </ul>
+      <hr />
+
+        <div class='playlists'>
+          <p>#playlist 1</p>
+          <p>#playlist 2</p>
+          <p>#playlist 3</p>
+          <p>#playlist 4</p>
+          <p>#playlist 5</p>
+          <p>#playlist 4</p>
+          <p>#playlist 5</p>
+          <p>#playlist 5</p>
+          <p>#playlist 4</p>
+          <p>#playlist 5</p>
+        </div>
+
+          <ul class='stick-to-bottom'>
+            <li><a href='#'> <i class="fas fa-arrow-circle-down"></i> Install</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </aside>
+
+    <!-- main content -->
+    <section class="mainframe">
+    <!-- <a href="https://icons8.com/icon/1501/plus">Plus icon by Icons8</a> -->
+
+      <div class="main-content">
+        <img src = "images/rock-concert.jpg"/>
+        <div class="container mt-3 justify-center">
+
+        <div class="jumbotron d-flex justify-content-center flex-column">
+          <h6>33,000,575 MONTHLY LISTENERS</h6>
+          <h1 class="display-4">Queen</h1>
+        <div class = "d-flex flex-row"><a class="artist-pg-play-btn btn" href="#" role="button">PLAY</a>
+          <a class="artist-pg-follow-btn btn btn-outline-light btn-lg" href="#" role="button">FOLLOW</a></div>
+        </div>
+      </div>
       <!-- Tab heading -->
 
-      <section>
-        
-          <div>
-            <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  id="trending-tab"
-                  data-toggle="tab"
-                  href="#trending"
-                  role="tab"
-                  aria-controls="trending"
-                  aria-selected="true"
-                  data-target="#homepage-headings"
-                  data-slide-to="0"
-                  >OVERVIEW</a
-                >
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  id="podcast-tab"
-                  data-toggle="tab"
-                  href="#podcast"
-                  role="tab"
-                  aria-controls="podcast"
-                  aria-selected="false"
-                  data-target="#homepage-headings"
-                  data-slide-to="1"
-                  >RELATED ARTISTS</a
-                >
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  id="moods-and-genres-tab"
-                  data-toggle="tab"
-                  href="#moods-and-genres"
-                  role="tab"
-                  aria-controls="moods-and-genres"
-                  aria-selected="false"
-                  data-target="#homepage-headings"
-                  data-slide-to="2"
-                  >ABOUT</a
-                >
-              </li>
-              
-            </ul>
-          </div>
-        </div>
-      </section>
+
+      <div>
+        <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="trending-tab"
+              data-toggle="tab"
+              href="#trending"
+              role="tab"
+              aria-controls="trending"
+              aria-selected="true"
+              data-target="#homepage-headings"
+              data-slide-to="0"
+              >OVERVIEW</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="podcast-tab"
+              data-toggle="tab"
+              href="#podcast"
+              role="tab"
+              aria-controls="podcast"
+              aria-selected="false"
+              data-target="#homepage-headings"
+              data-slide-to="1"
+              >RELATED ARTISTS</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="moods-and-genres-tab"
+              data-toggle="tab"
+              href="#moods-and-genres"
+              role="tab"
+              aria-controls="moods-and-genres"
+              aria-selected="false"
+              data-target="#homepage-headings"
+              data-slide-to="2"
+              >ABOUT</a
+            >
+          </li>
+
+        </ul>
+      </div>
+
       <!-- End of Tab heading -->
       <div class ="container">
-        <h1>Albums</h1>
+          <h1>Albums</h1>
+
+        <!-- Card Design -->
+          <div class="row no-gutters">
+
+            <div class="trending card col-12 col-md-3 col-lg-2">
+              <img
+                class="card-img-top"
+                src="images/queen_1.png"
+                alt="spotify_playlist_1"
+              />
+              <i class="spotify-card-icon fab fa-spotify"></i>
+              <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
+              </span>
+              <div>
+                <h6>Bohemian Rhapsody (The Orginal Soundtrack)</h6>
+                <!-- <p>Queen</p> -->
+              </div>
+            </div>
+
+            <div class="trending card col-12 col-md-3 col-lg-2">
+              <img
+                class="card-img-top"
+                src="images/queen_2.png"
+                alt="spotify_playlist_1"
+              />
+              <i class="spotify-card-icon fab fa-spotify"></i>
+              <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
+              </span>
+              <div>
+                <h6>On Air</h6>
+                <!-- <p>Queen</p> -->
+              </div>
+            </div>
+
+            <div class="trending card col-12 col-md-3 col-lg-2">
+              <img
+                class="card-img-top"
+                src="images/queen_3.png"
+                alt="spotify_playlist_1"
+              />
+              <i class="spotify-card-icon fab fa-spotify"></i>
+              <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
+              </span>
+              <div>
+                <h6>A Night At The Odeon</h6>
+                <!-- <p>Queen</p> -->
+              </div>
+            </div>
+
+            <div class="trending card col-12 col-md-3 col-lg-2">
+              <img
+                class="card-img-top"
+                src="images/queen_4.png"
+                alt="spotify_playlist_1"
+              />
+              <i class="spotify-card-icon fab fa-spotify"></i>
+              <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
+              </span>
+              <div>
+                <h6>Live At The Rainbow</h6>
+                <!-- <p>Queen</p> -->
+              </div>
+            </div>
+
+            <div class="trending card col-12 col-md-3 col-lg-2">
+              <img
+                class="card-img-top"
+                src="images/queen_5.png"
+                alt="spotify_playlist_1"
+              />
+              <i class="spotify-card-icon fab fa-spotify"></i>
+              <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
+              </span>
+              <div>
+                <h6>Live At The Rainbow (Deluxe)</h6>
+                <!-- <p>Queen</p> -->
+            </div>
+            </div>
+            <div class="trending card col-12 col-md-3 col-lg-2">
+                <img
+                  class="card-img-top"
+                  src="images/queen_6.png"
+                  alt="spotify_playlist_1"
+                />
+                <i class="spotify-card-icon fab fa-spotify"></i>
+                <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
+                </span>
+                <div>
+                  <h6>Live At The Rainbow (Deluxe)</h6>
+                  <!-- <p>Queen</p> -->
+                </div>
+              </div>
+            </div>
+
+          <h1 class= "mt-5">Appears On</h1>
 
       <!-- Card Design -->
-      <div class="row">
+          <div class="row no-gutters">
+            <div class="trending card col-12 col-md-3 col-lg-2">
+              <img
+                class="card-img-top"
+                src="images/queen_6.png"
+                alt="spotify_playlist_1"
+              />
+              <i class="spotify-card-icon fab fa-spotify"></i>
+              <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
+              </span>
+              <div>
+                <h6>Top 50 - Italy</h6>
+              </div>
+            </div>
 
-        <div class="trending card col-12 col-md-3 col-lg-2">
-          <img
-            class="card-img-top"
-            src="images/queen_1.png"
-            alt="spotify_playlist_1"
-          />
-          <i class="spotify-card-icon fab fa-spotify"></i>
-          <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
-          </span>
-          <div>
-            <h6>Bohemian Rhapsody (The Orginal Soundtrack)</h6>
-            <!-- <p>Queen</p> -->
+            <div class="trending card col-12 col-md-3 col-lg-2">
+              <img
+                class="card-img-top"
+                src="images/queen_4.png"
+                alt="spotify_playlist_1"
+              />
+              <i class="spotify-card-icon fab fa-spotify"></i>
+              <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
+              </span>
+                <div>
+                <h6>Top 50 - Global</h6>
+              </div>
+            </div>
+
+            <div class="trending card col-12 col-md-3 col-lg-2">
+              <img
+                class="card-img-top"
+                src="images/queen_2.png"
+                alt="spotify_playlist_1"
+              />
+              <i class="spotify-card-icon fab fa-spotify"></i>
+              <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
+              </span>
+              <div>
+                <h6>Viral 50 - Global</h6>
+              </div>
+            </div>
+
+            <div class="trending card col-12 col-md-3 col-lg-2">
+              <img
+                class="card-img-top"
+                src="images/queen_1.png"
+                alt="spotify_playlist_1"
+              />
+              <i class="spotify-card-icon fab fa-spotify"></i>
+              <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
+              </span>
+              <div>
+                <h6>Viral 50 - Italy</h6>
+              </div>
+            </div>
+            <!-- End of Container Closure -->
+
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="trending card col-12 col-md-3 col-lg-2">
-          <img
-            class="card-img-top"
-            src="images/queen_2.png"
-            alt="spotify_playlist_1"
-          />
-          <i class="spotify-card-icon fab fa-spotify"></i>
-          <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
-          </span>
-          <div>
-            <h6>On Air</h6>
-            <!-- <p>Queen</p> -->
+      <!-- player menu -->
+      <section class="player d-flex justify-content-between" style='width: 100%; position: fixed;'>
+        <div
+          class="player-albumart d-flex align-items-center justify-content-start"
+        >
+        <div class="nowplaying-albumart mx-3">
+          <img src="http://placehold.it/64x64" />
+        </div>
+        <div class="d-flex flex-column text-left mr-4">
+          <div class="nowplaying-title">Nowplaying title</div>
+          <div class="nowplaying-artist">Nowplaying artist</div>
+        </div>
+        <div class="loved-track mr-3">
+          <i class="far fa-heart"></i>
+          <i class="fas fa-heart"></i>
+        </div>
+        <i class="fas fa-chalkboard"></i>
+      </div>
+        </div>
+
+        <div class="d-flex flex-column py-2 my-1 flex-grow-1">
+          <div
+            class=".player-btn d-flex align-items-center justify-content-center player-controller my-1 py-1"
+          >
+            <i class="fas fa-random fa-md mx-3"></i>
+            <i class="fas fa-step-backward fa-md mx-3"></i>
+            <div class="fa-lg">
+              <i class="fas fa-play fa-md mx-3"></i>
+              <!-- <i class="fas fa-pause fa-2x></i>-->
+            </div>
+            <i class="fas fa-step-forward fg-md mx-3"></i>
+            <i class="fas fa-redo-alt fg-md mx-3"></i>
+          </div>
+          <div
+            class="d-flex flex-row justify-content-between player-nowplaying position-relative"
+          >
+            <div class="player-nowplaying-time">18:32</div>
+            <div class="player-progress">
+              <div id="nowplayingProgress"></div>
+            </div>
+            <div class="player-totaltime">24:42</div>
           </div>
         </div>
-
-        <div class="trending card col-12 col-md-3 col-lg-2">
-          <img
-            class="card-img-top"
-            src="images/queen_3.png"
-            alt="spotify_playlist_1"
-          />
-          <i class="spotify-card-icon fab fa-spotify"></i>
-          <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
-          </span>
-          <div>
-            <h6>A Night At The Odeon</h6>
-            <!-- <p>Queen</p> -->
+        <div class="player-setting d-flex align-items-center justify-content-end">
+          <i class="fas fa-list-ol fa-md mx-2"></i>
+          <i class="fas fa-laptop-house fa-md mx-2"></i>
+          <div class="player-volume">
+            <i class="fas fa-volume-up fa-md mx-2"></i>
+            <div id="nowplayingVolume"></div>
           </div>
+          <!--fa-volume-down fa-volume-mute-->
         </div>
-
-        <div class="trending card col-12 col-md-3 col-lg-2">
-          <img
-            class="card-img-top"
-            src="images/queen_4.png"
-            alt="spotify_playlist_1"
-          />
-          <i class="spotify-card-icon fab fa-spotify"></i>
-          <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
-          </span>
-          <div>
-            <h6>Live At The Rainbow</h6>
-            <!-- <p>Queen</p> -->
-          </div>
-        </div>
-
-        <div class="trending card col-12 col-md-3 col-lg-2">
-          <img
-            class="card-img-top"
-            src="images/queen_5.png"
-            alt="spotify_playlist_1"
-          />
-          <i class="spotify-card-icon fab fa-spotify"></i>
-          <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
-          </span>
-          <div>
-            <h6>Live At The Rainbow (Deluxe)</h6>
-            <!-- <p>Queen</p> -->
-        </div>
-        </div>
-        <div class="trending card col-12 col-md-3 col-lg-2">
-            <img
-              class="card-img-top"
-              src="images/queen_6.png"
-              alt="spotify_playlist_1"
-            />
-            <i class="spotify-card-icon fab fa-spotify"></i>
-            <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
-            </span>
-            <div>
-              <h6>Live At The Rainbow (Deluxe)</h6>
-              <!-- <p>Queen</p> -->
-          </div>
-        </div>
-        </div>
-
-        <h1 class= "mt-5">Appears On</h1>
-
-      <!-- Card Design -->
-      <div class="row">
-
-        <div class="trending card col-12 col-md-3 col-lg-2">
-          <img
-            class="card-img-top"
-            src="images/queen_6.png"
-            alt="spotify_playlist_1"
-          />
-          <i class="spotify-card-icon fab fa-spotify"></i>
-          <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
-          </span>
-          <div>
-            <h6>Top 50 - Italy</h6>
-          </div>
-        </div>
-
-        <div class="trending card col-12 col-md-3 col-lg-2">
-          <img
-            class="card-img-top"
-            src="images/queen_4.png"
-            alt="spotify_playlist_1"
-          />
-          <i class="spotify-card-icon fab fa-spotify"></i>
-          <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
-          </span>
-            <div>
-            <h6>Top 50 - Global</h6>
-          </div>
-        </div>
-
-        <div class="trending card col-12 col-md-3 col-lg-2">
-          <img
-            class="card-img-top"
-            src="images/queen_2.png"
-            alt="spotify_playlist_1"
-          />
-          <i class="spotify-card-icon fab fa-spotify"></i>
-          <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
-          </span>
-          <div>
-            <h6>Viral 50 - Global</h6>
-          </div>
-        </div>
-
-        <div class="trending card col-12 col-md-3 col-lg-2">
-          <img
-            class="card-img-top"
-            src="images/queen_1.png"
-            alt="spotify_playlist_1"
-          />
-          <i class="spotify-card-icon fab fa-spotify"></i>
-          <span class= "overlay-icons"><i class="heart far fa-heart mr-2"></i><i class="play fas fa-play mr-2"></i><i class="plus far fa-plus-square"></i>
-          </span>
-          <div>
-            <h6>Viral 50 - Italy</h6>
-          </div>
-        </div>
-
-
-      <!-- End of Container Closure -->
-      
-    </div>
-
+      </section>
+      <!---player menu end-->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

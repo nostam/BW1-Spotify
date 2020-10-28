@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="login.css" />
     <title>Welcome to spotify</title>
   </head>
-  <body>
+  <body style='overflow-y: auto;'>
     <section class="container-fluid position-relative">
       <div class="login-logo">
         <a href="index.html"><img src="assets/logo.png" /></a>
@@ -56,17 +56,31 @@
         </div>
         <div class="input-group">
           <span>Email address or Username</span>
-          <input placeholder="Email address or username" />
+          <input placeholder="Email address or username"/>
           <span>Password</span>
-          <input placeholder="Password" />
+          <input placeholder="Password" type='password'/>
         </div>
-        <p><a href="#">Forget your password?</a></p>
+        <p>
+          <a class="forgot-password" href="#">Forget your password?</a>
+        </p>
         <div class="login-btn">
-          <div>
-            <i class="fa fa-check-square fa-lg"></i>
-            <span>Remember me</span>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="customCheck1"
+            />
+            <label class="custom-control-label" for="customCheck1"
+              >Remember Me</label
+            >
           </div>
-          <div class="login-button login-spotify">LOG IN</div>
+
+          <!-- <div>
+            <i class="fa fa-check-square fa-lg"></i>
+            <span class="ml-2">Remember me</span>
+          </div> -->
+
+          <div href="#" class="login-button login-spotify">LOG IN</div>
         </div>
         <hr />
         <div class="login-footer">
