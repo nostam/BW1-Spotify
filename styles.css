@@ -576,6 +576,7 @@ aside {
   display: flex;
   align-items: center;
   margin: auto 1rem;
+  background-color: grey;
 }
 #nowplayingProgress {
   width: var(--nowplaying-progress);
