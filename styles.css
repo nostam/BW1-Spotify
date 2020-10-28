@@ -374,6 +374,7 @@ hr {
   max-height: 150px;
   border: 0;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.3);
+  margin-top: 1.5rem;
 }
 
 .card {
