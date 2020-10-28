@@ -134,8 +134,11 @@ aside {
 .menu li:hover a {
   color: #fff;
 }
-
-/* scrollbar */
+.list-container{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
 
 .playlists {
   position: relative;
@@ -144,7 +147,14 @@ aside {
   padding-top: 20px;
   overflow-y: auto;
   height: 130px;
+  flex-basis: 20em;
+  flex-shrink: 2;
 }
+.install-btn{
+  flex-basis: 5em;
+  flex-shrink: 1;
+}
+/* scrollbar */
 /* The emerging W3C standard
    that is currently Firefox-only */
 * {
