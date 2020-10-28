@@ -1,0 +1,9 @@
+.albums-holder{
+    max-width: calc(100vw - 232px);
+    max-height: calc(100vh - 90px);
+    height: 90%;
+    background-color: aqua;
+    position: fixed;
+    overflow-y: auto;
+    right: 0px;
+}
