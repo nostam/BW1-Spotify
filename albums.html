@@ -29,14 +29,14 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="styles.css" />
     <link rel='stylesheet' href='albums.css' />
-    <title>Spotify</title>
+    <title>Albums</title>
     <script src='script.js'></script>
   </head>
   <body>
 
     <div class='row'>
 
-        <div class=''>
+        <div class='col-3'>
             <!-- side menu -->
             <aside>
             <div>
@@ -89,31 +89,181 @@
             </aside>
         </div> <!-- /col-->
 
-        <div class='albums-holder'>
+        <div class='albums-holder col-9' style='padding: 0px !important;'>
             <!-- albums section -->
-            <section class='albums' style='overflow-y: auto;'>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum eveniet nam mollitia ratione sed illo, eos quod temporibus pariatur consequatur eius ad, minus non veniam cupiditate cum reprehenderit sit.</p>
+            <section style='overflow-y: auto;'>
 
+
+              <!-- the header navigation -->
+                <div class='album-header'>
+                  <img src="https://img.icons8.com/ios/24/b3b3b3/less-than.png" class='arrow' />
+                  <img src="https://img.icons8.com/ios/24/b3b3b3/more-than.png" class='arrow' />
+
+                  <div class='header-btns'>
+                    
+                    <button class='upgrade-btn' value='upgrade' style='margin-right: 20px;'>UPGRADE</button>
+
+                    <div class="dropdown">
+                      <button class="profile-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class='user-icon'>
+                          <img src="https://img.icons8.com/small/16/ffffff/user.png"/>
+                        </span>
+                        User
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Acount</a>
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Log-out</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div> <!-- buttons holder -->
+
+                <!-- the header image, title  -->
+                <div class='album row'>
+                  <div class='col-3'>
+                    <img class='album-cover img-fluid' src='assets/bohemian-rhapsody.jpg' alt='bohemian rhapsody' />
+                  </div>
+                  <!-- album-details -->
+                  <div class='album-details col-9' >
+                    <h4>albums</h4>
+                    <h2>bohemian rhapsody(the original soundtrack)</h2>
+                    <div class='last-line'>
+                      <img src='assets/queen.jpg' alt='queen' class='group-img'>
+                      <a href='#' class='group-name'>Queen</a>
+                      <p class='album-length'> - 2018 - 22 songs, 1 hr 19 min</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- playlist holder -->
+                <div class='playlist'>
+                  <div class='playlist-btns'>
+                    <img src="https://img.icons8.com/ios-glyphs/60/1DB954/circled-pause.png"/>
+                    <img src="https://img.icons8.com/ios/40/b3b3b3/like.png"/>
+                    <img src="https://img.icons8.com/material/40/b3b3b3/more--v1.png"/>
+                  </div>
+                  <div class='playlist-table'>
+                    <table class='table table-borderless'>
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col" style='padding-left: 50px;'>Title</th>
+                          <th scope="col">
+                            <img src="https://img.icons8.com/ios/24/b3b3b3/alarm-clock.png"/>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td>0:25</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td>0:25</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td>0:25</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td>0:25</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td>0:25</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td>0:25</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td>0:25</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td>0:25</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td>0:25</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td>0:25</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class='playlist-footer'>
+                    &copy 2018 Queen Productions Ltd, under exclusive licence to Universal International Music BV<br>
+                    ℗ A Virgin Records Release; This Compilation ℗ 2018 Queen Productions Ltd, under exclusive licence to Universal International Music BV
+                  </p>
+                </div>
             </section>
         </div> <!-- /col-->
 
