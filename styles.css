@@ -245,6 +245,9 @@ hr {
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+/********************* cover page *****************/
+
   .logo {
     width: 8em;
     height: 4.5em;
@@ -271,7 +274,6 @@ hr {
   }
   .playlists {
     height: 20vh;
-  }
 }
 /********************* cover page *****************/
 .nav {
@@ -362,7 +364,9 @@ h6 .nav-tabs .nav-item.show .nav-link,
 }
 
 .card:hover .spotify-card-icon {
-  color: white;
+  color: limegreen;
+  opacity: 1;
+  z-index: 10001;
 }
 
 .trending.card {
@@ -433,7 +437,8 @@ h6 .nav-tabs .nav-item.show .nav-link,
   height: 100%;
   transition: 1s ease;
   opacity: 0.9;
-  z-index: 999;
+  z-index: 2;
+
 }
 
 /******************** bottom player ******************/
@@ -444,7 +449,9 @@ h6 .nav-tabs .nav-item.show .nav-link,
   height: 100%;
   padding-top: 0.5rem;
   padding-top: 0.5rem;
-  bottom: 0px;
+  bottom: 0px;;
+  z-index: 100;
+
 }
 .player-albumart {
   max-width: 30vw;
