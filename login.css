@@ -99,7 +99,7 @@ body {
   margin: auto 1rem;
 }
 .login-button:hover {
-  transition: 0.5s ease-in;
+  transition: 0.4s ease-in;
 }
 .login-facebook {
   background-color: #3b5998;
@@ -160,12 +160,20 @@ div > hr {
   margin: 0.5rem auto 0.5rem 0;
 }
 
-p a {
+.forgot-password {
   color: grey;
   display: flex;
   justify-items: start;
   margin: 1rem auto;
   text-decoration: underline;
+
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  color: #46b954;
+  cursor: pointer;
+  transition: 0.4s ease-in;
 }
 
 .login-btn {
@@ -190,7 +198,7 @@ p a {
 .login-spotify {
   font-weight: bold;
   justify-content: center;
-  background-color: #46b954;
+  background-color: #15883e;
   text-align: center;
   width: 12rem;
 }
@@ -221,27 +229,16 @@ p a {
   cursor: pointer;
 }
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #46b954;
+  background-color: #09991a;
   cursor: pointer;
+}
+.custom-control-label::before,
+.custom-control-label::after {
+  top: 0.125rem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .custom-control-label {
-  font-size: 12px;
-  padding-top: 0.25em;
-}
-
-.forgot-password {
-  justify-content: center;
-  align-content: center;
-  color: #46b954;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.forgot-password:hover {
-  justify-content: center;
-  align-content: center;
-  color: #09991a;
-  text-decoration: none;
-  cursor: pointer;
+  font-size: 14px;
 }
