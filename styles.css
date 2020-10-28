@@ -1,4 +1,3 @@
-
 /*********************** global *********************/
 /* @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap");*/
 :root {
@@ -65,226 +64,290 @@ aside {
   margin-left: 2em;
   margin-bottom: 1em;
 }
-.menu a{
-    color: #b3b3b3;
-    z-index: 1;
+.menu a {
+  color: #b3b3b3;
+  z-index: 1;
 }
-.menu a:hover{
-    text-decoration: none;
-    color: #b3b3b3;
+.menu a:hover {
+  text-decoration: none;
+  color: #b3b3b3;
 }
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
-.menu ul li{
-    padding-top: 1em;
-    font-size: 1em;
+.menu ul li {
+  padding-top: 1em;
+  font-size: 1em;
 }
-.menu i{
-    padding-right: 20px;
+.menu i {
+  padding-right: 20px;
 }
-.menu h6{
-    padding-left: 35px;
-    margin-top: 2em;
-    margin-bottom: -0.3em;;
+.menu h6 {
+  padding-left: 35px;
+  margin-top: 2em;
+  margin-bottom: -0.3em;
 }
-hr{
-    border: 0;
-    clear:both;
-    display:block;
-    width: 96%;
-    background-color:#b3b3b3;
-    height: 1px;
-  }
-.menu hr{
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 5px;
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: #b3b3b3;
+  height: 1px;
 }
-.stick-to-bottom{
-    position: absolute;
-    bottom: 5px;
+.menu hr {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5px;
 }
-.menu a:hover{
-    color: white;
-    transition: 0.5s;
+.stick-to-bottom {
+  position: absolute;
+  bottom: 5px;
 }
-.menu li:active::after{
-    background: #afaeae50;
-    color: white !important;
-    border-radius: 4px;
-    content: '';
-    display: block;
-    position: absolute;
-    margin-top: -30px;
-    margin-left: -25px;
-    height: 2.5em;
-    width: 18vw;
+.menu a:hover {
+  color: white;
+  transition: 0.5s;
+}
+.menu li:active::after {
+  background: #afaeae50;
+  color: white !important;
+  border-radius: 4px;
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: -25px;
+  height: 2.5em;
+  width: 18vw;
 }
 .menu li:hover a {
-    color: #FFF ;
+  color: #fff;
 }
 
 /* scrollbar */
 
-.playlists{
-    position: relative;
-    padding-left: 15%;
-    font-size: smaller;
-    padding-top: 20px;
-    overflow-y : auto;
-    height: 130px;
+.playlists {
+  position: relative;
+  padding-left: 15%;
+  font-size: smaller;
+  padding-top: 20px;
+  overflow-y: auto;
+  height: 130px;
 }
 /* The emerging W3C standard
    that is currently Firefox-only */
-   * {
-    scrollbar-width: auto;
-    scrollbar-color: #040404  #b3b3b3;
-  }
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #040404 #b3b3b3;
+}
 
-  /* Works on Chrome/Edge/Safari */
-  *::-webkit-scrollbar {
-    width: 1em;
-  }
-  *::-webkit-scrollbar-track {
-    background: #b3b3b3;
-  }
-  *::-webkit-scrollbar-thumb {
-    background-color:  #040404;
-    border: 3px solid #b3b3b3;
-  }
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 1em;
+}
+*::-webkit-scrollbar-track {
+  background: #b3b3b3;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #040404;
+  border: 3px solid #b3b3b3;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .logo{
-        width: 5.2em;
-        height: 4em;
-        display: flex;
-        padding-top: 0.5;
-        margin-bottom: 1em;
-        margin-left: 1em;
-    }
-    .menu ul li{
-        padding-top: 0.8em;
-        font-size: 0.5em;
-        margin-left: -3em;
-    }
-    .menu h6{
-        padding-left: 15px;
-        margin-top: 1em;
-        margin-bottom: 0.3em;
-        font-size: 0.8em;
-    }
-    ul a img{
-        width: 10px;
-        height: 10px;
-    }
-    .playlists{
-        height: 50vh;
-        overflow-y: auto;
-    }
+  .logo {
+    width: 5.2em;
+    height: 4em;
+    display: flex;
+    padding-top: 0.5;
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+  .menu ul li {
+    padding-top: 0.8em;
+    font-size: 0.5em;
+    margin-left: -3em;
+  }
+  .menu h6 {
+    padding-left: 15px;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    font-size: 0.8em;
+  }
+  ul a img {
+    width: 10px;
+    height: 10px;
+  }
+  .playlists {
+    height: 50vh;
+    overflow-y: auto;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .logo{
-        width: 5.2em;
-        height: 4em;
-        display: flex;
-        padding-top: 0.5;
-        margin-bottom: 1em;
-        margin-left: 1em;
-    }
-    .menu ul li{
-        padding-top: 0.8em;
-        font-size: 0.5em;
-        margin-left: -3em;
-    }
-    .menu h6{
-        padding-left: 15px;
-        margin-top: 1em;
-        margin-bottom: 0.3em;
-        font-size: 0.8em;
-    }
-    ul a img{
-        width: 20px;
-        height: 20px;
-    }
-    .playlists{
-        height: 40vh;
-    }
+  .logo {
+    width: 5.2em;
+    height: 4em;
+    display: flex;
+    padding-top: 0.5;
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+  .menu ul li {
+    padding-top: 0.8em;
+    font-size: 0.5em;
+    margin-left: -3em;
+  }
+  .menu h6 {
+    padding-left: 15px;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    font-size: 0.8em;
+  }
+  ul a img {
+    width: 20px;
+    height: 20px;
+  }
+  .playlists {
+    height: 40vh;
+  }
+
+  h6 .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link {
+    background-color: transparent;
+    border: 0px;
+    font-size: 10px;
+    font-weight: 500;
+    color: whitesmoke;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link:after {
+    display: block;
+    content: "";
+    margin-bottom: 10px;
+    border-bottom: solid 2px limegreen;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link:hover:after {
+    transform: scaleX(0.5);
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .logo{
-        width: 7.2em;
-        height: 4em;
-        display: flex;
-        padding-top: 0.5;
-        margin-bottom: 1em;
-        margin-left: 1em;
-    }
-    .menu ul li{
-        padding-top: 0.8em;
-        font-size: .8em;
-        margin-left: -25px;
-    }
-    .menu h6{
-        padding-left: 15px;
-        margin-top: 3em;
-        margin-bottom: 0.3em;
-        font-size: 0.7em;
-    }
-    .playlists{
-        height: 40vh;
-    }
+  .logo {
+    width: 7.2em;
+    height: 4em;
+    display: flex;
+    padding-top: 0.5;
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+  .menu ul li {
+    padding-top: 0.8em;
+    font-size: 0.8em;
+    margin-left: -25px;
+  }
+  .menu h6 {
+    padding-left: 15px;
+    margin-top: 3em;
+    margin-bottom: 0.3em;
+    font-size: 0.7em;
+  }
+  .playlists {
+    height: 40vh;
+  }
+  h6 .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link {
+    background-color: transparent;
+    border: 0px;
+    font-size: 10px;
+    font-weight: 500;
+    color: whitesmoke;
+    letter-spacing: 0.1em;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link:after {
+    display: block;
+    content: "";
+    margin-bottom: 10px;
+    border-bottom: solid 2px limegreen;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .logo{
-        width: 8em;
-        height: 4.5em;
-        display: flex;
-        padding-top: 2em;
-        margin-bottom: 1em;
-        margin-left: 2em;
-    }
-    .menu ul li{
-        padding-top: 1em;
-        font-size: 1em;
-        margin-left: 0px;
-    }
-    .menu h6{
-        padding-left: 15px;
-        margin-top: 1.3em;
-        margin-bottom: 0em;
-        font-size: 0.9em;
-        margin-left: 25px;
-    }
-    ul a img{
-        width: 20px;
-        height: 20px;
-    }
-    .playlists{
-        height: 20vh;
-    }
+  .logo {
+    width: 8em;
+    height: 4.5em;
+    display: flex;
+    padding-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+  }
+  .menu ul li {
+    padding-top: 1em;
+    font-size: 1em;
+    margin-left: 0px;
+  }
+  .menu h6 {
+    padding-left: 15px;
+    margin-top: 1.3em;
+    margin-bottom: 0em;
+    font-size: 0.9em;
+    margin-left: 25px;
+  }
+  ul a img {
+    width: 20px;
+    height: 20px;
+  }
+  .playlists {
+    height: 30vh;
+  }
+
+  h6 .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link {
+    background-color: transparent;
+    border: 0px;
+    font-size: 10px;
+    font-weight: 500;
+    color: whitesmoke;
+    letter-spacing: 0.1em;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link:after {
+    display: block;
+    content: "";
+    margin-bottom: 10px;
+    border-bottom: solid 2px limegreen;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+  }
+}
 /********************* cover page *****************/
-.main-content{
+/* .main-content {
     max-width: calc(100vw - 232px);
     width: 100%;
-    margin-left: 232px;
+    margin-left: 250px;
+    position: fixed;
+    top: 0px;
+  } */
 
-}
-
-.nav {
+.nav-tabs {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   list-style: none;
-  justify-content: space-between;
-  padding-left: 10em;
-  padding-right: 10em;
 }
 
 h1 {
@@ -307,20 +370,9 @@ h6 .nav-tabs .nav-item.show .nav-link,
   font-weight: 500;
   color: whitesmoke;
   letter-spacing: 0.1em;
-  justify-content: space-around;
   margin-bottom: 10px;
 }
-/* .nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link:hover {
-  background-color: transparent;
-  border: 0px;
-  padding-bottom: 1px;
-  border-bottom: 2px solid limegreen;
-  font-weight: 500;
-  color: whitesmoke; */
-  #myTab{
 
-  }
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link:after {
   display: block;
@@ -364,7 +416,9 @@ h6 .nav-tabs .nav-item.show .nav-link,
 }
 
 .card:hover .spotify-card-icon {
-  color: white;
+  color: limegreen;
+  opacity: 1;
+  z-index: 10001;
 }
 
 .trending.card {
@@ -398,24 +452,6 @@ h6 .nav-tabs .nav-item.show .nav-link,
   display: none;
 }
 
-/* .trending.card:hover .overlay-icons {
-  display: inline-block;
-  position: absolute;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  font-size: 25px;
-  top: 55px;
-  right: 50px;
-  bottom: 50px;
-  left: 50px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  border: 2px solid white;
-  z-index: 999;
-} */
-
 .overlay-icons {
   display: none;
 }
@@ -436,19 +472,32 @@ h6 .nav-tabs .nav-item.show .nav-link,
   transition: 1s ease;
   opacity: 0.9;
   z-index: 999;
-  }
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 100%;
+  padding-left: 25px;
+  margin-left: 230px;
+  max-width: calc(100vw - 232px);
+  position: fixed;
+  top: 0px;
+}
 
 /* global */
 body {
   margin: 0px;
   padding: 0px;
-  /* font-family: 'Nunito Sans', sans-serif; */
-  font-family: "Circular", sans-serif;  /* updated to the spotify text shared in discord */
+  font-family: "Circular", sans-serif; /* updated to the spotify text shared in discord */
 }
 .mainframe {
   height: calc(100vh - 90px);
-
 }
+
 /******************** bottom player ******************/
 .player {
   color: #ccc;
@@ -457,7 +506,8 @@ body {
   height: 100%;
   padding-top: 0.5rem;
   padding-top: 0.5rem;
-  bottom: 0px;;
+  bottom: 0px;
+  z-index: 10001;
 }
 .player-albumart {
   max-width: 30vw;
