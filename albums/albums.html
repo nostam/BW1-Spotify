@@ -27,17 +27,16 @@
       crossorigin="anonymous"
     ></script>
     <!-- My CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
     <link rel="stylesheet" href="albums.css" />
     <title>Albums</title>
-    <script src="script.js"></script>
   </head>
   <body>
     <div class="row">
       <div class="col-3">
         <aside>
           <div>
-            <img src="assets/logo.png" alt="logo" class="logo" />
+            <img src="../assets/logo.png" alt="logo" class="logo" />
           </div>
           <div class="menu">
             <ul>
@@ -95,17 +94,21 @@
 
       <div class="albums-holder col-9" style="padding: 0px !important">
         <!-- albums section -->
-        <section style="overflow-y: auto">
+        <section style="overflow-y: auto" id="albums-section">
+          <!--onscroll="addScrollEffect()"-->
+
           <!-- the header navigation -->
-          <div class="album-header">
-            <img
-              src="https://img.icons8.com/ios/24/b3b3b3/less-than.png"
-              class="arrow"
-            />
-            <img
-              src="https://img.icons8.com/ios/24/b3b3b3/more-than.png"
-              class="arrow"
-            />
+          <div class="album-header" id="header">
+            <div class="arrow-container">
+              <img
+                src="https://img.icons8.com/ios/24/b3b3b3/less-than.png"
+                class="arrow"
+              />
+              <img
+                src="https://img.icons8.com/ios/24/b3b3b3/more-than.png"
+                class="arrow"
+              />
+            </div>
 
             <div class="header-btns">
               <button
@@ -144,26 +147,26 @@
 
           <!-- the header image, title  -->
           <div class="album row">
-            <div class="col-3">
+            <div class="col-12 col-md-6 col-lg-4">
               <img
                 class="album-cover img-fluid"
-                src="assets/bohemian-rhapsody.jpg"
+                src="../assets/bohemian-rhapsody.jpg"
                 alt="bohemian rhapsody"
               />
             </div>
             <!-- album-details -->
-            <div class="album-details col-9">
+            <div class="album-details col-12 col-md-6 col-lg-8">
               <h4>albums</h4>
               <h2>bohemian rhapsody(the original soundtrack)</h2>
               <div class="last-line">
-                <img src="assets/queen.jpg" alt="queen" class="group-img" />
+                <img src="../assets/queen.jpg" alt="queen" class="group-img" />
                 <a href="#" class="group-name">Queen</a>
                 <p class="album-length">- 2018 - 22 songs, 1 hr 19 min</p>
               </div>
             </div>
           </div>
 
-          <!-- playlist holder -->
+          <!-- album playlist holder -->
           <div class="playlist">
             <div class="playlist-btns">
               <img
@@ -189,104 +192,106 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">1</th>
+                    <th scope="row" style="vertical-align: middle">1</th>
                     <td>
                       <ul>
                         <li class="song">20th Centry Fox Fanfare</li>
-                        <li class="group">Queen</li>
+                        <li class="group" style="vertical-align: middle">
+                          Queen
+                        </li>
                       </ul>
                     </td>
-                    <td>0:25</td>
+                    <td style="vertical-align: middle">0:25</td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
+                    <th scope="row" style="vertical-align: middle">1</th>
                     <td>
                       <ul>
                         <li class="song">20th Centry Fox Fanfare</li>
                         <li class="group">Queen</li>
                       </ul>
                     </td>
-                    <td>0:25</td>
+                    <td style="vertical-align: middle">0:25</td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
+                    <th scope="row" style="vertical-align: middle">1</th>
                     <td>
                       <ul>
                         <li class="song">20th Centry Fox Fanfare</li>
                         <li class="group">Queen</li>
                       </ul>
                     </td>
-                    <td>0:25</td>
+                    <td style="vertical-align: middle">0:25</td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
+                    <th scope="row" style="vertical-align: middle">1</th>
                     <td>
                       <ul>
                         <li class="song">20th Centry Fox Fanfare</li>
                         <li class="group">Queen</li>
                       </ul>
                     </td>
-                    <td>0:25</td>
+                    <td style="vertical-align: middle">0:25</td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
+                    <th scope="row" style="vertical-align: middle">1</th>
                     <td>
                       <ul>
                         <li class="song">20th Centry Fox Fanfare</li>
                         <li class="group">Queen</li>
                       </ul>
                     </td>
-                    <td>0:25</td>
+                    <td style="vertical-align: middle">0:25</td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
+                    <th scope="row" style="vertical-align: middle">1</th>
                     <td>
                       <ul>
                         <li class="song">20th Centry Fox Fanfare</li>
                         <li class="group">Queen</li>
                       </ul>
                     </td>
-                    <td>0:25</td>
+                    <td style="vertical-align: middle">0:25</td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
+                    <th scope="row" style="vertical-align: middle">1</th>
                     <td>
                       <ul>
                         <li class="song">20th Centry Fox Fanfare</li>
                         <li class="group">Queen</li>
                       </ul>
                     </td>
-                    <td>0:25</td>
+                    <td style="vertical-align: middle">0:25</td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
+                    <th scope="row" style="vertical-align: middle">1</th>
                     <td>
                       <ul>
                         <li class="song">20th Centry Fox Fanfare</li>
                         <li class="group">Queen</li>
                       </ul>
                     </td>
-                    <td>0:25</td>
+                    <td style="vertical-align: middle">0:25</td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
+                    <th scope="row" style="vertical-align: middle">1</th>
                     <td>
                       <ul>
                         <li class="song">20th Centry Fox Fanfare</li>
                         <li class="group">Queen</li>
                       </ul>
                     </td>
-                    <td>0:25</td>
+                    <td style="vertical-align: middle">0:25</td>
                   </tr>
                   <tr>
-                    <th scope="row">1</th>
+                    <th scope="row" style="vertical-align: middle">1</th>
                     <td>
                       <ul>
                         <li class="song">20th Centry Fox Fanfare</li>
                         <li class="group">Queen</li>
                       </ul>
                     </td>
-                    <td>0:25</td>
+                    <td style="vertical-align: middle">0:25</td>
                   </tr>
                 </tbody>
               </table>
@@ -317,8 +322,8 @@
           <img src="http://placehold.it/64x64" />
         </div>
         <div class="d-none d-sm-flex flex-column text-left mr-4">
-          <div class="nowplaying-title">Nowplaying title</div>
-          <div class="nowplaying-artist">Nowplaying artist</div>
+          <div class="nowplaying-title">Now playing title</div>
+          <div class="nowplaying-artist">Now playing artist</div>
         </div>
         <div class="d-none d-lg-flex loved-track mr-3">
           <i class="far fa-heart"></i>
@@ -366,6 +371,7 @@
     <!---player menu end-->
 
     <script src="script.js"></script>
+
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
