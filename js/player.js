@@ -15,16 +15,19 @@ window.onload = function () {
 
   let muted = document.querySelector(".player-volume .fas.fa-volume-mute");
   let volMax = document.querySelector(".player-volume .fas.fa-volume-up");
+  let vol = document.getElementById("nowplayingVolume");
   muted.addEventListener("click", function () {
     if (!muted.classList.contains("active")) {
       console.log("going mute");
       muted.classList.toggle("active");
       muted.style.opacity = 1;
       volMax.style.opacity = 0;
+      vol.style.width = "0%";
     } else {
       muted.classList.toggle("active");
       muted.style.opacity = 0;
       volMax.style.opacity = 1;
+      vol.style.width = "100%";
     }
   });
 };
