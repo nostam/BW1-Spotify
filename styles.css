@@ -186,12 +186,7 @@ aside {
   scrollbar-width: 5vw;
   scrollbar-color: #040404 #b3b3b3;
 }
-*,
-*::after,
-*::before {
-  box-sizing: content-box;
-  overflow-x: hidden;
-}
+
 /* Works on Chrome/Edge/Safari */
 *::-webkit-scrollbar {
   width: 0.75rem;
