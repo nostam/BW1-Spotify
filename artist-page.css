@@ -1090,21 +1090,25 @@ aside {
   width: 100%;
 }
 .nowplaying-albumart img {
-  max-height: 56px;
-  max-width: 56px;
-  width: 100%;
-  height: 100%;
+  height: 56px;
+  width: 56px;
   object-fit: cover;
   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
 }
 .player-albumart .nowplaying-title {
   font-size: 0.9rem;
   font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .player-albumart .nowplaying-artist {
   font-size: 0.7rem;
   font-weight: bold;
   color: grey;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .loved-track {
   position: relative;
