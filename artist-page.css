@@ -490,7 +490,7 @@ li {
 .main-content:before {
   content: " ";
   width: 100%;
-  height: 100vw;
+  height: 100% !important;  
   position: absolute;
   z-index: -1;
   top: 0;
