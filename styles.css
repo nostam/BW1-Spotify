@@ -412,6 +412,11 @@ aside {
   color: limegreen;
   text-decoration: none;
 }
+
+.small-index-menu .list-group li a:active {
+  color: limegreen;
+  text-decoration: none;
+}
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .logo {
@@ -521,10 +526,9 @@ h3.index-headings {
 .nav-tabs .nav-link.active {
   background-color: transparent;
   border: 0px;
-  padding-bottom: 1px;
-  border-bottom: 3px solid limegreen;
+  /* border-bottom: solid 2px limegreen; */
   font-weight: 500;
-  color: whitesmoke;
+  color: limegreen;
   transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
   -webkit-transition: 0.5s ease-in-out;
@@ -595,13 +599,11 @@ h3.index-headings {
   padding-top: 40%;
   font-size: 25px;
   color: white;
-  /* bottom: 0; */
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   transition: 1s ease;
   opacity: 0.9;
-
   z-index: 999;
 }
 
@@ -618,6 +620,11 @@ h3.index-headings {
   position: fixed;
   top: 0px;
 }
+
+/* .overlay-icons.far.fa-heart {
+  font: 4px !important;
+  margin-right: 2px;
+} */
 
 /******************** bottom player ******************/
 .player {
