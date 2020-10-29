@@ -368,6 +368,10 @@ aside {
     overflow-y: auto;
   } */
 
+  .nav-link {
+    padding-right: 5px;
+  }
+
   .menu h6 .nav-tabs .nav-item.show .nav-link,
   .nav-tabs .nav-link {
     background-color: transparent;
@@ -387,6 +391,26 @@ aside {
     transform: scaleX(0);
     transition: transform 300ms ease-in-out;
   }
+}
+
+.small-index-menu,
+.list-group,
+.list-group li {
+  background-color: transparent !important;
+  border: 0px;
+  font-size: 10px;
+  font-weight: 500;
+  color: whitesmoke;
+  letter-spacing: 0.1em;
+}
+
+.small-index-menu .list-group li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.small-index-menu .list-group li a:hover {
+  color: limegreen;
+  text-decoration: none;
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
