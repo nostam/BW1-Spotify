@@ -474,9 +474,14 @@ aside {
   list-style: none;
 }
 
-.main-content h1 {
+h1.index-headings {
   color: white;
   font-size: 36px;
+  font-weight: 800;
+}
+
+h3.index-headings {
+  color: white;
   font-weight: 800;
 }
 
