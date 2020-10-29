@@ -546,7 +546,13 @@ aside {
   bottom: 0px;
   z-index: 10001;
 }
-
+.player-albumart .far:hover,
+.player-albumart .fas:hover,
+.player-btn .far:hover,
+.player-btn .fas:hover,
+.player-setting .fas:hover {
+  color: white;
+}
 .player-albumart {
   max-width: 30vw;
   width: 100%;
