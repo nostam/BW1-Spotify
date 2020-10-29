@@ -55,7 +55,11 @@ aside {
   top: 0px;
   max-width: 232px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
   position: fixed;
+  top: 0;
+  left: 0;
 }
 .logo {
   width: auto;
@@ -67,7 +71,10 @@ aside {
 }
 
 .menu {
-  font-size: 12px;
+  font-size: 0.9rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .menu a {
   color: #b3b3b3;
@@ -81,19 +88,33 @@ aside {
 
 .menu ul {
   list-style-type: none;
-  font-size: 12px;
+  font-size: 0.9rem;
+  margin-bottom: 0;
 }
 .menu ul li {
-  padding-top: 1rem;
-  font-size: 12px;
+  display: flex;
+  align-content: flex-start;
+  font-size: 0.9rem;
+  margin: 1rem auto;
+}
+.menu ul li > a > i {
+  /* fa fonts each icon have different width, aligning Home, Search, Your Library at the same line */
+  width: 40px;
+}
+.menu ul li > a {
+  display: flex;
+  align-content: center;
+}
+.menu ul li > a > img {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
 }
 .menu i {
   padding-right: 20px;
 }
 .menu h6 {
   padding-left: 35px;
-  margin-top: 2em;
-  margin-bottom: -0.3em;
 }
 .menu hr {
   border: 0;
@@ -106,10 +127,6 @@ aside {
   margin: 0 auto;
   margin-bottom: 5px;
 }
-.stick-to-bottom {
-  position: absolute;
-  bottom: 10px;
-}
 
 .menu li:active::after {
   background: #afaeae50;
@@ -118,42 +135,63 @@ aside {
   content: "";
   display: block;
   position: absolute;
-  margin-top: -30px;
-  margin-left: -25px;
+  margin-top: -8px;
+  margin-left: -8px;
   height: 2.5em;
-  width: 15vw;
+  width: 180px;
 }
 .menu li:hover a {
   color: #fff;
 }
-
-/* scrollbar */
+.list-container {
+  height: calc(100vh - 330px - 60px - 90px - 0px);
+  display: flex;
+  flex-direction: column;
+}
 
 .playlists {
   position: relative;
   padding-left: 15%;
-  font-size: smaller;
+  font-size: 1rem;
   padding-top: 20px;
+  display: block;
   overflow-y: auto;
-  height: 130px;
+  white-space: nowrap;
+  float: left;
+  height: 100%;
+  padding-bottom: 1rem;
 }
+.stick-to-bottom {
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+.install-btn {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+/* scrollbar */
 /* The emerging W3C standard
    that is currently Firefox-only */
 * {
-  scrollbar-width: auto;
+  scrollbar-width: 5vw;
   scrollbar-color: #040404 #b3b3b3;
 }
 
 /* Works on Chrome/Edge/Safari */
 *::-webkit-scrollbar {
-  width: .75rem;
+  width: 0.75rem;
 }
 *::-webkit-scrollbar-track {
-  background: #b3b3b3;
+  background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-  background-color: #040404;
-  border: 3px solid #b3b3b3;
+  background: rgba(70, 70, 70, 0.76);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(110, 110, 110, 0.76);
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -167,7 +205,7 @@ aside {
     margin-left: 1rem;
   }
   .menu ul li {
-    padding-top: 0.8rem;
+    /* padding-top: 0.8rem; */
     /* font-size: 0.5rem; */
     /* margin-left: -3rem; */
   }
@@ -175,16 +213,16 @@ aside {
     padding-left: 15px;
     margin-top: 1rem;
     margin-bottom: 0.3rem;
-    font-size: 0.8rem; */
-  }
+    font-size: 0.8rem;
+  }*/
   .menu ul a img {
     width: 10px;
     height: 10px;
   }
-  .playlists {
+  /* .playlists {
     height: 220px;
     overflow-y: auto;
-  }
+  }*/
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -197,7 +235,7 @@ aside {
     margin-left: 1rem;
   }
   .menu ul li {
-    padding-top: 0.8rem;
+    /* padding-top: 0.8rem; */
     /* font-size: 0.5rem; */
     /* margin-left: -3rem; */
   }
@@ -205,16 +243,16 @@ aside {
     padding-left: 15px;
     margin-top: 1rem;
     margin-bottom: 0.3rem;
-    font-size: 0.8rem; */
-  }
+    font-size: 0.8rem;
+  }*/
   .menu ul a img {
     width: 20px;
     height: 20px;
   }
-  .playlists {
+  /* .playlists {
     height: 220px;
     overflow-y: auto;
-  }
+  } */
 
   .menu h6 .nav-tabs .nav-item.show .nav-link,
   .nav-tabs .nav-link {
@@ -253,7 +291,7 @@ aside {
     margin-left: 1rem;
   }
   .menu ul li {
-    padding-top: 0.8rem;
+    /* padding-top: 0.8rem; */
     /* font-size: 0.8rem; */
     /* margin-left: -25px; */
   }
@@ -263,11 +301,11 @@ aside {
     margin-bottom: 0.3rem;
     font-size: 0.7rem;
   } */
-  .playlists {
+  /* .playlists {
     height: 220px;
     overflow-y: auto;
-  }
-  
+  } */
+
   .menu h6 .nav-tabs .nav-item.show .nav-link,
   .nav-tabs .nav-link {
     background-color: transparent;
@@ -299,7 +337,7 @@ aside {
     margin-left: 2rem;
   }
   .menu ul li {
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     /* font-size: 1rem; */
     margin-left: 0px;
   }
@@ -314,10 +352,10 @@ aside {
     width: 20px;
     height: 20px;
   }
-  .playlists {
+  /* .playlists {
     height: 220px;
     overflow-y: auto;
-  }
+  } */
 
   .menu h6 .nav-tabs .nav-item.show .nav-link,
   .nav-tabs .nav-link {
@@ -372,21 +410,21 @@ aside {
   letter-spacing: 0.1rem;
   margin-bottom: 10px;
 }
-  .nav-tabs .nav-item.show .nav-link,
-  .nav-tabs .nav-link:after {
-    display: block;
-    content: "";
-    margin-bottom: 10px;
-    border-bottom: solid 2px limegreen;
-    transform: scaleX(0);
-    transition: 300ms ease-in-out;
-  }
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link:after {
+  display: block;
+  content: "";
+  margin-bottom: 10px;
+  border-bottom: solid 2px limegreen;
+  transform: scaleX(0);
+  transition: 300ms ease-in-out;
+}
 
 /*** artist page ***/
 .main-content:before {
   content: " ";
   width: 100vw;
-  height: 100vw;
+  height: 100%;
   position: absolute;
   z-index: -1;
   top: 0;
@@ -719,6 +757,7 @@ aside {
   display: flex;
   align-items: center;
   margin: auto 1rem;
+  background-color: grey;
 }
 #nowplayingProgress {
   width: var(--nowplaying-progress);
