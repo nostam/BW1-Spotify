@@ -31,8 +31,11 @@
   display: flex;
   flex-direction: row;
   padding: 10px 20px 10px 20px;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   z-index: 44444444444444444;
+  background-color:  #55164f;
+  height: 60px;
 }
 .arrow-container{
   position: fixed;
@@ -191,22 +194,217 @@ th {
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  
+  .arrow {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    height: 1em;
+    margin-right: 10px;
+    padding: 5px;
+    z-index: 222222222222;
+  }
+  .upgrade-btn {
+    display: none;
+  }
+  .user-icon {
+    display: none;
+  }
+  .profile-btn {
+    font-size: 8px;
+    line-height: 10px;
+    font-weight: 500;
+    letter-spacing: 1.76px;
+    will-change: transform;
+    white-space: nowrap;
+    padding: 4px 6px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+  }
+  .album {
+    height: 400px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  
+  .arrow {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    height: 1.2em;
+    margin-right: 10px;
+    padding: 5px;
+    z-index: 222222222222;
+  }
+  .upgrade-btn {
+    display: none;
+  }
+  .user-icon {
+    display: none;
+  }
+  .profile-btn {
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 500;
+    letter-spacing: 1.76px;
+    will-change: transform;
+    white-space: nowrap;
+    padding: 4px 6px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+  }
+  .album {
+    height: 430px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  
+  .arrow {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    height: 1.2em;
+    margin-right: 10px;
+    padding: 5px;
+    z-index: 222222222222;
+  }
+  .upgrade-btn {
+    display: none;
+  }
+  .user-icon {
+    display: none;
+  }
+  .profile-btn {
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 500;
+    letter-spacing: 1.76px;
+    will-change: transform;
+    white-space: nowrap;
+    padding: 4px 6px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+  }
+  .album {
+    height: 430px;
+  }
+  .album-cover{
+    margin-top: 150px;
+  }
+  .album-details{
+    margin-top: -90px;
+    padding-top: 0px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  
+  .album-cover{
+    margin-top: 10px;
+  }
+  .album-details{
+    margin-top: -90px;
+    padding-top: 0px;
+  }
+  .arrow {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    height: 1.9em;
+    margin-right: 10px;
+    padding: 5px;
+    z-index: 222222222222;
+  }
+  .header-btns {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    position: fixed;
+  }
+  .upgrade-btn {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 1.76px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 500px;
+    color: #fff;
+    background-color: #000000e3;
+    -webkit-transition: all 33ms cubic-bezier(0.3, 0, 0, 1);
+    transition: all 33ms cubic-bezier(0.3, 0, 0, 1);
+    will-change: transform;
+    white-space: nowrap;
+    padding: 8px 34px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #b3b3b3;
+  }
+  .profile-btn {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 1.76px;
+    border: 2px solid transparent;
+    border-radius: 500px;
+    color: #fff;
+    background-color: #000000e3;
+    -webkit-transition: all 33ms cubic-bezier(0.3, 0, 0, 1);
+    transition: all 33ms cubic-bezier(0.3, 0, 0, 1);
+    will-change: transform;
+    white-space: nowrap;
+    padding: 8px 10px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+  }
+  .user-icon {
+    background-color: rgba(49, 49, 49, 0.849);
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 5px;
+    padding-right: 5px;
+  }
+  .album {
+    height: 200px;
+    width: 100%;
+    padding: 35px 30px 10px 30px;
+    margin-top: 10px;
+  }
+  .album .album-cover {
+    width: 240px;
+    height: 240px;
+    box-shadow: 5px 5px 20px rgba(37, 37, 37, 0.849);
+    z-index: 1;
+  }
+  .album .album-details {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Circular", sans-serif;
+    justify-content: flex-end;
+  }
+  .album .album-details h4 {
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: 4px;
+    line-height: 16px;
+  }
+  .album .album-details h2 {
+    font-weight: 700;
+  }
+  .last-line {
+    display: inline-block;
+  }
+  .last-line .group-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

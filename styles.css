@@ -205,14 +205,32 @@ aside {
 @media only screen and (max-width: 600px) {
   .logo {
     width: auto;
-    height: 4rem;
+    height: 3rem;
     display: flex;
     padding-top: 0.5;
     margin-bottom: 1rem;
     margin-left: 1rem;
   }
-  .menu ul li {
-    /* padding-top: 0.8rem; */
+  h2{
+    font-size: 1.3rem;
+  }
+  .playlist-btns img{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .album{
+    height: 500px;
+  }
+  /* .playlists {
+    height: 220px;
+    overflow-y: auto;
+  } */
+  
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /*.menu ul li {
+     padding-top: 0.8rem; */
     /* font-size: 0.5rem; */
     /* margin-left: -3rem; */
   }
@@ -222,17 +240,10 @@ aside {
     margin-bottom: 0.3rem;
     font-size: 0.8rem;
   }*/
-  .menu ul a img {
-    width: 10px;
-    height: 10px;
-  }
   /* .playlists {
     height: 220px;
     overflow-y: auto;
-  }*/
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+  } */
   .logo {
     width: auto;
     height: 4rem;
@@ -241,25 +252,7 @@ aside {
     margin-bottom: 1rem;
     margin-left: 1rem;
   }
-  .menu ul li {
-    /* padding-top: 0.8rem; */
-    /* font-size: 0.5rem; */
-    /* margin-left: -3rem; */
-  }
-  /* .menu h6 {
-    padding-left: 15px;
-    margin-top: 1rem;
-    margin-bottom: 0.3rem;
-    font-size: 0.8rem;
-  }*/
-  .menu ul a img {
-    width: 20px;
-    height: 20px;
-  }
-  /* .playlists {
-    height: 220px;
-    overflow-y: auto;
-  } */
+
 
   .menu h6 .nav-tabs .nav-item.show .nav-link,
   .nav-tabs .nav-link {
@@ -297,8 +290,9 @@ aside {
     margin-bottom: 1rem;
     margin-left: 1rem;
   }
-  .menu ul li {
-    /* padding-top: 0.8rem; */
+
+  /*.menu ul li {
+     padding-top: 0.8rem; */
     /* font-size: 0.8rem; */
     /* margin-left: -25px; */
   }
