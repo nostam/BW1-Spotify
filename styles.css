@@ -757,10 +757,39 @@ h3.index-headings {
 #nowplayingVolume {
   width: 100%;
   height: 4px;
-  background-color: grey;
+  background-color: #b3b3b3;
   border-radius: 2px;
 }
-
+#nowplayingVolume::before {
+  content: " ";
+  width: 100px;
+  height: 4px;
+  background-color: #808080;
+  border-radius: 2px;
+}
+.player-volume .fas.fa-volume-up:hover + #nowplayingVolume,
+.player-volume .fas.fa-volume-mute:hover + #nowplayingVolume {
+  background-color: #1db954;
+}
+.player-volume .fas.fa-volume-up:hover + #nowplayingVolume::after,
+.player-volume .fas.fa-volume-muted:hover + #nowplayingVolume::after,
+.player-volume .fas.fa-volume-up:hover,
+#nowplayingVolume:hover::after {
+  content: " ";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 3rem;
+  position: absolute;
+  color: #b3b3b3;
+  background-color: #b3b3b3;
+  top: 50%;
+  left: 50%;
+  transform: translate(150%, -50%);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  left: var(--nowplaying-progress);
+  z-index: 1;
+}
 .player-volume .fas.fa-volume-mute {
   position: absolute;
   z-index: 10002;
