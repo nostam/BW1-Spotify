@@ -189,6 +189,64 @@ aside {
   height: 100%;
   padding-bottom: 1rem;
 }
+.stick-to-bottom {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+.install-btn {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.install-btn > a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.install-btn > a:hover {
+  color: white;
+}
+
+.login-button-index {
+  max-width: 400px;
+  width: 90%;
+  padding: 0.75rem;
+  margin: 0.25rem;
+  margin-left: 12px;
+  margin-bottom: 10px;
+  color: #b3b3b3;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  border-radius: 2rem;
+  text-align: center;
+  border: 2px solid #b3b3b3;
+}
+
+.login-button-index:hover {
+  transition: 0.4s ease-in;
+  background-color: white;
+  border: 2px solid white;
+  color: black;
+  cursor: pointer;
+}
+/* scrollbar */
+
+.playlists {
+  position: relative;
+  padding-left: 15%;
+  font-size: 1rem;
+  padding-top: 20px;
+  display: block;
+  overflow-y: auto;
+  white-space: nowrap;
+  float: left;
+  height: 100%;
+  padding-bottom: 1rem;
+}
 .stick-to-bottom-index-page {
   position: absolute;
   height: 60px;
