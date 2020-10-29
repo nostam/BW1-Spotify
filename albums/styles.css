@@ -144,7 +144,7 @@
   .menu h6 {
     padding-left: 35px;
   }
-  .menu hr {
+  hr.sidebar {
     border: 0;
     clear: both;
     display: block;
@@ -180,13 +180,13 @@
   .playlists {
     position: relative;
     padding-left: 15%;
-    font-size: 1rem;
+    font-size: 0.1rem;
     padding-top: 20px;
     display: block;
     overflow-y: auto;
     white-space: nowrap;
     float: left;
-    height: 100%;
+    height: auto;
     padding-bottom: 1rem;
   }
   .stick-to-bottom-index-page {
@@ -383,7 +383,6 @@
       margin-bottom: 1rem;
       margin-left: 1rem;
     }
-  
     /*.menu ul li {
        padding-top: 0.8rem; */
       /* font-size: 0.8rem; */

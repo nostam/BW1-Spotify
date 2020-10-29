@@ -34,8 +34,60 @@
   </head>
   <body>
 
-    <div class='row'>
+    <!-- side menu -->
+    <aside>
+      <div>
+        <img src="../assets/logo.png" alt="logo" class="logo" />
+      </div>
+      <div class="menu" style='margin-left: -25px !important;'>
+        <ul>
+          <li>
+            <a href="#"> <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#"> <i class="fas fa-search"></i> Search</a>
+          </li>
+          <li>
+            <a href="#"> <i class="fas fa-book"></i> Your library</a>
+          </li>
+        </ul>
+        <h6>PLAYLISTS</h6>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="https://img.icons8.com/ios/25/b3b3b3/plus.png" /> Create playlist</a
+            >
+          </li>
+          <li>
+            <a href='#'>
+            <img src="https://img.icons8.com/ios/25/b3b3b3/like.png"/> Liked Songs</a>
+          </li>
+        </ul>
+        <hr />
 
+          <div class='playlists'>
+            <p>#playlist 1</p>
+            <p>#playlist 2</p>
+            <p>#playlist 3</p>
+            <p>#playlist 4</p>
+            <p>#playlist 5</p>
+            <p>#playlist 4</p>
+            <p>#playlist 5</p>
+            <p>#playlist 5</p>
+            <p>#playlist 4</p>
+            <p>#playlist 5</p>
+          </div>
+
+           <!-- <ul class='stick-to-bottom'>
+              <li><a href='#'> <i class="fas fa-arrow-circle-down"></i> Install</a></li>
+            </ul>-->
+        
+      </div>  
+    </div>
+  </aside>
+
+    <div class='row'>
+        <!-- first menu
         <div class='col-3'>
           <aside>
             <div>
@@ -92,7 +144,7 @@
               </div>
             </div>
           </aside>
-        </div> <!-- /col-->
+        </div>--> <!-- /col-->
 
         <div class='albums-holder col-9' style='padding: 0px !important;'>
             <!-- albums section -->
@@ -101,8 +153,8 @@
               <!-- the header navigation -->
                 <div class='album-header' id='header'>
                   <div class='arrow-container'>
-                    <img src="https://img.icons8.com/ios/24/b3b3b3/less-than.png" class='arrow' />
-                    <img src="https://img.icons8.com/ios/24/b3b3b3/more-than.png" class='arrow' />
+                    <a href='#'><img src="https://img.icons8.com/ios/24/b3b3b3/less-than.png" class='arrow' /></a>
+                    <a href='#'><img src="https://img.icons8.com/ios/24/b3b3b3/more-than.png" class='arrow disabled' /></a>
                   </div>
 
                   <div class='header-btns'>
@@ -275,7 +327,7 @@
 
     </div> <!--row-->
 
-  <!-- player menu -->
+  <!-- player menu 
     <section class="player d-flex justify-content-between" style='width: 100%; position: fixed;'>
       <div
         class="player-albumart d-flex align-items-center justify-content-start"
@@ -302,8 +354,8 @@
           <i class="fas fa-random fa-md mx-3"></i>
           <i class="fas fa-step-backward fa-md mx-3"></i>
           <div class="fa-lg">
-            <i class="fas fa-play fa-md mx-3"></i>
-            <!-- <i class="fas fa-pause fa-2x></i>-->
+            <i class="fas fa-play fa-md mx-3"></i>-->
+            <!-- <i class="fas fa-pause fa-2x></i>
           </div>
           <i class="fas fa-step-forward fg-md mx-3"></i>
           <i class="fas fa-redo-alt fg-md mx-3"></i>
@@ -324,10 +376,72 @@
         <div class="player-volume">
           <i class="fas fa-volume-up fa-md mx-2"></i>
           <div id="nowplayingVolume"></div>
-        </div>
-        <!--fa-volume-down fa-volume-mute-->
+        </div>-->
+        <!--fa-volume-down fa-volume-mute
       </div>
-    </section> <!---player menu end-->
+    </section> --><!---player menu end-->
+
+    <!-- player menu -->
+    <section
+      class="player d-flex justify-content-between"
+      style="width: 100%; position: fixed"
+    >
+      <div
+        class="player-albumart d-flex align-items-center justify-content-start"
+      >
+        <div class="nowplaying-albumart mx-3">
+          <img src="http://placehold.it/64x64" />
+        </div>
+        <div class="d-none d-sm-flex flex-column text-left mr-4">
+          <div class="nowplaying-title">Now playing title</div>
+          <div class="nowplaying-artist">Now playing artist</div>
+        </div>
+        <div class="d-none d-lg-flex loved-track mr-3">
+          <i class="far fa-heart"></i>
+          <i class="fas fa-heart"></i>
+        </div>
+        <i class="d-none d-lg-block fas fa-chalkboard"></i>
+      </div>
+
+      <div class="d-flex flex-column py-2 my-1 flex-grow-1">
+        <div
+          class="player-btn d-flex align-items-center justify-content-center player-controller my-1 py-1"
+        >
+          <i class="d-none d-md-flex fas fa-random fa-md mx-3"></i>
+          <i class="fas fa-step-backward fa-md mx-3"></i>
+          <div class="fa-lg">
+            <i class="fas fa-play fa-md mx-3"></i>
+            <!-- <i class="fas fa-pause fa-2x></i>-->
+          </div>
+          <i class="fas fa-step-forward fg-md mx-3"></i>
+          <i class="d-none d-md-flex fas fa-redo-alt fg-md mx-3"></i>
+        </div>
+        <div
+          class="d-none d-sm-flex flex-row justify-content-between player-nowplaying position-relative"
+        >
+          <div class="player-nowplaying-time">18:32</div>
+          <div class="player-progress">
+            <div id="nowplayingProgress"></div>
+          </div>
+          <div class="player-totaltime">24:42</div>
+        </div>
+      </div>
+      <div
+        class="player-setting d-none d-sm-flex align-items-center justify-content-end"
+      >
+        <i class="d-none d-md-flex fas fa-list-ol fa-md mx-2"></i>
+        <i class="d-none d-md-flex fas fa-laptop-house fa-md mx-2"></i>
+        <div class="player-volume">
+          <i class="fas fa-volume-up fa-md mx-2"></i>
+          <i class="fas fa-volume-mute fa-md mx-2"></i>
+          <div id="nowplayingVolume"></div>
+        </div>
+        <!--fa-volume-down-->
+      </div>
+    </section>
+    <!---player menu end-->
+
+    <script src="./js/player.js"></script>
 
     <script src="script.js"></script>
     
