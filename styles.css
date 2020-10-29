@@ -625,7 +625,13 @@ aside {
   bottom: 0px;
   z-index: 10001;
 }
-
+.player-albumart .far:hover,
+.player-albumart .fas:hover,
+.player-btn .far:hover,
+.player-btn .fas:hover,
+.player-setting .fas:hover {
+  color: white;
+}
 .player-albumart {
   max-width: 30vw;
   width: 100%;
@@ -639,21 +645,25 @@ aside {
   width: 100%;
 }
 .nowplaying-albumart img {
-  max-height: 56px;
-  max-width: 56px;
-  width: 100%;
-  height: 100%;
+  height: 56px;
+  width: 56px;
   object-fit: cover;
   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
 }
 .player-albumart .nowplaying-title {
   font-size: 0.9rem;
   font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .player-albumart .nowplaying-artist {
   font-size: 0.7rem;
   font-weight: bold;
   color: grey;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .loved-track {
   position: relative;
@@ -697,6 +707,7 @@ aside {
   align-items: center;
   margin: auto 1rem;
   background-color: grey;
+  flex-shrink: 1;
 }
 #nowplayingProgress {
   width: var(--nowplaying-progress);
