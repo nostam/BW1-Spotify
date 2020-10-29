@@ -142,10 +142,10 @@ aside {
   content: "";
   display: block;
   position: absolute;
-  margin-top: -30px;
-  margin-left: -25px;
+  margin-top: -8px;
+  margin-left: -8px;
   height: 2.5em;
-  width: 15vw;
+  width: 180px;
 }
 .menu li:hover a {
   color: #fff;
