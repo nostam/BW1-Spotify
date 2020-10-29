@@ -11,10 +11,16 @@
   font-weight: 700;
 }
 
+.playlist-footer,
+.playlist-footer::after,
+.playlist-footer::before {
+  overflow-x: hidden;
+}
+
 .albums-holder {
   max-width: calc(100vw - 232px);
   max-height: calc(100vh - 90px);
-  height: 90%;
+  height: 100%;
   background-color: #55164f;
   position: fixed;
   overflow-y: auto;
