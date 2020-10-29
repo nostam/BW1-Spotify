@@ -96,13 +96,14 @@
 
         <div class='albums-holder col-9' style='padding: 0px !important;'>
             <!-- albums section -->
-            <section style='overflow-y: auto;'>
-
+            <section style='overflow-y: auto;' id='albums-section'> <!--onscroll="addScrollEffect()"-->
 
               <!-- the header navigation -->
-                <div class='album-header'>
-                  <img src="https://img.icons8.com/ios/24/b3b3b3/less-than.png" class='arrow' />
-                  <img src="https://img.icons8.com/ios/24/b3b3b3/more-than.png" class='arrow' />
+                <div class='album-header' id='header'>
+                  <div class='arrow-container'>
+                    <img src="https://img.icons8.com/ios/24/b3b3b3/less-than.png" class='arrow' />
+                    <img src="https://img.icons8.com/ios/24/b3b3b3/more-than.png" class='arrow' />
+                  </div>
 
                   <div class='header-btns'>
 
@@ -127,11 +128,11 @@
 
                 <!-- the header image, title  -->
                 <div class='album row'>
-                  <div class='col-3'>
+                  <div class='col-12 col-md-3'>
                     <img class='album-cover img-fluid' src='assets/bohemian-rhapsody.jpg' alt='bohemian rhapsody' />
                   </div>
                   <!-- album-details -->
-                  <div class='album-details col-9' >
+                  <div class='album-details col-12 col-md-9' >
                     <h4>albums</h4>
                     <h2>bohemian rhapsody(the original soundtrack)</h2>
                     <div class='last-line'>
@@ -142,7 +143,7 @@
                   </div>
                 </div>
 
-                <!-- playlist holder -->
+                <!-- album playlist holder -->
                 <div class='playlist'>
                   <div class='playlist-btns'>
                     <img src="https://img.icons8.com/ios-glyphs/60/1DB954/circled-pause.png"/>
@@ -329,6 +330,7 @@
     </section> <!---player menu end-->
 
     <script src="script.js"></script>
+    
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
