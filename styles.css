@@ -624,6 +624,7 @@ aside {
   align-items: center;
   margin: auto 1rem;
   background-color: grey;
+  flex-shrink: 1;
 }
 #nowplayingProgress {
   width: var(--nowplaying-progress);
