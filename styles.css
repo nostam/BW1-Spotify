@@ -640,14 +640,18 @@ aside {
   display: inline-block;
   top: 50%;
   left: 50%;
+  opacity: 0;
+  color: #1db954;
   font-size: 1.1rem;
   transform: translate(-50%, -48%);
+  cursor: pointer;
 }
-.player-albumart .fas.fa-heart:hover {
+.player-albumart .fas.fa-heart:hover,
+.player-albumart .fas.fa-heart:active {
   opacity: 1;
-  color: #1db954;
 }
-.player-albumart .far.fa-heart:hover {
+.player-albumart .far.fa-heart:hover,
+.player-albumart .far.fa-heart:active {
   opacity: 0;
 }
 .fa-play:hover,
