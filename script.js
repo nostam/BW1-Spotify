@@ -8,4 +8,22 @@ window.onload = function () {
     console.log(newItem);
     list.insertBefore(newItem, list.firstElementChild);
   });
+
+  let heartOutline = document.querySelector(".loved-track .far.fa-heart");
+  let heartFilled = document.querySelector(".loved-track .fas.fa-heart");
+  heartFilled.addEventListener("click", function () {
+    if (!heartFilled.classList.contains("active")) {
+      heartFilled.classList.toggle("active");
+      console.log(heartFilled.classList);
+      console.log("henshi");
+      heartFilled.style.opacity = 1;
+      heartOutline.style.opacity = 0;
+    } else {
+      heartFilled.classList.toggle("active");
+      console.log(heartFilled.classList);
+      console.log("henshi");
+      heartFilled.style.opacity = 0;
+      heartOutline.style.opacity = 1;
+    }
+  });
 };
