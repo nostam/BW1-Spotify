@@ -964,11 +964,11 @@ li {
     display: flex;
     padding-top: 2rem;
   }
-  .menu ul li {
-    /* padding-top: 1rem; */
-    /* font-size: 1rem; */
-    margin-left: 0px;
-  }
+  /* .menu ul li { */
+  /* padding-top: 1rem; */
+  /* font-size: 1rem; */
+  /* margin-left: 0px;
+  } */
   /* .menu h6 {
     padding-left: 15px;
     margin-top: 1.3rem;
