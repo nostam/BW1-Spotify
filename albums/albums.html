@@ -161,21 +161,22 @@
                   <div class='playlist-table'>
                     <table class='table table-borderless'>
                       <thead>
-                        <tr>
+                        <tr">
                           <th scope="col th-sm">
                             <span># </span>
                           </th>
-                          <th scope="col th-lg" style='padding-left: 50px;'>Title</th>
+                          <th scope="col th-lg" style='padding-left: 50px;' >Title</th>
                           <th scope="col th-sm">
-                            <i class="far fa-clock"></i>
+                            <img src="https://img.icons8.com/ios/24/b3b3b3/alarm-clock.png"/>
                           </th>
                           <div style="border-bottom: 1px solid #b3b3b3; width: 90%;"></div>
                         </tr>
                       </thead>
                       <tbody>
+                          <tr  onclick="printInnerText(this)">
                           <th scope="row" style='vertical-align: middle;'>
-                            <span class='track-num'># </span>
-                              <i class="track-play fas fa-play"></i>
+                            <span class='track-num'>1 </span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" onclick="printInnerText()" class='track-play play-track-btn'/>
                           </th>
                           <td>
                             <ul>
@@ -184,161 +185,178 @@
                             </ul>
                           </td>
                           <td style='vertical-align: middle;'>
-                            <i class="track-heart heart far fa-heart"></i>
-                            0:25
-                            <i class=" track-dots fa fa-ellipsis-h fa-sm"></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row" style='vertical-align: middle;'>
-                            <span class='track-num'># </span>
-                            <i class="track-play fas fa-play"></i>
-                          </th>
-                          <td>
-                            <ul>
-                              <li class='song'>20th Centry Fox Fanfare</li>
-                              <li class='group'>Queen</li>
-                            </ul>
-                          </td>
-                          <td style='vertical-align: middle;'>
                             <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
                             0:25
                             <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
                           </td>
                         </tr>
-                        <tr>
+                        <tr onclick="printInnerText(this)">
                           <th scope="row" style='vertical-align: middle;'>
-                            <span class='track-num'># </span>
-                            <i class="track-play fas fa-play"></i>
+                            <span class='track-num'>2 </span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play play-track-btn'/>
                           </th>
                           <td>
                             <ul>
-                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='song' id='song'>Somebody to love - 2011 MIX</li>
                               <li class='group'>Queen</li>
                             </ul>
                           </td>
                           <td style='vertical-align: middle;'>
                             <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
-                            0:25
+                            4:55
                             <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
                           </td>
                         </tr>
-                        <tr>
+                        <tr onclick="printInnerText(this)">
                           <th scope="row" style='vertical-align: middle;'>
-                            <span class='track-num'># </span>
-                            <i class="track-play fas fa-play"></i>
+                            <span class='track-num'>3 </span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play play-track-btn'/>
                           </th>
                           <td>
                             <ul>
-                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='song'>Doing All Right - ...Revisited</li>
                               <li class='group'>Queen</li>
                             </ul>
                           </td>
                           <td style='vertical-align: middle;'>
                             <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
-                            0:25
+                            3:16
                             <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
                           </td>
                         </tr>
-                        <tr>
+                        <tr onclick="printInnerText(this)">
                           <th scope="row" style='vertical-align: middle;'>
-                            <i class="track-num fas fa-hashtag"></i>
-                            <i class="track-play fas fa-play"></i>
+                            <span class='track-num'>4 </span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play play-track-btn'/>
                           </th>
                           <td>
                             <ul>
-                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='song'>Keep Yourself Alive - Live At The Rainbow</li>
                               <li class='group'>Queen</li>
                             </ul>
                           </td>
                           <td style='vertical-align: middle;'>
                             <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
-                            0:25
+                            3:56
                             <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
                           </td>
                         </tr>
-                        <tr>
+                        <tr onclick="printInnerText(this)">
                           <th scope="row" style='vertical-align: middle;'>
-                            <i class="track-num fas fa-hashtag"></i>
-                            <i class="track-play fas fa-play"></i>
+                            <span class='track-num'>5</span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play play-track-btn'/>
                           </th>
                           <td>
                             <ul>
-                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='song'>Killer Queen - 2011 Mix</li>
                               <li class='group'>Queen</li>
                             </ul>
                           </td>
                           <td style='vertical-align: middle;'>
                             <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
-                            0:25
+                            2:58
                             <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
                           </td>
                         </tr>
-                        <tr>
+                        <tr onclick="printInnerText(this)">
                           <th scope="row" style='vertical-align: middle;'>
-                            <i class="track-num fas fa-hashtag"></i>
-                            <i class="track-play fas fa-play"></i>
+                            <span class='track-num'>6 </span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play play-track-btn'/>
                           </th>
                           <td>
                             <ul>
-                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='song'>Bohemian Rhapsody - 2011 Mix</li>
                               <li class='group'>Queen</li>
                             </ul>
                           </td>
                           <td style='vertical-align: middle;'>
                             <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
-                            0:25
+                            5:54
                             <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
                           </td>
                         </tr>
-                        <tr>
+                        <tr onclick="printInnerText(this)">
                           <th scope="row" style='vertical-align: middle;'>
-                            <i class="track-num fas fa-hashtag"></i>
-                            <i class="track-play fas fa-play"></i>
+                            <span class='track-num'>7</span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play play-track-btn'/>
                           </th>
                           <td>
                             <ul>
-                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='song'>Love Of My Life - Live At Rock In Rio</li>
                               <li class='group'>Queen</li>
                             </ul>
                           </td>
                           <td style='vertical-align: middle;'>
                             <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
-                            0:25
+                            4:28
                             <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
                           </td>
                         </tr>
-                        <tr>
+                        <tr onclick="printInnerText(this)">
                           <th scope="row" style='vertical-align: middle;'>
-                            <i class="track-num fas fa-hashtag"></i>
-                            <i class="track-play fas fa-play"></i>
+                            <span class='track-num'>8</span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play play-track-btn'/>
                           </th>
                           <td>
                             <ul>
-                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='song'>We Will Rock You - Movie Mix</li>
                               <li class='group'>Queen</li>
                             </ul>
                           </td>
                           <td style='vertical-align: middle;'>
                             <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
-                            0:25
+                            2:09
                             <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
                           </td>
                         </tr>
-                        <tr>
+                        <tr onclick="printInnerText(this)">
                           <th scope="row" style='vertical-align: middle;'>
-                            <i class="track-num fas fa-hashtag"></i>
-                            <i class="track-play fas fa-play"></i>
+                            <span class='track-num'>9</span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play play-track-btn'/>
                           </th>
                           <td>
                             <ul>
-                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='song'>Another One Bites The Dust</li>
                               <li class='group'>Queen</li>
                             </ul>
                           </td>
                           <td style='vertical-align: middle;'>
                             <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
-                            0:25
+                            3:34
+                            <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
+                          </td>
+                        </tr>
+                        <tr onclick="printInnerText(this)">
+                          <th scope="row" style='vertical-align: middle;'>
+                            <span class='track-num'>10</span>
+                            <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play play-track-btn'/>
+                          </th>
+                          <td>
+                            <ul>
+                              <li class='song'>I Want To Break Free </li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td style='vertical-align: middle;'>
+                            <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
+                            3:43
+                            <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
+                          </td>
+                        </tr>
+                        <tr onclick="printInnerText(this)">
+                          <th scope="row" style='vertical-align: middle;'>
+                            <span class='track-num'>11</span>
+                            <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play play-track-btn'/>
+                          </th>
+                          <td>
+                            <ul>
+                              <li class='song'>Bohemian Rhapsody - Live Aid</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td style='vertical-align: middle;'>
+                            <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
+                            2:27
                             <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
                           </td>
                         </tr>
@@ -418,7 +436,7 @@
         class="player-albumart d-flex align-items-center justify-content-start"
       >
         <div class="nowplaying-albumart mx-3">
-          <img src="http://placehold.it/64x64" />
+          <img src="../assets/bohemian-rhapsody.jpg" />
         </div>
         <div class="d-none d-sm-flex flex-column text-left mr-4">
           <div class="nowplaying-title">Now playing title</div>
@@ -469,6 +487,8 @@
     </section>
     <!---player menu end-->
     <script src="script.js"></script>
+    <script src="./js/player.js"></script>
+    <script src='playSong.js'></script>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script

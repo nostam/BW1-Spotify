@@ -1002,3 +1002,8 @@ li {
     transition: 300ms ease-in-out;
   }
 }
+
+/* active class for music track */
+.active-track{
+  color: limegreen;
+}
