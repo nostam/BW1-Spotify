@@ -603,6 +603,7 @@ li {
 .d-none.d-md-flex.column.artist-pg-follow-btn:hover {
   background-color: limegreen;
   color: white;
+  border: 1px solid limegreen;
   box-shadow: 4px 4px 16px rgba(114, 113, 113, 0.3);
 }
 
