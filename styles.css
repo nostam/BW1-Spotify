@@ -410,7 +410,8 @@ aside {
 
 
   .menu h6 .nav-tabs .nav-item.show .nav-link,
-  .nav-tabs .nav-link {
+  .nav-tabs .nav-link,
+  .main-content .dropdown-toggle {
     background-color: transparent;
     border: 0px;
     font-size: 10px;
@@ -641,6 +642,32 @@ h3.index-headings {
   border-bottom: none;
 }
 
+.dropdown-menu {
+  background-color: rgba(245, 245, 245, 0.788);
+  border-radius: 2px;
+}
+
+.dropdown-menu > .dropdown-item {
+  font-size: 10px;
+  justify-self: center;
+}
+
+.dropdown-item:after {
+  display: block;
+  content: "";
+  margin-bottom: 10px;
+  border-bottom: solid 2px limegreen;
+  transform: scaleX(0);
+  transition: 300ms ease-in-out;
+}
+
+.dropdown-item:hover:after {
+  transform: scaleX(0.5);
+}
+
+button:focus {
+  outline: none !important;
+}
 .card .spotify-card-icon {
   position: absolute;
   top: 5px;
