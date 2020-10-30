@@ -836,7 +836,7 @@ li {
     height: 10px;
   } */
   .playlists p {
-    font-size: 0.6rem;
+    /* font-size: 0.6rem; */
     margin-left: 15px;
   }
   .albums-holder {
@@ -849,8 +849,8 @@ li {
     overflow-y: auto;
   }*/
   aside {
-    max-width: 30%;
-    /* width: 100%; */
+    max-width: 232px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     position: fixed;
