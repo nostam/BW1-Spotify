@@ -596,8 +596,8 @@ li {
   z-index: 1000;
   position: absolute;
   left: -10px;
-  bottom: 0px;
-  height: 33px;
+  bottom: -5px;
+  height: 150%;
   width: 2.5px;
 }
 
@@ -612,7 +612,7 @@ li {
 }
 .menu .col > a {
   display: flex;
-  align-content: center;
+  align-items: center;
 }
 .menu .col > a > img {
   width: 20px;
