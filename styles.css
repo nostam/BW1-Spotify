@@ -209,7 +209,12 @@ aside {
 .install-btn > a:hover {
   color: white;
 }
-
+.login-button-index a{
+  color: #fff;
+}
+.login-button-index a:hover{
+  color: #000;
+}
 .login-button-index {
   max-width: 400px;
   width: 90%;
@@ -253,7 +258,7 @@ aside {
   width: 100%;
   background-color: black;
   text-align: center;
-  bottom: 110px;
+  bottom: 120px;
 }
 .install-btn {
   padding-top: 1.25rem;
@@ -339,7 +344,7 @@ aside {
     height: 220px;
     overflow-y: auto;
   } */
-  
+
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -706,6 +711,15 @@ h3.index-headings {
   z-index: 999;
 }
 
+h6 > a {
+  text-decoration: none;
+  color: white;
+}
+
+h6 > a:hover {
+  text-decoration: none;
+  color: limegreen;
+}
 .container,
 .container-fluid,
 .container-lg,
@@ -866,11 +880,27 @@ h3.index-headings {
   background-color: #808080;
   border-radius: 2px;
 }
+.player-volume #nowplayingVolume:hover,
 .player-volume .fas.fa-volume-up:hover + #nowplayingVolume,
 .player-volume .fas.fa-volume-mute:hover + #nowplayingVolume {
   background-color: #1db954;
 }
-
+#nowplayingVolume:hover::before{
+  content: " ";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 3rem;
+  position: absolute;
+  color: #b3b3b3;
+  background-color: #b3b3b3;
+  top: 50%;
+  right:0;
+  transform: translate(150%, -50%);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  left: var(--nowplaying-progress);
+  z-index: 1;
+}
 .player-volume .fas.fa-volume-mute {
   position: absolute;
   z-index: 10002;

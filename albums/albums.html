@@ -28,287 +28,383 @@
     ></script>
     <!-- My CSS -->
     <!-- <link rel="stylesheet" href="styles.css" /> -->
-    <link rel="stylesheet" href="albums.css" />
+    <link rel='stylesheet' href='albums.css' />
     <title>Albums</title>
+    <script src='script.js'></script>
   </head>
   <body>
-    <div class="row">
-      <div class="col-3">
-        <aside>
-          <div>
-            <img src="../assets/logo.png" alt="logo" class="logo" />
-          </div>
-          <div class="menu">
-            <ul>
-              <li>
-                <a href="#"> <i class="fas fa-home fa-lg"></i>Home</a>
-              </li>
-              <li>
-                <a href="#"> <i class="fas fa-search fa-lg"></i>Search</a>
-              </li>
-              <li>
-                <a href="#"> <i class="fas fa-book fa-lg"></i>Your library</a>
-              </li>
-            </ul>
-            <h6>PLAYLISTS</h6>
-            <ul>
-              <li>
-                <a href="#">
-                  <img src="https://img.icons8.com/ios/25/b3b3b3/plus.png" />
-                  Create playlist</a
-                >
-              </li>
-              <li>
-                <a href="#">
-                  <img src="https://img.icons8.com/ios/25/b3b3b3/like.png" />
-                  Liked Songs</a
-                >
-              </li>
-            </ul>
-            <hr />
-            <div class="list-container">
-              <div class="playlists">
-                <p>#playlist 1</p>
-                <p>#playlist 2</p>
-                <p>#playlist 3</p>
-                <p>#playlist 4</p>
-                <p>#playlist 5</p>
-                <p>#playlist 4</p>
-                <p>#playlist 5</p>
-                <p>#playlist 5</p>
-                <p>#playlist 4</p>
-                <p>#playlist 0</p>
-              </div>
-            </div>
-            <div class="stick-to-bottom">
-              <div class="install-btn">
-                <a href="#">
-                  <i class="fas fa-arrow-circle-down fa-lg"></i> Install</a
-                >
-              </div>
-            </div>
-          </div>
-        </aside>
+
+    <!-- side menu -->
+    <aside>
+      <div>
+        <img src="../assets/logo.png" alt="logo" class="logo" />
       </div>
-      <!-- /col-->
-
-      <div class="albums-holder col-9" style="padding: 0px !important">
-        <!-- albums section -->
-        <section style="overflow-y: auto" id="albums-section">
-          <!--onscroll="addScrollEffect()"-->
-
-          <!-- the header navigation -->
-          <div class="album-header" id="header">
-            <div class="arrow-container">
-              <img
-                src="https://img.icons8.com/ios/24/b3b3b3/less-than.png"
-                class="arrow"
-              />
-              <img
-                src="https://img.icons8.com/ios/24/b3b3b3/more-than.png"
-                class="arrow"
-              />
+      <div class="menu d-flex column justify-content-start align-items-center">
+            <div class="col">
+              <a href="#"> <i class="fas fa-home fa-lg"></i>Home</a>
             </div>
+          </div>
+          <div class="menu d-flex column justify-content-start align-items-center">
+            <div class="col">
+              <a href="#"> <i class="fas fa-search fa-lg"></i>Search</a>
+            </div>
+          </div>
+          <div class="menu d-flex column justify-content-start align-items-center">
 
-            <div class="header-btns">
-              <button
-                class="upgrade-btn"
-                value="upgrade"
-                style="margin-right: 20px"
-              >
-                UPGRADE
-              </button>
+            <div class="col">
+              <a href="#"> <i class="fas fa-book fa-lg"></i>Your library</a>
+            </div>
+          </div>
+          <br>
+          <br>
 
-              <div class="dropdown">
-                <button
-                  class="profile-btn dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <span class="user-icon">
-                    <img
-                      src="https://img.icons8.com/small/16/ffffff/user.png"
-                    />
-                  </span>
-                  User
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Acount</a>
-                  <a class="dropdown-item" href="#">Profile</a>
-                  <a class="dropdown-item" href="#">Log-out</a>
+          <div class="menu d-flex column justify-content-start align-items-center">
+          <div class="col">
+            <a href="#">
+              <img src="https://img.icons8.com/ios/25/b3b3b3/plus.png" />Create playlist</a
+            >
+          </div>
+        </div>
+        <div class="menu d-flex column justify-content-start align-items-center">
+        <div class="col">
+          <a href='#'>
+            <img src="https://img.icons8.com/ios/25/b3b3b3/like.png"/>Liked Songs</a>
+        </div>
+      </div>
+
+
+        </div>
+
+      <hr />
+
+        <div class='playlists'>
+          <p>#playlist 1</p>
+          <p>#playlist 2</p>
+          <p>#playlist 3</p>
+          <p>#playlist 4</p>
+          <p>#playlist 5</p>
+          <p>#playlist 4</p>
+          <p>#playlist 5</p>
+          <p>#playlist 5</p>
+          <p>#playlist 4</p>
+          <p>#playlist 5</p>
+        </div>
+
+          <ul class='stick-to-bottom install-btn'>
+            <li><a href='#'> <i class="fas fa-arrow-circle-down"></i> Install</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <div class='row'>
+
+        <div class='albums-holder col-9' style='padding: 0px !important;'>
+            <!-- albums section -->
+            <section style='overflow-y: auto;' id='albums-section'> <!--onscroll="addScrollEffect()"-->
+
+              <!-- the header navigation -->
+                <div class='album-header' id='header'>
+                  <div class='arrow-container'>
+                    <a href='#'><img src="https://img.icons8.com/ios/24/b3b3b3/less-than.png" class='arrow' /></a>
+                    <a href='#'><img src="https://img.icons8.com/ios/24/b3b3b3/more-than.png" class='arrow disabled' /></a>
+                  </div>
+
+                  <div class='header-btns'>
+
+                    <button class='upgrade-btn' value='upgrade' style='margin-right: 20px;'>UPGRADE</button>
+
+                    <div class="dropdown">
+                      <button class="profile-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class='user-icon'>
+                          <img src="https://img.icons8.com/small/16/ffffff/user.png"/>
+                        </span>
+                        User
+                      </button>
+                      <div class="dropdown-menu" style='background: black; color: white;' aria-labelledby="dropdownMenuButton" >
+                        <a class="dropdown-item" style='background: black; color: white;' href="#">Acount</a>
+                        <a class="dropdown-item" style='background: black; color: white;' href="#">Profile</a>
+                        <a class="dropdown-item" style='background: black; color: white;' href="#">Log-out</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div> <!-- buttons holder -->
+
+                <!-- the header image, title  -->
+                <div class='album row'>
+                  <div class='col-12 col-md-6 col-lg-4'>
+                    <img class='album-cover img-fluid' src='../assets/bohemian-rhapsody.jpg' alt='bohemian rhapsody' />
+                  </div>
+                  <!-- album-details -->
+                  <div class='album-details col-12 col-md-6 col-lg-8' >
+                    <h4>albums</h4>
+                    <h2>bohemian rhapsody(the original soundtrack)</h2>
+                    <div class='last-line'>
+                      <img src='../assets/queen.jpg' alt='queen' class='group-img'>
+                      <a href='../artist-page.html' class='group-name'>Queen</a>
+                      <p class='album-length'> - 2018 - 22 songs, 1 hr 19 min</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <!-- buttons holder -->
 
-          <!-- the header image, title  -->
-          <div class="album row">
-            <div class="col-12 col-md-6 col-lg-4">
-              <img
-                class="album-cover img-fluid"
-                src="../assets/bohemian-rhapsody.jpg"
-                alt="bohemian rhapsody"
-              />
-            </div>
-            <!-- album-details -->
-            <div class="album-details col-12 col-md-6 col-lg-8">
-              <h4>albums</h4>
-              <h2>bohemian rhapsody(the original soundtrack)</h2>
-              <div class="last-line">
-                <img src="../assets/queen.jpg" alt="queen" class="group-img" />
-                <a href="#" class="group-name">Queen</a>
-                <p class="album-length">- 2018 - 22 songs, 1 hr 19 min</p>
-              </div>
-            </div>
-          </div>
+                <!-- album playlist holder -->
+                <div class='playlist'>
+                  <div class='playlist-btns'>
+                    <img src="https://img.icons8.com/ios-glyphs/60/1DB954/circled-pause.png"/>
+                    <img src="https://img.icons8.com/ios/40/b3b3b3/like.png"/>
+                    <img src="https://img.icons8.com/material/40/b3b3b3/more--v1.png"/>
+                  </div>
+                  <div class='playlist-table'>
+                    <table class='table table-borderless'>
+                      <thead>
+                        <tr>
+                          <th scope="col th-sm">
+                            <span># </span>
+                          </th>
+                          <th scope="col th-lg" style='padding-left: 50px;'>Title</th>
+                          <th scope="col th-sm">
+                            <img src="https://img.icons8.com/ios/24/b3b3b3/alarm-clock.png"/>
+                          </th>
+                          <div style="border-bottom: 1px solid #b3b3b3; width: 90%;"></div>
+                        </tr>
+                      </thead>
+                      <tbody>
+                          <th scope="row" style='vertical-align: middle;'>
+                            <span class='track-num'># </span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play'/>
+                          </th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group' style='vertical-align: middle;'>Queen</li>
+                            </ul>
+                          </td>
+                          <td style='vertical-align: middle;'>
+                            <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
+                            0:25
+                            <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" style='vertical-align: middle;'>
+                            <span class='track-num'># </span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play'/>
+                          </th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td style='vertical-align: middle;'>
+                            <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
+                            0:25
+                            <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" style='vertical-align: middle;'>
+                            <span class='track-num'># </span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play'/>
+                          </th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td style='vertical-align: middle;'>
+                            <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
+                            0:25
+                            <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" style='vertical-align: middle;'>
+                            <span class='track-num'># </span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play'/>
+                          </th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td style='vertical-align: middle;'>
+                            <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
+                            0:25
+                            <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" style='vertical-align: middle;'>
+                            <span class='track-num'># </span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play'/>
+                          </th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td style='vertical-align: middle;'>
+                            <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
+                            0:25
+                            <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" style='vertical-align: middle;'>
+                            <span class='track-num'># </span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play'/>
+                          </th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td style='vertical-align: middle;'>
+                            <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
+                            0:25
+                            <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" style='vertical-align: middle;'>
+                            <span class='track-num'># </span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play'/>
+                          </th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td style='vertical-align: middle;'>
+                            <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
+                            0:25
+                            <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" style='vertical-align: middle;'>
+                            <span class='track-num'># </span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play'/>
+                          </th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td style='vertical-align: middle;'>
+                            <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
+                            0:25
+                            <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" style='vertical-align: middle;'>
+                            <span class='track-num'># </span>
+                              <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play'/>
+                          </th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td style='vertical-align: middle;'>
+                            <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
+                            0:25
+                            <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" style='vertical-align: middle;'>
+                            <span class='track-num'># </span>
+                            <img src="https://img.icons8.com/android/16/b3b3b3/play.png" class='track-play'/>
+                          </th>
+                          <td>
+                            <ul>
+                              <li class='song'>20th Centry Fox Fanfare</li>
+                              <li class='group'>Queen</li>
+                            </ul>
+                          </td>
+                          <td style='vertical-align: middle;'>
+                            <img src="https://img.icons8.com/ios/15/b3b3b3/like.png" class='track-heart'/>
+                            0:25
+                            <img src="https://img.icons8.com/material/15/b3b3b3/more--v1.png" class='track-dots'/>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class='playlist-footer'>
+                    &copy 2018 Queen Productions Ltd, under exclusive licence to Universal International Music BV<br>
+                    ℗ A Virgin Records Release; This Compilation ℗ 2018 Queen Productions Ltd, under exclusive licence to Universal International Music BV
+                  </p>
+                </div>
+            </section>
+        </div> <!-- /col-->
 
-          <!-- album playlist holder -->
-          <div class="playlist">
-            <div class="playlist-btns">
-              <img
-                src="https://img.icons8.com/ios-glyphs/60/1DB954/circled-pause.png"
-              />
-              <img src="https://img.icons8.com/ios/40/b3b3b3/like.png" />
-              <img
-                src="https://img.icons8.com/material/40/b3b3b3/more--v1.png"
-              />
-            </div>
-            <div class="playlist-table">
-              <table class="table table-borderless">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col" style="padding-left: 50px">Title</th>
-                    <th scope="col">
-                      <img
-                        src="https://img.icons8.com/ios/24/b3b3b3/alarm-clock.png"
-                      />
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row" style="vertical-align: middle">1</th>
-                    <td>
-                      <ul>
-                        <li class="song">20th Centry Fox Fanfare</li>
-                        <li class="group" style="vertical-align: middle">
-                          Queen
-                        </li>
-                      </ul>
-                    </td>
-                    <td style="vertical-align: middle">0:25</td>
-                  </tr>
-                  <tr>
-                    <th scope="row" style="vertical-align: middle">1</th>
-                    <td>
-                      <ul>
-                        <li class="song">20th Centry Fox Fanfare</li>
-                        <li class="group">Queen</li>
-                      </ul>
-                    </td>
-                    <td style="vertical-align: middle">0:25</td>
-                  </tr>
-                  <tr>
-                    <th scope="row" style="vertical-align: middle">1</th>
-                    <td>
-                      <ul>
-                        <li class="song">20th Centry Fox Fanfare</li>
-                        <li class="group">Queen</li>
-                      </ul>
-                    </td>
-                    <td style="vertical-align: middle">0:25</td>
-                  </tr>
-                  <tr>
-                    <th scope="row" style="vertical-align: middle">1</th>
-                    <td>
-                      <ul>
-                        <li class="song">20th Centry Fox Fanfare</li>
-                        <li class="group">Queen</li>
-                      </ul>
-                    </td>
-                    <td style="vertical-align: middle">0:25</td>
-                  </tr>
-                  <tr>
-                    <th scope="row" style="vertical-align: middle">1</th>
-                    <td>
-                      <ul>
-                        <li class="song">20th Centry Fox Fanfare</li>
-                        <li class="group">Queen</li>
-                      </ul>
-                    </td>
-                    <td style="vertical-align: middle">0:25</td>
-                  </tr>
-                  <tr>
-                    <th scope="row" style="vertical-align: middle">1</th>
-                    <td>
-                      <ul>
-                        <li class="song">20th Centry Fox Fanfare</li>
-                        <li class="group">Queen</li>
-                      </ul>
-                    </td>
-                    <td style="vertical-align: middle">0:25</td>
-                  </tr>
-                  <tr>
-                    <th scope="row" style="vertical-align: middle">1</th>
-                    <td>
-                      <ul>
-                        <li class="song">20th Centry Fox Fanfare</li>
-                        <li class="group">Queen</li>
-                      </ul>
-                    </td>
-                    <td style="vertical-align: middle">0:25</td>
-                  </tr>
-                  <tr>
-                    <th scope="row" style="vertical-align: middle">1</th>
-                    <td>
-                      <ul>
-                        <li class="song">20th Centry Fox Fanfare</li>
-                        <li class="group">Queen</li>
-                      </ul>
-                    </td>
-                    <td style="vertical-align: middle">0:25</td>
-                  </tr>
-                  <tr>
-                    <th scope="row" style="vertical-align: middle">1</th>
-                    <td>
-                      <ul>
-                        <li class="song">20th Centry Fox Fanfare</li>
-                        <li class="group">Queen</li>
-                      </ul>
-                    </td>
-                    <td style="vertical-align: middle">0:25</td>
-                  </tr>
-                  <tr>
-                    <th scope="row" style="vertical-align: middle">1</th>
-                    <td>
-                      <ul>
-                        <li class="song">20th Centry Fox Fanfare</li>
-                        <li class="group">Queen</li>
-                      </ul>
-                    </td>
-                    <td style="vertical-align: middle">0:25</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="playlist-footer">
-              &copy 2018 Queen Productions Ltd, under exclusive licence to
-              Universal International Music BV<br />
-              ℗ A Virgin Records Release; This Compilation ℗ 2018 Queen
-              Productions Ltd, under exclusive licence to Universal
-              International Music BV
-            </p>
-          </div>
-        </section>
+    </div> <!--row-->
+
+  <!-- player menu
+    <section class="player d-flex justify-content-between" style='width: 100%; position: fixed;'>
+      <div
+        class="player-albumart d-flex align-items-center justify-content-start"
+      >
+      <div class="nowplaying-albumart mx-3">
+        <img src="http://placehold.it/64x64" />
       </div>
-      <!-- /col-->
+      <div class="d-flex flex-column text-left mr-4">
+        <div class="nowplaying-title">Nowplaying title</div>
+        <div class="nowplaying-artist">Nowplaying artist</div>
+      </div>
+      <div class="loved-track mr-3">
+        <i class="far fa-heart"></i>
+        <i class="fas fa-heart"></i>
+      </div>
+      <i class="fas fa-chalkboard"></i>
     </div>
-    <!--row-->
+      </div>
+
+      <div class="d-flex flex-column py-2 my-1 flex-grow-1">
+        <div
+          class=".player-btn d-flex align-items-center justify-content-center player-controller my-1 py-1"
+        >
+          <i class="fas fa-random fa-md mx-3"></i>
+          <i class="fas fa-step-backward fa-md mx-3"></i>
+          <div class="fa-lg">
+            <i class="fas fa-play fa-md mx-3"></i>-->
+            <!-- <i class="fas fa-pause fa-2x></i>
+          </div>
+          <i class="fas fa-step-forward fg-md mx-3"></i>
+          <i class="fas fa-redo-alt fg-md mx-3"></i>
+        </div>
+        <div
+          class="d-flex flex-row justify-content-between player-nowplaying position-relative"
+        >
+          <div class="player-nowplaying-time">18:32</div>
+          <div class="player-progress">
+            <div id="nowplayingProgress"></div>
+          </div>
+          <div class="player-totaltime">24:42</div>
+        </div>
+      </div>
+      <div class="player-setting d-flex align-items-center justify-content-end">
+        <i class="fas fa-list-ol fa-md mx-2"></i>
+        <i class="fas fa-laptop-house fa-md mx-2"></i>
+        <div class="player-volume">
+          <i class="fas fa-volume-up fa-md mx-2"></i>
+          <div id="nowplayingVolume"></div>
+        </div>-->
+        <!--fa-volume-down fa-volume-mute
+      </div>
+    </section> --><!---player menu end-->
 
     <!-- player menu -->
     <section
@@ -369,7 +465,6 @@
       </div>
     </section>
     <!---player menu end-->
-
     <script src="script.js"></script>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

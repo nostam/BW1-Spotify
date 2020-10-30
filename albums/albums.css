@@ -34,10 +34,10 @@
   position: fixed;
   width: 100%;
   z-index: 44444444444444444;
-  background-color:  #55164f;
+  background-color: #55164f;
   height: 60px;
 }
-.arrow-container{
+.arrow-container {
   position: fixed;
   z-index: 222222222;
 }
@@ -192,6 +192,49 @@
 th {
   padding-top: 25px;
 }
+.arrow.disabled:hover {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.track-play {
+  display: none;
+}
+.track-heart,
+.track-dots {
+  padding: 5px;
+  padding-bottom: 10px;
+  display: none;
+}
+.playlist-table tr {
+  background-color: transparent;
+  transition-property: background-color;
+  transition-duration: 5s;
+  transition-delay: 2s;
+}
+.playlist-table tr:hover::after {
+  color: white !important;
+  border-radius: 4px;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 75vw;
+  height: 4.1rem;
+  left: 1vw;
+  background-color: #50505050;
+  transition-delay: 2s !important;
+}
+tr:hover .track-num {
+  display: none;
+}
+tr:hover .track-play {
+  padding-bottom: 10px;
+  display: inline;
+  cursor: pointer;
+}
+/* tr:hover .track-heart, tr:hover .track-dots{
+   display: inline; 
+} */
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .arrow {
@@ -222,6 +265,12 @@ th {
   }
   .album {
     height: 400px;
+  }
+  .playlist-table tr:hover::after {
+    position: absolute;
+    width: 98%;
+    height: 8rem;
+    left: 0vw;
   }
 }
 
@@ -256,8 +305,18 @@ th {
   .album {
     height: 430px;
   }
+  .playlist-table tr:hover::after {
+    width: 98%;
+    height: 7.1rem;
+  }
 }
-
+/* playlist hover only */
+@media only screen and (min-width: 655px) {
+  .playlist-table tr:hover::after {
+    width: 98%;
+    height: 5rem;
+  }
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .arrow {
@@ -289,23 +348,31 @@ th {
   .album {
     height: 430px;
   }
-  .album-cover{
+  .album-cover {
     margin-top: 150px;
   }
-  .album-details{
+  .album-details {
     margin-top: -90px;
     padding-top: 0px;
+  }
+  .playlist-table tr:hover::after {
+    width: 90%;
+    height: 5rem;
+    left: 5%;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .album-cover{
+  .album-cover {
     margin-top: 10px;
   }
-  .album-details{
+  .album-details {
     margin-top: -90px;
     padding-top: 0px;
+  }
+  .user-icon {
+    display: inline;
   }
   .arrow {
     background-color: rgba(0, 0, 0, 0.7);
@@ -405,35 +472,16 @@ th {
     height: 30px;
     border-radius: 50%;
   }
+  .playlist-table tr:hover::after {
+    width: 90%;
+    height: 4rem;
+    left: 3%;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*** global ***/
 
@@ -451,7 +499,6 @@ th {
 }
 
 /* body {
-
   z-index: 0;
   background: linear-gradient(
      */
@@ -500,8 +547,7 @@ aside {
 }
 .logo {
   width: auto;
-  height: 4em;
-  display: flex;
+  height: 4rem;
   padding-top: 2rem;
   margin-left: 2rem;
   margin-bottom: 1rem;
@@ -509,12 +555,13 @@ aside {
 
 .menu {
   font-size: 0.9rem;
-  height: 100%;
+  padding: 5%;
   display: flex;
   flex-direction: column;
 }
 .menu a {
   color: #b3b3b3;
+  margin-left: 3px;
   z-index: 1;
 }
 .menu a:hover {
@@ -523,7 +570,7 @@ aside {
   transition: 0.5s;
 }
 
-.menu ul {
+/* .menu ul {
   list-style-type: none;
   font-size: 0.9rem;
   margin-bottom: 0;
@@ -533,16 +580,41 @@ aside {
   align-content: flex-start;
   font-size: 0.9rem;
   margin: 1rem auto;
+
+} */
+
+li {
+  list-style: none;
 }
-.menu ul li > a > i {
+
+.menu .col:after {
+  display: inline-block;
+  content: "";
+  background-color: limegreen;
+  transform: scaleX(0);
+  transition: 300ms ease-in-out;
+  z-index: 1000;
+  position: absolute;
+  left: -10px;
+  bottom: -5px;
+  height: 150%;
+  width: 2.5px;
+}
+
+.menu .col:hover:after {
+  transform: scaleX(1);
+  z-index: 1000;
+}
+
+.menu > .col > a > i {
   /* fa fonts each icon have different width, aligning Home, Search, Your Library at the same line */
   width: 40px;
 }
-.menu ul li > a {
+.menu .col > a {
   display: flex;
-  align-content: center;
+  align-items: center;
 }
-.menu ul li > a > img {
+.menu .col > a > img {
   width: 20px;
   height: 20px;
   margin-right: 1rem;
@@ -565,18 +637,19 @@ aside {
   margin-bottom: 5px;
 }
 
-.menu li:active::after {
-  background: #afaeae50;
-  color: white !important;
-  border-radius: 4px;
+/* .menu col:active::after {
+  border-left: solid 2px limegreen;
   content: "";
   display: block;
   position: absolute;
   margin-top: -8px;
   margin-left: -8px;
-  height: 2.5em;
-  width: 180px;
-}
+
+  transform: scaleX(0);
+  transition: 300ms ease-in-out;
+  z-index: 1000;
+} */
+
 .menu li:hover a {
   color: #fff;
 }
@@ -599,16 +672,53 @@ aside {
   padding-bottom: 1rem;
 }
 .stick-to-bottom {
+  position: absolute;
   height: 60px;
-  width: 100%;
+  width: 232px;
   background-color: black;
   text-align: center;
+  bottom: -20px;
 }
 .install-btn {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+  padding-right: 20%;
+  padding-left: 20%;
 }
 
+.install-btn a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.install-btn a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.login-button-index {
+  max-width: 400px;
+  width: 90%;
+  padding: 0.75rem;
+  margin: 0.25rem;
+  margin-left: 12px;
+  margin-bottom: 10px;
+  color: #b3b3b3;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  border-radius: 2rem;
+  text-align: center;
+  border: 2px solid #b3b3b3;
+}
+
+.login-button-index:hover {
+  transition: 0.4s ease-in;
+  background-color: white;
+  border: 2px solid white;
+  color: black;
+  cursor: pointer;
+}
 /* scrollbar */
 /* The emerging W3C standard
    that is currently Firefox-only */
@@ -638,28 +748,46 @@ aside {
     height: 4rem;
     display: flex;
     padding-top: 0.5;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
   }
-  .menu ul li {
-    /* padding-top: 0.8rem; */
-    /* font-size: 0.5rem; */
-    /* margin-left: -3rem; */
+  /* .menu ul li {
+    padding-top: 0.8rem; 
+    font-size: 0.8rem; 
+    margin-left: -3rem; 
+    margin-top: -0.7rem;
   }
-  /* .menu h6 {
+  .menu h6 {
     padding-left: 15px;
-    margin-top: 1rem;
-    margin-bottom: 0.3rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
     font-size: 0.8rem;
-  }*/
+    margin-left: 10%;
+  }
   .menu ul a img {
     width: 10px;
     height: 10px;
+  } */
+  .playlists p {
+    font-size: 0.6rem;
+    margin-left: 15px;
+  }
+  .albums-holder {
+    max-width: 70%;
+    width: 70%;
+    left: 30%;
   }
   /* .playlists {
     height: 220px;
     overflow-y: auto;
   }*/
+  aside {
+    max-width: 30%;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -668,24 +796,22 @@ aside {
     height: 4rem;
     display: flex;
     padding-top: 0.5;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
   }
-  .menu ul li {
-    /* padding-top: 0.8rem; */
-    /* font-size: 0.5rem; */
-    /* margin-left: -3rem; */
-  }
+  /* .menu ul li { */
+  /* padding-top: 0.8rem; */
+  /* font-size: 0.5rem; */
+  /* margin-left: -3rem; */
+  /* } */
   /* .menu h6 {
     padding-left: 15px;
     margin-top: 1rem;
     margin-bottom: 0.3rem;
     font-size: 0.8rem;
   }*/
-  .menu ul a img {
+  /* .menu ul a img {
     width: 20px;
     height: 20px;
-  }
+  } */
   /* .playlists {
     height: 220px;
     overflow-y: auto;
@@ -724,14 +850,12 @@ aside {
     height: 4rem;
     display: flex;
     padding-top: 0.5;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
   }
-  .menu ul li {
-    /* padding-top: 0.8rem; */
-    /* font-size: 0.8rem; */
-    /* margin-left: -25px; */
-  }
+  /* .menu ul li {
+    padding-top: 0.8rem;
+    font-size: 0.8rem; 
+     margin-left: -25px;
+  } */
   /* .menu h6 {
     padding-left: 15px;
     margin-top: 3rem;
@@ -770,8 +894,6 @@ aside {
     height: 4rem;
     display: flex;
     padding-top: 2rem;
-    margin-bottom: 1em;
-    margin-left: 2rem;
   }
   .menu ul li {
     /* padding-top: 1rem; */
