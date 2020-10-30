@@ -211,7 +211,6 @@ li {
   color: white;
 }
 
-
 /* scrollbar */
 
 .playlists {
@@ -564,7 +563,7 @@ li {
 }
 
 .d-none.d-md-flex.column .artist-pg-play-btn,
-.d-none.d-md-flex.column .artist-pg-follow-btn{
+.d-none.d-md-flex.column .artist-pg-follow-btn {
   width: 150px;
   padding: 0.75rem;
   margin: 0.25rem;
@@ -578,7 +577,7 @@ li {
   cursor: pointer;
   display: inline-block;
 }
-  /* color: white;
+/* color: white;
   padding: 10px 20px;
   text-align: center;
   justify-content: center;
@@ -590,8 +589,7 @@ li {
   font-size: 12px;
   letter-spacing: 0.2em; */
 
-  /* font-weight: 300px; */
-}
+/* font-weight: 300px; */
 
 .artist-pg-play-btn:hover,
 .artist-pg-follow-btn:hover {
@@ -603,7 +601,7 @@ li {
 }
 
 .d-none.d-md-flex.column .artist-pg-play-btn:hover,
-.d-none.d-md-flex.column.artist-pg-follow-btn:hover {
+.d-none.d-md-flex.column .artist-pg-follow-btn:hover {
   background-color: limegreen;
   border: 1px solid limegreen;
   color: white;
