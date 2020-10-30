@@ -1006,6 +1006,10 @@ li {
   }
 }
 
+.fa-clock {
+  color: whitesmoke;
+}
+
 /* active class for music track */
 .active-track {
   color: limegreen;
