@@ -209,29 +209,7 @@ li {
   color: white;
 }
 
-.login-button-index {
-  max-width: 400px;
-  width: 90%;
-  padding: 0.75rem;
-  margin: 0.25rem;
-  margin-left: 12px;
-  margin-bottom: 10px;
-  color: #b3b3b3;
-  font-weight: 500;
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
-  border-radius: 2rem;
-  text-align: center;
-  border: 2px solid #b3b3b3;
-}
 
-.login-button-index:hover {
-  transition: 0.4s ease-in;
-  background-color: white;
-  border: 2px solid white;
-  color: black;
-  cursor: pointer;
-}
 /* scrollbar */
 
 .playlists {
@@ -585,7 +563,7 @@ li {
 
 .d-none.d-md-flex.column .artist-pg-play-btn,
 .d-none.d-md-flex.column .artist-pg-follow-btn{
-  max-width: 150px
+  width: 150px;
   padding: 0.75rem;
   margin: 0.25rem;
   color: white;
@@ -616,36 +594,15 @@ li {
 .artist-pg-play-btn:hover,
 .artist-pg-follow-btn:hover {
   background-color: limegreen;
-  max-width: 150px;
-  padding: 0.75rem;
-  margin: 0.25rem;
-  color: white;
-  font-weight: 500;
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
-  border-radius: 2rem;
-  text-align: center;
   border: none;
-  cursor: pointer;
-  display: inline-block;
+  color: white;
   box-shadow: 4px 4px 16px rgba(114, 113, 113, 0.3);
 }
 
 .d-none.d-md-flex.column .artist-pg-play-btn:hover,
 .d-none.d-md-flex.column.artist-pg-follow-btn:hover {
   background-color: limegreen;
-  max-width: 150px;
-  padding: 0.75rem;
-  margin: 0.25rem;
   color: white;
-  font-weight: 500;
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
-  border-radius: 2rem;
-  text-align: center;
-  border: none;
-  cursor: pointer;
-  display: inline-block;
   box-shadow: 4px 4px 16px rgba(114, 113, 113, 0.3);
 }
 
@@ -1004,8 +961,7 @@ button:focus {
 
 .artist-pg-play-btn,
 .artist-pg-follow-btn {
-  min-width: 150px;
-  max-width: 350px;
+  max-width: 150px;
   width: 100%;
   padding: 0.75rem;
   margin: 0.25rem;
@@ -1018,20 +974,6 @@ button:focus {
   border: 1px solid white;
   cursor: pointer;
   display: inline-block;
-
-  /* color: white;
-  padding: 10px 20px;
-  text-align: center;
-  justify-content: center;
-  text-decoration: none;
-  align-content: center;
-  border-radius: 16px;
-  width: 100px;
-  height: 30px;
-  font-size: 12px;
-  letter-spacing: 0.2em; */
-
-  /* font-weight: 300px; */
 }
 
 .artist-pg-play-btn:hover,
@@ -1047,7 +989,7 @@ button:focus {
   letter-spacing: 0.1em;
   border-radius: 2rem;
   text-align: center;
-  border: none;
+  border: 1px solid limegreen;
   cursor: pointer;
   display: inline-block;
   box-shadow: 4px 4px 16px rgba(114, 113, 113, 0.3);
