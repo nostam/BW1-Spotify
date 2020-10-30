@@ -16,6 +16,7 @@ window.onload = function () {
       alert.style.width = "100%";
       alert.style.marginTop = "1rem";
       alert.style.color = "tomato";
+      alert.className = "alert alert-danger";
       if (
         inputGrp.firstElementChild.innerText === "Email address or Username"
       ) {
