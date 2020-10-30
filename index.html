@@ -116,7 +116,7 @@
       <!-- <a href="https://icons8.com/icon/1501/plus">Plus icon by Icons8</a> -->
       <div class="main-content d-flex flex-column">
         <!-- Tab heading -->
-        <div class="d-none d-md-flex justify-content-center">
+        <div class="justify-content-center">
           <div>
             <ul
               class="nav nav-tabs justify-content-center"
@@ -151,7 +151,7 @@
                   >PODCAST</a
                 >
               </li>
-              <li class="nav-item" role="presentation">
+              <li class="nav-item d-none d-md-flex" role="presentation">
                 <a
                   class="nav-link"
                   id="moods-and-genres-tab"
@@ -165,7 +165,7 @@
                   >MOODS AND GENRES</a
                 >
               </li>
-              <li class="nav-item" role="presentation">
+              <li class="nav-item d-none d-md-flex " role="presentation">
                 <a
                   class="nav-link"
                   id="new-releases-tab"
@@ -179,7 +179,7 @@
                   >NEW RELEASES</a
                 >
               </li>
-              <li class="nav-item" role="presentation">
+              <li class="nav-item d-none d-md-flex" role="presentation">
                 <a
                   class="nav-link"
                   id="discover-tab"
@@ -193,11 +193,26 @@
                   >DISCOVER
                 </a>
               </li>
-            </ul>
+            <button class="dropdown-toggle d-md-none" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style ="background: transparent;
+            font-size: 10px;
+            border: none;
+            color: whitesmoke;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            margin-bottom: 22px;
+            margin-left: 5px;">
+              MORE
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">MOODS & GENERES</a>
+              <a class="dropdown-item" href="#">NEW RELEASES</a>
+              <a class="dropdown-item" href="#">DISCOVER</a>
+            </div>
+          </ul>
           </div>
         </div>
 
-        <div class="small-index-menu d-sm-flex d-md-none mb-3">
+        <!-- <div class="small-index-menu d-sm-flex d-md-none mb-3">
           <ul class="list-group">
             <li class="list-group-item"><a href="#">TRENDING</a></li>
             <li class="list-group-item"><a href="#">PODCAST</a></li>
@@ -205,7 +220,7 @@
             <li class="list-group-item"><a href="#">NEW RELEASES</a></li>
             <li class="list-group-item"><a href="#">DISCOVER</a></li>
           </ul>
-        </div>
+        </div> -->
         
 
         <div class="mx-auto">
