@@ -561,6 +561,9 @@ h3.index-headings {
   transform: scaleX(0.5);
 }
 
+button:focus {
+  outline: none !important;
+}
 .card .spotify-card-icon {
   position: absolute;
   top: 5px;
