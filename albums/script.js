@@ -39,4 +39,16 @@ window.onload = function () {
       vol.style.width = "100%";
     }
   });
+
+  function playlistHover(){
+    let rows = document.querySelectorAll('tr');
+    for(let i=9; i<=rows.length; i++){
+      rows[i].addEventListener("mouseover", addIcons());
+    }
+  }
+
+  function addIcons(){
+    
+  }
 };
+
