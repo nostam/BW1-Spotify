@@ -285,6 +285,9 @@ th {
   background-color: #50505050;
   transition-delay: 2s !important;
 }
+.track-num {
+  font-size: 1rem;
+}
 tr:hover .track-num {
   display: none;
 }
@@ -1004,6 +1007,6 @@ li {
 }
 
 /* active class for music track */
-.active-track{
+.active-track {
   color: limegreen;
 }
