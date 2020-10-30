@@ -853,10 +853,9 @@ h6 > a:hover {
   color: #b3b3b3;
   background-color: #b3b3b3;
   top: 50%;
-  left: 50%;
+  left: var(--nowplaying-progress);
   transform: translate(-200%, -50%);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  left: var(--nowplaying-progress);
   z-index: 1;
 }
 .player-volume {
@@ -896,9 +895,8 @@ h6 > a:hover {
   background-color: #b3b3b3;
   top: 50%;
   right:0;
-  transform: translate(150%, -50%);
+  transform: translate(50%, -50%);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  left: var(--nowplaying-progress);
   z-index: 1;
 }
 .player-volume .fas.fa-volume-mute {
