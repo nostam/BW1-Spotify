@@ -54,7 +54,6 @@ body {
 }
 
 /********************** Sidebar **********************/
-
 aside {
   background-color: #040404;
   color: #b3b3b3;
@@ -120,8 +119,8 @@ li {
   z-index: 1000;
   position: absolute;
   left: -10px;
-  bottom: -5px;
-  height: 150%;
+  bottom: 0px;
+  height: 33px;
   width: 2.5px;
 }
 
@@ -136,12 +135,12 @@ li {
 }
 .menu .col > a {
   display: flex;
-  align-items: center;
+  align-content: center;
 }
 .menu .col > a > img {
   width: 20px;
   height: 20px;
-  margin-right: 20px;
+  margin-right: 1rem;
 }
 .menu i {
   padding-right: 20px;
@@ -201,7 +200,7 @@ li {
   /* width: 232px; */
   background-color: black;
   text-align: center;
-  bottom: -16px;
+  bottom: -20px;
 }
 .install-btn {
   padding-top: 1.25rem;
@@ -240,6 +239,31 @@ li {
   color: black;
   cursor: pointer;
 }
+/* scrollbar */
+
+.playlists {
+  position: relative;
+  padding-left: 15%;
+  font-size: 1rem;
+  padding-top: 20px;
+  display: block;
+  overflow-y: auto;
+  white-space: nowrap;
+  float: left;
+  height: 100%;
+  padding-bottom: 1rem;
+}
+.stick-to-bottom {
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+.install-btn {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 /* scrollbar */
 /* The emerging W3C standard
      that is currently Firefox-only */
@@ -299,16 +323,17 @@ li {
   /* padding-top: 0.8rem; */
   /* font-size: 0.5rem; */
   /* margin-left: -3rem; */
-}
-/* .menu h6 {
+
+  /* .menu h6 {
       padding-left: 15px;
       margin-top: 1rem;
       margin-bottom: 0.3rem;
       font-size: 0.8rem;
     }*/
-.menu ul a img {
-  width: 10px;
-  height: 10px;
+  .menu ul a img {
+    width: 10px;
+    height: 10px;
+  }
 }
 /* .playlists {
       height: 220px;
@@ -434,31 +459,31 @@ li {
     transform: scaleX(0);
     transition: transform 300ms ease-in-out;
   }
-}
 
-.small-index-menu,
-.list-group,
-.list-group li {
-  background-color: transparent !important;
-  border: 0px;
-  font-size: 10px;
-  font-weight: 500;
-  color: whitesmoke;
-  letter-spacing: 0.1em;
-}
+  .small-index-menu,
+  .list-group,
+  .list-group li {
+    background-color: transparent !important;
+    border: 0px;
+    font-size: 10px;
+    font-weight: 500;
+    color: whitesmoke;
+    letter-spacing: 0.1em;
+  }
 
-.small-index-menu .list-group li a {
-  color: whitesmoke;
-  text-decoration: none;
-}
-.small-index-menu .list-group li a:hover {
-  color: limegreen;
-  text-decoration: none;
-}
+  .small-index-menu .list-group li a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  .small-index-menu .list-group li a:hover {
+    color: limegreen;
+    text-decoration: none;
+  }
 
-.small-index-menu .list-group li a:active {
-  color: limegreen;
-  text-decoration: none;
+  .small-index-menu .list-group li a:active {
+    color: limegreen;
+    text-decoration: none;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -511,7 +536,6 @@ li {
     transition: 300ms ease-in-out;
   }
 }
-
 /********************* cover page *****************/
 .nav {
   display: flex;
