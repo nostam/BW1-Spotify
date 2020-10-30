@@ -214,6 +214,7 @@ li {
 
 .install-btn a:hover {
   color: white;
+  text-decoration: none;
 }
 
 .login-button-index {
@@ -253,7 +254,7 @@ li {
   height: 100%;
   padding-bottom: 1rem;
 }
-.stick-to-bottom {
+/* .stick-to-bottom {
   height: 60px;
   width: 100%;
   background-color: black;
@@ -262,7 +263,7 @@ li {
 .install-btn {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
+} */
 
 /* scrollbar */
 /* The emerging W3C standard
