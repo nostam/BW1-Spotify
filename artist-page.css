@@ -571,9 +571,7 @@ li {
 
 .artist-pg-play-btn,
 .artist-pg-follow-btn {
-  min-width: 150px;
-  max-width: 350px;
-  width: 100%;
+  max-width: 150px;
   padding: 0.75rem;
   margin: 0.25rem;
   color: white;
@@ -585,7 +583,23 @@ li {
   border: 1px solid white;
   cursor: pointer;
   display: inline-block;
+}
 
+.d-none.d-md-flex.column .artist-pg-play-btn,
+.d-none.d-md-flex.column .artist-pg-follow-btn{
+  max-width: 150px
+  padding: 0.75rem;
+  margin: 0.25rem;
+  color: white;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  border-radius: 2rem;
+  text-align: center;
+  border: 1px solid white;
+  cursor: pointer;
+  display: inline-block;
+}
   /* color: white;
   padding: 10px 20px;
   text-align: center;
@@ -605,7 +619,24 @@ li {
 .artist-pg-follow-btn:hover {
   background-color: limegreen;
   max-width: 150px;
-  width: 100%;
+  padding: 0.75rem;
+  margin: 0.25rem;
+  color: white;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  border-radius: 2rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 4px 4px 16px rgba(114, 113, 113, 0.3);
+}
+
+.d-none.d-md-flex.column .artist-pg-play-btn:hover,
+.d-none.d-md-flex.column.artist-pg-follow-btn:hover {
+  background-color: limegreen;
+  max-width: 150px;
   padding: 0.75rem;
   margin: 0.25rem;
   color: white;
@@ -671,6 +702,32 @@ li {
   border-bottom: none;
 }
 
+.dropdown-menu {
+  background-color: rgba(245, 245, 245, 0.788);
+  border-radius: 2px;
+}
+
+.dropdown-menu > .dropdown-item {
+  font-size: 10px;
+  justify-self: center;
+}
+
+.dropdown-item:after {
+  display: block;
+  content: "";
+  margin-bottom: 10px;
+  border-bottom: solid 2px limegreen;
+  transform: scaleX(0);
+  transition: 300ms ease-in-out;
+}
+
+.dropdown-item:hover:after {
+  transform: scaleX(0.5);
+}
+
+button:focus {
+  outline: none !important;
+}
 .card .spotify-card-icon {
   position: absolute;
   top: 8px;
