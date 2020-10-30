@@ -711,6 +711,15 @@ h3.index-headings {
   z-index: 999;
 }
 
+h6 > a {
+  text-decoration: none;
+  color: white;
+}
+
+h6 > a:hover {
+  text-decoration: none;
+  color: limegreen;
+}
 .container,
 .container-fluid,
 .container-lg,
