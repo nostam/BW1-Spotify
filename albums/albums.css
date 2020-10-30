@@ -101,7 +101,9 @@
   border-radius: 50%;
   margin-right: 5px;
   padding-right: 5px;
+  justify-items: center;
 }
+
 .album {
   height: 200px;
   width: 100%;
@@ -130,6 +132,7 @@
 }
 .album .album-details h2 {
   font-weight: 700;
+  letter-spacing: 0.2rem;
 }
 .last-line {
   display: inline-block;
@@ -139,7 +142,21 @@
   height: 30px;
   border-radius: 50%;
 }
-.group-name {
+.last-line h6 {
+  /* color: white; */
+  display: inline-block;
+  letter-spacing: 0.75px;
+}
+
+.last-line h6 a {
+  color: white;
+}
+.last-line h6 a:hover {
+  display: inline-block;
+  text-decoration: none;
+  color: limegreen;
+}
+/* .group-name {
   color: white;
   font-weight: 800;
 }
@@ -147,11 +164,12 @@
   color: white;
   text-decoration: underline;
   font-size: 15px;
-}
+} */
 .album-length {
   color: #b3b3b3;
-  display: inline;
+  display: block;
   font-size: 14px;
+  letter-spacing: 0.5px;
 }
 .playlist {
   background: rgb(18, 18, 18);
@@ -205,13 +223,33 @@ th {
   padding-bottom: 10px;
   display: none;
 }
+
+.playlist-btns > .fa-pause-circle {
+  color: limegreen;
+}
+
+.playlist-btns > .fa-pause-circle:hover {
+  color: whitesmoke;
+}
+.playlist-btns > .far.fa-heart {
+  color: whitesmoke;
+}
+
+.playlist-btns > .fas.fa-heart {
+  color: limegreen;
+  display: none;
+}
+
+.playlist-btns > .fa-ellipsis-h {
+  color: whitesmoke;
+}
 .playlist-table tr {
   background-color: transparent;
   transition-property: background-color;
   transition-duration: 5s;
   transition-delay: 2s;
 }
-.playlist-table tr:hover::after {
+.playlist-table tbody tr:hover::after {
   color: white !important;
   border-radius: 4px;
   content: "";
