@@ -209,7 +209,12 @@ aside {
 .install-btn > a:hover {
   color: white;
 }
-
+.login-button-index a{
+  color: #fff;
+}
+.login-button-index a:hover{
+  color: #000;
+}
 .login-button-index {
   max-width: 400px;
   width: 90%;
