@@ -40,12 +40,25 @@ window.onload = function () {
     }
   });
 
-  function playlistHover() {
-    let rows = document.querySelectorAll("tr");
-    for (let i = 9; i <= rows.length; i++) {
-      rows[i].addEventListener("mouseover", addIcons());
-    }
-  }
+  let playlistHeartOutline = document.querySelectorAll(".playlist .fa-heart");
+  for (let i = 0; i < playlistHeartOutline.length; i++) {
+    playlistHeartOutline[i].addEventListener("click", function () {
+      if (playlistHeartOutline[i].classList.contains("far")) {
+        playlistHeartOutline[i].classList.toggle("fas");
+        playlistHeartOutline[i].style.width = "2rem";
+        playlistHeartOutline[i].style.height = "2rem";
+      } else {
+        playlistHeartOutline[i].classList.toggle("far");
+      }
+    });
 
-  function addIcons() {}
+    function playlistHover() {
+      let rows = document.querySelectorAll("tr");
+      for (let i = 9; i <= rows.length; i++) {
+        rows[i].addEventListener("mouseover", addIcons());
+      }
+    }
+
+    function addIcons() {}
+  }
 };
