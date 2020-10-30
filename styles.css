@@ -210,9 +210,10 @@ aside {
   color: white;
 }
 .login-button-index a{
+  text-decoration: none;
   color: #fff;
 }
-.login-button-index a:hover{
+.login-button-index:hover span{
   color: #000;
 }
 .login-button-index {
