@@ -209,7 +209,12 @@ aside {
 .install-btn > a:hover {
   color: white;
 }
-
+.login-button-index a{
+  color: #fff;
+}
+.login-button-index a:hover{
+  color: #000;
+}
 .login-button-index {
   max-width: 400px;
   width: 90%;
@@ -706,6 +711,15 @@ h3.index-headings {
   z-index: 999;
 }
 
+h6 > a {
+  text-decoration: none;
+  color: white;
+}
+
+h6 > a:hover {
+  text-decoration: none;
+  color: limegreen;
+}
 .container,
 .container-fluid,
 .container-lg,
@@ -839,10 +853,9 @@ h3.index-headings {
   color: #b3b3b3;
   background-color: #b3b3b3;
   top: 50%;
-  left: 50%;
+  left: var(--nowplaying-progress);
   transform: translate(-200%, -50%);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  left: var(--nowplaying-progress);
   z-index: 1;
 }
 .player-volume {
@@ -882,9 +895,8 @@ h3.index-headings {
   background-color: #b3b3b3;
   top: 50%;
   right:0;
-  transform: translate(150%, -50%);
+  transform: translate(50%, -50%);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  left: var(--nowplaying-progress);
   z-index: 1;
 }
 .player-volume .fas.fa-volume-mute {

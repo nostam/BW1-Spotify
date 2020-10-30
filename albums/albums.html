@@ -29,6 +29,7 @@
     <!-- My CSS -->
     <!-- <link rel="stylesheet" href="styles.css" /> -->
     <link rel='stylesheet' href='albums.css' />
+    <link rel='stylesheet' href='player.css' />
     <title>Albums</title>
     <script src='script.js'></script>
   </head>
@@ -39,17 +40,17 @@
       <div>
         <img src="../assets/logo.png" alt="logo" class="logo" />
       </div>
-      <div class="menu d-flex column align-items-start">
+      <div class="menu d-flex column justify-content-start align-items-center">
             <div class="col">
               <a href="#"> <i class="fas fa-home fa-lg"></i>Home</a>
             </div>
           </div>
-          <div class="menu d-flex column align-items-start">
+          <div class="menu d-flex column justify-content-start align-items-center">
             <div class="col">
               <a href="#"> <i class="fas fa-search fa-lg"></i>Search</a>
             </div>
           </div>
-          <div class="menu d-flex column align-items-start">
+          <div class="menu d-flex column justify-content-start align-items-center">
 
             <div class="col">
               <a href="#"> <i class="fas fa-book fa-lg"></i>Your library</a>
@@ -57,15 +58,15 @@
           </div>
           <br>
           <br>
-        
-          <div class="menu d-flex column align-items-start">
+
+          <div class="menu d-flex column justify-content-start align-items-center">
           <div class="col">
             <a href="#">
               <img src="https://img.icons8.com/ios/25/b3b3b3/plus.png" />Create playlist</a
             >
           </div>
         </div>
-        <div class="menu d-flex column align-items-start">
+        <div class="menu d-flex column justify-content-start align-items-center">
         <div class="col">
           <a href='#'>
             <img src="https://img.icons8.com/ios/25/b3b3b3/like.png"/>Liked Songs</a>
@@ -73,8 +74,8 @@
       </div>
 
 
-        </div>                     
-  
+        </div>
+
       <hr />
 
         <div class='playlists'>
@@ -354,7 +355,7 @@
 
     </div> <!--row-->
 
-  <!-- player menu 
+  <!-- player menu
     <section class="player d-flex justify-content-between" style='width: 100%; position: fixed;'>
       <div
         class="player-albumart d-flex align-items-center justify-content-start"
@@ -467,11 +468,8 @@
       </div>
     </section>
     <!---player menu end-->
-
-    <script src="./js/player.js"></script>
-
     <script src="script.js"></script>
-    
+
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

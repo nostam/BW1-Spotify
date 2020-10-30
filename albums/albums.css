@@ -270,7 +270,7 @@ tr:hover .track-play {
   cursor: pointer;
 }
 /* tr:hover .track-heart, tr:hover .track-dots{
-   display: inline; 
+   display: inline;
 } */
 
 /* Extra small devices (phones, 600px and down) */
@@ -655,7 +655,7 @@ li {
 .menu .col > a > img {
   width: 20px;
   height: 20px;
-  margin-right: 1rem;
+  margin-right: 20px;
 }
 .menu i {
   padding-right: 20px;
@@ -788,9 +788,9 @@ li {
     padding-top: 0.5;
   }
   /* .menu ul li {
-    padding-top: 0.8rem; 
-    font-size: 0.8rem; 
-    margin-left: -3rem; 
+    padding-top: 0.8rem;
+    font-size: 0.8rem;
+    margin-left: -3rem;
     margin-top: -0.7rem;
   }
   .menu h6 {
@@ -891,7 +891,7 @@ li {
   }
   /* .menu ul li {
     padding-top: 0.8rem;
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
      margin-left: -25px;
   } */
   /* .menu h6 {

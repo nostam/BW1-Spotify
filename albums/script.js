@@ -1,7 +1,7 @@
 window.onload = function () {
-  let btn = document.querySelectorAll(".menu ul");
+  let btn = document.querySelectorAll(".menu div.col");
   let list = document.querySelector(".playlists");
-  btn[1].firstElementChild.addEventListener("click", function () {
+  btn[3].firstElementChild.addEventListener("click", function () {
     let newItem = document.createElement("p");
     newItem.innerText = "New Playlist #";
     newItem.innerText += list.childElementCount++;
@@ -40,15 +40,12 @@ window.onload = function () {
     }
   });
 
-  function playlistHover(){
-    let rows = document.querySelectorAll('tr');
-    for(let i=9; i<=rows.length; i++){
+  function playlistHover() {
+    let rows = document.querySelectorAll("tr");
+    for (let i = 9; i <= rows.length; i++) {
       rows[i].addEventListener("mouseover", addIcons());
     }
   }
 
-  function addIcons(){
-    
-  }
+  function addIcons() {}
 };
-
