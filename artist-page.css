@@ -594,6 +594,7 @@ li {
 .artist-pg-play-btn:hover,
 .artist-pg-follow-btn:hover {
   background-color: limegreen;
+  border: 1px solid limegreen;
   border: none;
   color: white;
   box-shadow: 4px 4px 16px rgba(114, 113, 113, 0.3);
@@ -602,8 +603,8 @@ li {
 .d-none.d-md-flex.column .artist-pg-play-btn:hover,
 .d-none.d-md-flex.column.artist-pg-follow-btn:hover {
   background-color: limegreen;
-  color: white;
   border: 1px solid limegreen;
+  color: white;
   box-shadow: 4px 4px 16px rgba(114, 113, 113, 0.3);
 }
 
