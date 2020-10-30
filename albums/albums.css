@@ -34,10 +34,10 @@
   position: fixed;
   width: 100%;
   z-index: 44444444444444444;
-  background-color:  #55164f;
+  background-color: #55164f;
   height: 60px;
 }
-.arrow-container{
+.arrow-container {
   position: fixed;
   z-index: 222222222;
 }
@@ -192,19 +192,20 @@
 th {
   padding-top: 25px;
 }
-.arrow.disabled:hover{
-  cursor:not-allowed;
+.arrow.disabled:hover {
+  cursor: not-allowed;
   opacity: 0.7;
 }
-.track-play{
+.track-play {
   display: none;
 }
-.track-heart, .track-dots{
+.track-heart,
+.track-dots {
   padding: 5px;
   padding-bottom: 10px;
   display: none;
 }
-.playlist-table tr{
+.playlist-table tr {
   background-color: transparent;
   transition-property: background-color;
   transition-duration: 5s;
@@ -222,10 +223,10 @@ th {
   background-color: #50505050;
   transition-delay: 2s !important;
 }
-tr:hover .track-num{
+tr:hover .track-num {
   display: none;
 }
-tr:hover .track-play{
+tr:hover .track-play {
   padding-bottom: 10px;
   display: inline;
   cursor: pointer;
@@ -310,7 +311,7 @@ tr:hover .track-play{
   }
 }
 /* playlist hover only */
-@media only screen and (min-width: 655px){
+@media only screen and (min-width: 655px) {
   .playlist-table tr:hover::after {
     width: 98%;
     height: 5rem;
@@ -347,10 +348,10 @@ tr:hover .track-play{
   .album {
     height: 430px;
   }
-  .album-cover{
+  .album-cover {
     margin-top: 150px;
   }
-  .album-details{
+  .album-details {
     margin-top: -90px;
     padding-top: 0px;
   }
@@ -363,10 +364,10 @@ tr:hover .track-play{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .album-cover{
+  .album-cover {
     margin-top: 10px;
   }
-  .album-details{
+  .album-details {
     margin-top: -90px;
     padding-top: 0px;
   }
@@ -480,28 +481,7 @@ tr:hover .track-play{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*** global ***/
 
@@ -519,7 +499,6 @@ tr:hover .track-play{
 }
 
 /* body {
-
   z-index: 0;
   background: linear-gradient(
      */
@@ -552,7 +531,7 @@ body {
 
 /********************** Sidebar **********************/
 
-aside {
+/* aside {
   background-color: #040404;
   color: #b3b3b3;
   max-height: calc(100vh - 90px);
@@ -604,7 +583,7 @@ aside {
 }
 .menu ul li > a > i {
   /* fa fonts each icon have different width, aligning Home, Search, Your Library at the same line */
-  width: 40px;
+/* width: 40px;
 }
 .menu ul li > a {
   display: flex;
@@ -632,9 +611,9 @@ aside {
   margin: 0 auto;
   margin-bottom: 5px;
   z-index: 10;
-}
+} */
 
-hr.playlisthr{
+/* hr.playlisthr{
   border: 0;
   clear: both;
   display: block;
@@ -644,9 +623,9 @@ hr.playlisthr{
   width: 80%;
   margin: 0 auto;
   margin-bottom: 5px;
-}
+}  */
 
-.menu li:active::after {
+/* .menu li:active::after {
   background: #afaeae50;
   color: white !important;
   border-radius: 4px;
@@ -666,6 +645,7 @@ hr.playlisthr{
   display: flex;
   flex-direction: column;
 }
+*/
 
 .playlists {
   position: relative;
@@ -722,7 +702,7 @@ hr.playlisthr{
     margin-bottom: 1rem;
     margin-left: 1rem;
   }
-  .menu ul li {
+  /* .menu ul li {
     padding-top: 0.8rem; 
     font-size: 0.8rem; 
     margin-left: -3rem; 
@@ -738,12 +718,12 @@ hr.playlisthr{
   .menu ul a img {
     width: 10px;
     height: 10px;
-  }
-  .playlists p{
+  } */
+  .playlists p {
     font-size: 0.6rem;
     margin-left: 15px;
   }
-  .albums-holder{
+  .albums-holder {
     max-width: 70%;
     width: 70%;
     left: 30%;
@@ -761,7 +741,6 @@ hr.playlisthr{
     top: 0;
     left: 0;
   }
-
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
