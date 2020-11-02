@@ -477,7 +477,7 @@ tr:hover .track-play {
   }
 
   .upgrade-btn:hover {
-    background-color: rgba(0, 0, 0, 0.555);
+    background-color: rgb(70, 70, 70);
   }
   .profile-btn {
     font-size: 12px;
