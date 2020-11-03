@@ -51,7 +51,7 @@ window.onload = function () {
         "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
       },
     })
-      .then((response) => response.json())
+      .then((response) => (response.ok ? response.json() : ""))
       .then((data) => listAlbums(data))
       .catch((err) => {
         console.error(err);
@@ -119,9 +119,7 @@ window.onload = function () {
       let l = covers[i].firstElementChild.src;
       obj[l] = isNaN(obj[l]) ? 1 : obj[l] + 1;
     }
-    return Object.keys(obj).find(
-      (key) => obj[key] === Math.max(...Object.values(obj))
-    );
+    return Object.keys(obj).length;
   };
 
   let countBtn = document.getElementById("countUnique");
