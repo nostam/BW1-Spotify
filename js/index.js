@@ -41,4 +41,75 @@ window.onload = function () {
       }
     });
   }
+  // M3-D2
+
+  const search = (q) => {
+    fetch(`https://rapidapi.p.rapidapi.com/search?q=${q}`, {
+      method: "GET",
+      headers: {
+        "x-rapidapi-key": "74a8e76fbamshe2a8991c5162cf0p18ff5ajsn4ac24c69ec4a",
+        "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => listAlbums(data))
+      .catch((err) => {
+        console.error(err);
+      });
+  };
+
+  const addArtist = (name) => {
+    let myTab = document.getElementById("myTab");
+    let artist = document.createElement("li");
+    artist.innerHTML = `<li class="nav-item d-none d-md-flex" role="presentation">
+                        <a
+                          class="nav-link"
+                          id="discover-tab"
+                          data-toggle="tab"
+                          href="#discover"
+                          role="tab"
+                          aria-controls="discover"
+                          aria-selected="false"
+                          data-target="#homepage-headings"
+                          data-slide-to="2"
+                          >${name}
+                        </a>
+                      </li>`;
+    artist.setAttribute("name", `${name}`);
+    artist.addEventListener("click", function (name) {
+      console.log("clicked");
+      search(artist.innerText);
+    });
+    myTab.appendChild(artist);
+  };
+
+  addArtist("EMINEM");
+  // addArtist("METALLICA");
+  // addArtist("BEHEMOTH");
+  addArtist("SHEENA RINGO");
+  const listAlbums = (data) => {
+    console.log(data);
+    let header = document.querySelectorAll(".row.no-gutters.d-flex");
+    let newContent = document.createElement("div");
+    data.data.forEach((data) => {
+      let card = `<div class="trending card p-0 col-12 col-md-3 col-lg-2">
+                        <img
+                          class="card-img-top img-fluid"
+                          src="${data.album.cover_medium}"
+                          alt="spotify_playlist_1"
+                        />
+                        <i class="spotify-card-icon fab fa-spotify"></i>
+                        <span class="overlay-icons"
+                          ><i class="heart far fa-heart fa-sm mr-3"></i
+                          ><i class="play fas fa-play fa-1x mr-3"></i
+                          ><i class="fa fa-ellipsis-h fa-sm"></i>
+                        </span>
+                        <div>
+                          <h6>${data.artist.name}</h6>
+                        </div>
+                      </div>`;
+      newContent.innerHTML += card;
+    });
+    header[0].innerHTML = newContent.innerHTML;
+  };
 };
