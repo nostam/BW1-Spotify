@@ -1,3 +1,7 @@
+const headers = {
+  "x-rapidapi-key": "74a8e76fbamshe2a8991c5162cf0p18ff5ajsn4ac24c69ec4a",
+  "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
+};
 window.onload = function () {
   let heartOutline = document.querySelector(".loved-track .far.fa-heart");
   let heartFilled = document.querySelector(".loved-track .fas.fa-heart");
@@ -46,10 +50,7 @@ window.onload = function () {
   const search = (q) => {
     fetch(`https://rapidapi.p.rapidapi.com/search?q=${q}`, {
       method: "GET",
-      headers: {
-        "x-rapidapi-key": "74a8e76fbamshe2a8991c5162cf0p18ff5ajsn4ac24c69ec4a",
-        "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
-      },
+      headers,
     })
       .then((response) => (response.ok ? response.json() : ""))
       .then((data) => listAlbums(data))
@@ -96,7 +97,7 @@ window.onload = function () {
                         <img
                           class="card-img-top img-fluid"
                           src="${data.album.cover_medium}"
-                          alt="spotify_playlist_1"
+                          alt="${data.album.title}"
                         />
                         <i class="spotify-card-icon fab fa-spotify"></i>
                         <span class="overlay-icons"
@@ -105,13 +106,25 @@ window.onload = function () {
                           ><i class="fa fa-ellipsis-h fa-sm"></i>
                         </span>
                         <div>
-                          <h6>${data.artist.name}</h6>
+                          <h6 label="${data.title}">${data.artist.name}</h6>
                         </div>
                       </div>`;
       newContent.innerHTML += card;
     });
     header[0].innerHTML = newContent.innerHTML;
   };
+
+  const listAlbumsTitle = function () {
+    let covers = document.querySelectorAll(".trending.card");
+    let arr = [];
+    covers.forEach((covers) => arr.push(covers.firstElementChild.alt));
+    return arr;
+  };
+  const listBtn = document.getElementById("listAlbums");
+  listBtn.addEventListener("click", function () {
+    console.log(listAlbumsTitle());
+  });
+
   const countUnique = function () {
     let covers = document.querySelectorAll(".trending.card");
     let obj = {};
@@ -122,9 +135,8 @@ window.onload = function () {
     return Object.keys(obj).length;
   };
 
-  let countBtn = document.getElementById("countUnique");
+  const countBtn = document.getElementById("countUnique");
   countBtn.addEventListener("click", function () {
-    console.log("clicked");
     console.log(countUnique());
   });
 };
