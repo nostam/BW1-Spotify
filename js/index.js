@@ -112,4 +112,21 @@ window.onload = function () {
     });
     header[0].innerHTML = newContent.innerHTML;
   };
+  const countUnique = function () {
+    let covers = document.querySelectorAll(".trending.card");
+    let obj = {};
+    for (i = 0; i < covers.length; i++) {
+      let l = covers[i].firstElementChild.src;
+      obj[l] = isNaN(obj[l]) ? 1 : obj[l] + 1;
+    }
+    return Object.keys(obj).find(
+      (key) => obj[key] === Math.max(...Object.values(obj))
+    );
+  };
+
+  let countBtn = document.getElementById("countUnique");
+  countBtn.addEventListener("click", function () {
+    console.log("clicked");
+    console.log(countUnique());
+  });
 };
